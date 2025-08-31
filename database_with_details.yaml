@@ -1,0 +1,171 @@
+databases:
+  employee_leave_tracking_data_dataset:
+    column_count: 11
+    created_from: employee_leave_tracking_data.xlsx
+    dataset_type: employee
+    description: "The schema of the `employee_leave_tracking_data_dataset` database\
+      \ is as follows:\n\n### Tables\n- **Table Name**: employee_leave_tracking_data\n\
+      \n### Columns\n1. **Employee Name**\n   - **Data Type**: object\n   - **Description**:\
+      \ This column contains the names of employees in the organization.\n   - **Attributes**:\
+      \ 300 unique values, 0 nulls.\n\n2. **Department**\n   - **Data Type**: object\n\
+      \   - **Description**: Represents the department to which an employee belongs.\n\
+      \   - **Attributes**: 5 unique values, 0 nulls.\n\n3. **Position**\n   - **Data\
+      \ Type**: object\n   - **Description**: Indicates the job title or position\
+      \ held by the employee.\n   - **Attributes**: 10 unique values, 0 nulls.\n\n\
+      4. **Leave Type**\n   - **Data Type**: object\n   - **Description**: Classifies\
+      \ the type of leave taken by the employee (e.g., sick leave, vacation).\n  \
+      \ - **Attributes**: 5 unique values, 0 nulls.\n\n5. **Start Date**\n   - **Data\
+      \ Type**: datetime64[ns]\n   - **Description**: The date on which the employee's\
+      \ leave begins.\n   - **Attributes**: 202 unique values, 0 nulls.\n\n6. **End\
+      \ Date**\n   - **Data Type**: datetime64[ns]\n   - **Description**: The date\
+      \ on which the employee's leave ends.\n   - **Attributes**: 213 unique values,\
+      \ 0 nulls.\n\n7. **Days Taken**\n   - **Data Type**: int64\n   - **Description**:\
+      \ The total number of leave days taken by the employee in a given leave instance.\n\
+      \   - **Attributes**: 10 unique values, 0 nulls.\n\n8. **Total Leave Entitlement**\n\
+      \   - **Data Type**: int64\n   - **Description**: The total number of leave\
+      \ days an employee is entitled to within a specific period (e.g., yearly).\n\
+      \   - **Attributes**: 11 unique values, 0 nulls.\n\n9. **Leave Taken So Far**\n\
+      \   - **Data Type**: int64\n   - **Description**: The cumulative number of leave\
+      \ days taken by the employee so far in the current year or leave cycle.\n  \
+      \ - **Attributes**: 26 unique values, 0 nulls.\n\n10. **Remaining Leaves**\n\
+      \    - **Data Type**: int64\n    - **Description**: The number of leave days\
+      \ remaining for the employee after accounting for the leave taken.\n    - **Attributes**:\
+      \ 26 unique values, 0 nulls.\n\n11. **Month**\n    - **Data Type**: object\n\
+      \    - **Description**: Represents the month during which the leave was taken\
+      \ (could refer to the start date).\n    - **Attributes**: 12 unique values,\
+      \ 0 nulls.\n\n### Key Constraints\n- **Primary Keys**: There does not appear\
+      \ to be a defined primary key based on the provided information. However, combinations\
+      \ of `Employee Name`, `Start Date`, and `End Date` could serve as a unique identifier\
+      \ if they produce unique entries.\n- **Foreign Keys**: No foreign keys are specified,\
+      \ suggesting that this dataset operates independently without relationships\
+      \ to other tables.\n- **Indexes**: No indexes are mentioned in the dataset description.\n\
+      \n### High-Level Correlations\n1. **Leave Entitlement vs. Usage**: The `Total\
+      \ Leave Entitlement`, `Leave Taken So Far`, and `Remaining Leaves` columns are\
+      \ likely correlated. Analyzing these relationships can help understand how effectively\
+      \ employees are utilizing their leave entitlements.\n\n2. **Leave Type Usage\
+      \ Trends**: The `Leave Type` column can provide insights into how different\
+      \ leave types are used, which can be correlated with departmental trends in\
+      \ leave patterns. For example, one department may show higher sick leave usage\
+      \ compared to others.\n\n3. **Time-Based Leave Patterns**: The `Start Date`,\
+      \ `End Date`, and `Month` columns can reveal trends based on timings of leaves\
+      \ taken. This analysis may show if employees tend to take leave more frequently\
+      \ during specific months (e.g., summer vacations or holiday seasons).\n\n4.\
+      \ **Departmental Leave Patterns**: Investigating the `Department` column in\
+      \ conjunction with leave records can lead to insights about organizational culture\
+      \ and employee satisfaction. Departments with higher leave usage may signal\
+      \ issues that need addressing, such as burnout or workload imbalance.\n\n5.\
+      \ **Days Taken vs. Total Entitlement**: There could be significant correlations\
+      \ between `Days Taken` and `Total Leave Entitlement`, which may highlight whether\
+      \ employees are fully utilizing their entitled leave. Low utilization could\
+      \ indicate a need to inform employees of their benefits or more actively promote\
+      \ time off to improve work-life balance.\n\nOverall, the dataset provides valuable\
+      \ insights into employee leave behavior, which can inform HR policies, personnel\
+      \ management, and overall organizational wellness strategies."
+    file_name: sqlite:///employee_leave_tracking_data.db
+    owner: bibek
+    row_count: 300
+    table_name: employee_leave_tracking_data
+    type: database
+  net_capital_investment_2024_25.csv_dataset:
+    column_count: 7
+    created_from: net_capital_investment_2024_25.csv
+    dataset_type: custom
+    description: "The schema of the `net_capital_investment_2024_25.csv_dataset` database\
+      \ is as follows:\n\n### Tables\n- **Table Name**: net_capital_investment_2024_25\n\
+      \n### Columns\n1. **Unnamed: 0**\n   - **Data Type**: object\n   - **Description**:\
+      \ This column likely serves as an identifier or label for the investment categories\
+      \ or sectors. \n   - **Attributes**: 20 unique values, 0 nulls.\n   \n2. **Unnamed:\
+      \ 1**\n   - **Data Type**: object\n   - **Description**: This column may represent\
+      \ specific project or program names related to the capital investments.\n  \
+      \ - **Attributes**: 51 unique values, 4 nulls.\n\n3. **2022-23 ($m)**\n   -\
+      \ **Data Type**: int64\n   - **Description**: This represents the capital investment\
+      \ amount allocated for the fiscal year 2022-23 in millions of dollars.\n   -\
+      \ **Attributes**: 55 unique values, 0 nulls.\n\n4. **2023-24 ($m)**\n   - **Data\
+      \ Type**: int64\n   - **Description**: Represents the capital investment amount\
+      \ allocated for the fiscal year 2023-24 in millions of dollars.\n   - **Attributes**:\
+      \ 54 unique values, 0 nulls.\n\n5. **2024-25 ($m)**\n   - **Data Type**: int64\n\
+      \   - **Description**: Represents the capital investment amount allocated for\
+      \ the fiscal year 2024-25 in millions of dollars.\n   - **Attributes**: 56 unique\
+      \ values, 0 nulls.\n\n6. **2025-26 ($m)**\n   - **Data Type**: int64\n   - **Description**:\
+      \ Represents the capital investment amount allocated for the fiscal year 2025-26\
+      \ in millions of dollars.\n   - **Attributes**: 56 unique values, 0 nulls.\n\
+      \n7. **2026-27 ($m)**\n   - **Data Type**: int64\n   - **Description**: Represents\
+      \ the capital investment amount allocated for the fiscal year 2026-27 in millions\
+      \ of dollars.\n   - **Attributes**: 54 unique values, 0 nulls.\n\n### Key Constraints\n\
+      - **Primary Keys**: There doesn't appear to be a defined primary key based on\
+      \ the provided information, but `Unnamed: 0` or `Unnamed: 1` could serve as\
+      \ unique identifiers for rows if they contain unique values.\n- **Foreign Keys**:\
+      \ No foreign keys are specified, indicating that this dataset likely operates\
+      \ independently without relations to other tables.\n- **Indexes**: No indexes\
+      \ are mentioned in the dataset description.\n\n### High-Level Correlations\n\
+      1. **Temporal Investment Trends**: The columns representing different fiscal\
+      \ years ($m) are likely correlated, with investments in previous years influencing\
+      \ or predicting amounts allocated in the following years. For instance, one\
+      \ might observe a trend where the investment amount increases or decreases based\
+      \ on past fiscal performance.\n  \n2. **Investment Categories vs. Amounts**:\
+      \ The `Unnamed: 0` and `Unnamed: 1` columns can provide insight into which categories\
+      \ or projects receive more funding over time. By analyzing the investment distribution\
+      \ across different years, stakeholders can assess priority areas and investment\
+      \ strategy changes.\n\n3. **Potential Budget Allocation Patterns**: If one observes\
+      \ a consistent rise in funding from one year to the next in particular categories,\
+      \ it could hint at strategic shifts in budget allocation, perhaps due to increased\
+      \ demand or changes in policy priorities.\n\nOverall, the dataset provides insights\
+      \ into capital investment allocation trends over multiple fiscal periods, which\
+      \ can inform financial planning and investment strategy decisions."
+    file_name: sqlite:///net_capital_investment_2024_25.csv.db
+    owner: bibek
+    row_count: 70
+    table_name: net_capital_investment_2024_25.csv
+    type: database
+  staffing_2024_25_budget_dataset:
+    column_count: 6
+    created_from: staffing_2024_25_budget.csv
+    dataset_type: custom
+    description: "The schema of the `staffing_2024_25_budget_dataset` database is\
+      \ as follows:\n\n### Tables\n- **Table Name**: staffing_2024_25_budget\n\n###\
+      \ Columns\n1. **Unnamed: 0**\n   - **Data Type**: object\n   - **Description**:\
+      \ This column may represent a category or a grouping relevant to budgeting (e.g.,\
+      \ departments or teams).\n   - **Attributes**: 18 unique values, 3 nulls.\n\n\
+      2. **Unnamed: 1**\n   - **Data Type**: object\n   - **Description**: May represent\
+      \ specific items or personnel relevant to the staffing budget, possibly roles\
+      \ or positions.\n   - **Attributes**: 166 unique values, 1 null.\n\n3. **Estimated\
+      \ Actual**\n   - **Data Type**: object\n   - **Description**: This column likely\
+      \ indicates the estimated actual budget expenditures or allocations.\n   - **Attributes**:\
+      \ 166 unique values, 1 null.\n\n4. **Estimate**\n   - **Data Type**: object\n\
+      \   - **Description**: Represents the budget estimate for the staffing for the\
+      \ upcoming fiscal year.\n   - **Attributes**: 163 unique values, 1 null.\n\n\
+      5. **Unnamed: 4**\n   - **Data Type**: float64\n   - **Description**: This column\
+      \ appears to be empty and does not contain any usable data (182 nulls).\n  \
+      \ - **Attributes**: 0 unique values, 182 nulls.\n\n6. **Unnamed: 5**\n   - **Data\
+      \ Type**: float64\n   - **Description**: Similar to the above, this column also\
+      \ appears to be empty with no usable data (182 nulls).\n   - **Attributes**:\
+      \ 0 unique values, 182 nulls.\n\n### Key Constraints\n- **Primary Keys**: There\
+      \ doesn't appear to be a defined primary key based on the provided information.\
+      \ However, `Unnamed: 1` (if it contains unique values for roles or items) could\
+      \ be a candidate for a unique identifier.\n- **Foreign Keys**: No foreign keys\
+      \ are specified, suggesting that the dataset operates independently without\
+      \ relationships to other tables.\n- **Indexes**: No indexes are mentioned in\
+      \ the dataset description.\n\n### High-Level Correlations\n1. **Budget Estimates\
+      \ vs. Estimated Actuals**: The columns `Estimated Actual` and `Estimate` are\
+      \ highly likely to be correlated. A detailed analysis might reveal discrepancies\
+      \ between what was estimated and what was actually spent, providing insights\
+      \ into budgeting accuracy.\n\n2. **Department/Item-wise Spending**: The `Unnamed:\
+      \ 0` and `Unnamed: 1` columns can help determine how different departments or\
+      \ positions are funded. By analyzing the amounts allocated and estimated across\
+      \ these categories, stakeholders can assess resource distribution and potential\
+      \ areas for cost optimization.\n\n3. **Potential Trends in Staffing Costs**:\
+      \ Examining the relationship between budget estimates and actual expenditures\
+      \ over time may reveal trends in staffing costs. Any consistent patterns might\
+      \ indicate changes in hiring practices, salary adjustments, or shifts in organizational\
+      \ strategy.\n\n4. **Data Integrity Concerns**: Given the presence of null values\
+      \ in the dataset, particularly in `Unnamed: 0` and `Unnamed: 1`, it could impact\
+      \ the reliability of the analysis. Stakeholders should be cautious in interpreting\
+      \ results, as missing data may skew understandings of staffing requirements\
+      \ and budgets.\n\nOverall, the dataset provides valuable insights into staffing\
+      \ budget allocations for the fiscal year 2024-25, which can inform strategic\
+      \ workforce planning and budgeting decisions."
+    file_name: sqlite:///staffing_2024_25_budget.db
+    owner: bibek
+    row_count: 182
+    table_name: staffing_2024_25_budget
+    type: database

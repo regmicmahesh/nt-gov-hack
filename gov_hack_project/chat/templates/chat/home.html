@@ -1,0 +1,97 @@
+{% extends 'chat/base.html' %}
+
+{% block title %}Home - OpenMind{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto text-center">
+        <div class="mb-8">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+                <i class="fas fa-robot text-blue-600 mr-4"></i>Welcome to OpenMind
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                A comprehensive platform for querying and analyzing your data with AI-powered natural language processing.
+            </p>
+        </div>
+        
+        {% if user.is_authenticated %}
+            <div class="grid md:grid-cols-2 gap-6 mt-12">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center">
+                        <i class="fas fa-robot text-5xl text-blue-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">AI Chat</h3>
+                        <p class="text-gray-600 mb-6">Query your data using natural language and get intelligent insights.</p>
+                        <a href="{% url 'chat:ai_chat' %}" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200">
+                            Start Chatting
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center">
+                        <i class="fas fa-tachometer-alt text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Dashboard</h3>
+                        <p class="text-gray-600 mb-6">Manage your datasets, view activity, and access data management tools.</p>
+                        <a href="{% url 'chat:dashboard' %}" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-green-600 hover:bg-green-700 transition-colors duration-200">
+                            Go to Dashboard
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="grid md:grid-cols-2 gap-6 mt-12">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center">
+                        <i class="fas fa-user-plus text-5xl text-blue-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Get Started</h3>
+                        <p class="text-gray-600 mb-6">Create an account to access the AI-powered data analysis platform.</p>
+                        <a href="{% url 'chat:register' %}" class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200">
+                            Register Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center">
+                        <i class="fas fa-sign-in-alt text-5xl text-green-600 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Already Have an Account?</h3>
+                        <p class="text-gray-600 mb-6">Sign in to access your dashboard and continue analyzing data.</p>
+                        <a href="{% url 'chat:login' %}" class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-lg text-white bg-green-600 hover:bg-green-700 transition-colors duration-200">
+                            Login
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">Features</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-database text-2xl text-blue-600"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Multi-Dataset Access</h4>
+                        <p class="text-gray-600">Connect and query multiple data sources with secure access controls</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-robot text-2xl text-yellow-600"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">AI-Powered Analysis</h4>
+                        <p class="text-gray-600">Natural language queries with intelligent data interpretation</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-check-double text-2xl text-green-600"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-2">Quality Control</h4>
+                        <p class="text-gray-600">AI validates response accuracy and provides quality scores</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %} 

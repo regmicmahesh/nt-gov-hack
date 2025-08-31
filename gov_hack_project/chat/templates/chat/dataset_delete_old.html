@@ -1,0 +1,101 @@
+{% extends 'chat/base.html' %}
+
+{% block title %}Delete {{ dataset.name }} - GovAssist{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card border-danger">
+            <div class="card-header bg-danger text-white">
+                <h4 class="card-title mb-0">
+                    <i class="fas fa-exclamation-triangle me-2"></i>Delete Dataset
+                </h4>
+            </div>
+            <div class="card-body text-center">
+                <div class="mb-4">
+                    <i class="fas fa-trash fa-4x text-danger mb-3"></i>
+                    <h5 class="text-danger">Are you sure you want to delete this dataset?</h5>
+                </div>
+                
+                <div class="alert alert-warning">
+                    <strong>Dataset:</strong> {{ dataset.name }}
+                    <br>
+                    <strong>Description:</strong> {{ dataset.description|truncatewords:20 }}
+                    <br>
+                    <strong>File Size:</strong> {{ dataset.get_file_size_mb }} MB
+                    <br>
+                    <strong>Rows:</strong> {{ dataset.row_count|default:0 }}
+                    <br>
+                    <strong>Columns:</strong> {{ dataset.column_count|default:0 }}
+                </div>
+                
+                <div class="alert alert-danger">
+                    <i class="fas fa-exclamation-circle me-2"></i>
+                    <strong>Warning:</strong> This action cannot be undone. All data, metadata, and access logs will be permanently deleted.
+                </div>
+                
+                <form method="post" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger btn-lg me-2">
+                        <i class="fas fa-trash me-2"></i>Yes, Delete Dataset
+                    </button>
+                </form>
+                
+                <a href="{% url 'chat:dataset_detail' dataset.id %}" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-times me-2"></i>Cancel
+                </a>
+            </div>
+        </div>
+        
+        <!-- Dataset Info Card -->
+        <div class="card mt-4">
+            <div class="card-header bg-light">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-info-circle me-2"></i>Dataset Information
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Owner:</strong> {{ dataset.owner.get_full_name|default:dataset.owner.username }}</p>
+                        <p><strong>Created:</strong> {{ dataset.created_at|date:"M d, Y H:i" }}</p>
+                        <p><strong>Last Updated:</strong> {{ dataset.updated_at|date:"M d, Y H:i" }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Type:</strong> {{ dataset.get_dataset_type_display }}</p>
+                        <p><strong>Status:</strong> 
+                            <span class="badge bg-{% if dataset.status == 'active' %}success{% elif dataset.status == 'processing' %}warning{% else %}danger{% endif %}">
+                                {{ dataset.get_status_display }}
+                            </span>
+                        </p>
+                        <p><strong>Public:</strong> 
+                            <span class="badge bg-{% if dataset.is_public %}info{% else %}warning{% endif %}">
+                                {% if dataset.is_public %}Yes{% else %}No{% endif %}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                
+                {% if dataset.tags %}
+                <div class="mt-3">
+                    <strong>Tags:</strong><br>
+                    {% for tag in dataset.get_tags_list %}
+                        <span class="badge bg-light text-dark me-1">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <div class="text-center mt-4">
+            <a href="{% url 'chat:dataset_list' %}" class="btn btn-outline-secondary me-2">
+                <i class="fas fa-arrow-left me-2"></i>Back to Datasets
+            </a>
+            <a href="{% url 'chat:dashboard' %}" class="btn btn-outline-primary">
+                <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %} 

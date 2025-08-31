@@ -1,0 +1,23 @@
+# CREATE TABLE employee (
+#         "Employee Name" TEXT, 
+#         "Department" TEXT, 
+#         "Position" TEXT, 
+#         "Leave Type" TEXT, 
+#         "Start Date" DATETIME, 
+#         "End Date" DATETIME, 
+#         "Days Taken" BIGINT, 
+#         "Total Leave Entitlement" BIGINT, 
+#         "Leave Taken So Far" BIGINT, 
+#         "Remaining Leaves" BIGINT, 
+#         month TEXT
+# );
+
+evals:
+  "employee.db":
+    - query: "How many employees are there in the whole company based on the leave details?"
+      ground_truth:
+        sql: "SELECT COUNT(*) FROM employee"
+    
+    - query: "Which department does Michael Moore work in based on the leave details?"
+      ground_truth:
+        sql: "SELECT Department FROM employee WHERE \"Employee Name\" = 'Michael Moore'"

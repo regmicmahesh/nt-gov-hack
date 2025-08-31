@@ -1,0 +1,234 @@
+{% extends 'chat/base.html' %}
+
+{% block title %}Datasets - OpenMind{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <!-- Header Section -->
+    <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8 mb-8">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="mb-4 md:mb-0">
+                <h1 class="text-3xl font-bold mb-3">
+                    <i class="fas fa-database mr-2"></i>Datasets
+                </h1>
+                <p class="text-lg opacity-90">Explore and manage your data collections</p>
+            </div>
+            <div class="flex-shrink-0">
+                <a href="{% url 'chat:dataset_upload' %}" class="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-upload mr-2"></i>Upload Dataset
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search and Filters -->
+    <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+        <form method="get" class="grid grid-cols-1 md:grid-cols-6 gap-4">
+            <div class="md:col-span-2">
+                <input type="text" name="search" placeholder="Search datasets..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" value="{{ request.GET.search }}">
+            </div>
+            <div>
+                <select name="dataset_type" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">All Types</option>
+                    <option value="csv">CSV</option>
+                    <option value="json">JSON</option>
+                    <option value="excel">Excel</option>
+                </select>
+            </div>
+            <div>
+                <select name="owner" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">All Owners</option>
+                    <option value="me">My Datasets</option>
+                </select>
+            </div>
+            <div>
+                <select name="is_public" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <option value="">All Access</option>
+                    <option value="true">Public</option>
+                    <option value="false">Private</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="w-full px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-search mr-1"></i>Search
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+            <i class="fas fa-database text-4xl text-blue-600 mb-4"></i>
+            <h3 class="text-2xl font-bold text-blue-600">{{ total_datasets|default:"0" }}</h3>
+            <p class="text-gray-600">Total Datasets</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+            <i class="fas fa-users text-4xl text-green-600 mb-4"></i>
+            <h3 class="text-2xl font-bold text-green-600">{{ page_obj.paginator.count|default:"0" }}</h3>
+            <p class="text-gray-600">Available to You</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+            <i class="fas fa-globe text-4xl text-cyan-600 mb-4"></i>
+            <h3 class="text-2xl font-bold text-cyan-600">{{ page_obj|length|default:"0" }}</h3>
+            <p class="text-gray-600">Showing</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+            <i class="fas fa-upload text-4xl text-yellow-600 mb-4"></i>
+            <h3 class="text-2xl font-bold text-yellow-600">{{ page_obj.paginator.num_pages|default:"0" }}</h3>
+            <p class="text-gray-600">Pages</p>
+        </div>
+    </div>
+
+    <!-- Datasets Grid -->
+    {% if page_obj %}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for dataset in page_obj %}
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900 truncate flex-1 mr-2" title="{{ dataset.name }}">
+                            {{ dataset.name }}
+                        </h3>
+                        <div class="flex space-x-1">
+                            <span class="px-2 py-1 text-xs font-semibold rounded-full {% if dataset.status == 'active' %}bg-green-100 text-green-800{% elif dataset.status == 'processing' %}bg-yellow-100 text-yellow-800{% elif dataset.status == 'connecting' %}bg-blue-100 text-blue-800{% else %}bg-red-100 text-red-800{% endif %}">
+                                {{ dataset.get_status_display|default:"Unknown" }}
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="inline-flex items-center px-2 py-1 text-xs font-medium rounded bg-gray-100 text-gray-800">
+                            {{ dataset.get_dataset_type_display|default:"Unknown" }}
+                        </span>
+                        <span class="inline-flex items-center px-2 py-1 text-xs font-medium rounded bg-blue-100 text-blue-800">
+                            <i class="fas fa-{% if dataset.dataset_source == 'file' %}file-upload{% elif dataset.dataset_source == 'database' %}database{% elif dataset.dataset_source == 'api' %}plug{% else %}link{% endif %} mr-1"></i>
+                            {{ dataset.get_dataset_source_display|default:"Unknown" }}
+                        </span>
+                        {% if dataset.is_public %}
+                            <span class="inline-flex items-center px-2 py-1 text-xs font-medium rounded bg-green-100 text-green-800">
+                                <i class="fas fa-globe mr-1"></i>Public
+                            </span>
+                        {% endif %}
+                    </div>
+                    
+                    <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                        {{ dataset.description|truncatewords:20|default:"No description available." }}
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-4 text-center text-sm mb-4">
+                        <div>
+                            <div class="font-semibold text-gray-900">{{ dataset.row_count|default:'N/A' }}</div>
+                            <div class="text-gray-500">Rows</div>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-gray-900">{{ dataset.column_count|default:'N/A' }}</div>
+                            <div class="text-gray-500">Columns</div>
+                        </div>
+                        <div>
+                            {% if dataset.dataset_source == 'file' %}
+                                <div class="font-semibold text-gray-900">{{ dataset.get_file_size_mb|default:'N/A' }}</div>
+                                <div class="text-gray-500">MB</div>
+                            {% else %}
+                                <div class="font-semibold text-gray-900">{{ dataset.get_sync_frequency_display|default:'N/A' }}</div>
+                                <div class="text-gray-500">Sync</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-between items-center text-xs text-gray-500 mb-4">
+                        <span>
+                            <i class="fas fa-user mr-1"></i>{{ dataset.owner.username|default:"Unknown" }}
+                        </span>
+                        <span>
+                            <i class="fas fa-calendar mr-1"></i>{{ dataset.created_at|date:"M d, Y"|default:"Unknown" }}
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="px-6 py-3 bg-gray-50 border-t">
+                    <a href="{% url 'chat:dataset_detail' dataset.id %}" class="w-full inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-eye mr-2"></i>View Dataset
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <!-- Pagination -->
+        {% if page_obj.has_other_pages %}
+        <div class="mt-8 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1{% if request.GET.search %}&search={{ request.GET.search }}{% endif %}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                        <i class="fas fa-angle-double-left"></i>
+                    </a>
+                    <a href="?page={{ page_obj.previous_page_number }}{% if request.GET.search %}&search={{ request.GET.search }}{% endif %}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                        <i class="fas fa-angle-left"></i>
+                    </a>
+                {% endif %}
+                
+                <span class="px-3 py-2 text-sm font-medium text-white bg-blue-600 border border-blue-600 rounded-md">
+                    {{ page_obj.number }}
+                </span>
+                
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}{% if request.GET.search %}&search={{ request.GET.search }}{% endif %}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}{% if request.GET.search %}&search={{ request.GET.search }}{% endif %}" class="px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                {% endif %}
+            </nav>
+        </div>
+        {% endif %}
+        
+    {% else %}
+        <!-- Empty State -->
+        <div class="text-center py-16">
+            <i class="fas fa-database text-6xl text-gray-300 mb-4"></i>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">No datasets found</h3>
+            <p class="text-gray-600 mb-8">
+                {% if request.GET.search or request.GET.dataset_type or request.GET.owner or request.GET.is_public %}
+                    Try adjusting your search criteria
+                {% else %}
+                    Get started by uploading your first dataset
+                {% endif %}
+            </p>
+            {% if not request.GET.search and not request.GET.dataset_type and not request.GET.owner and not request.GET.is_public %}
+                <a href="{% url 'chat:dataset_upload' %}" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                    <i class="fas fa-upload mr-2"></i>Upload Your First Dataset
+                </a>
+            {% else %}
+                <a href="{% url 'chat:dataset_list' %}" class="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors">
+                    <i class="fas fa-times mr-2"></i>Clear Filters
+                </a>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    <!-- Quick Actions -->
+    <div class="mt-12">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-xl font-semibold mb-6">
+                <i class="fas fa-lightbulb mr-2 text-yellow-500"></i>Quick Actions
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <a href="{% url 'chat:dataset_upload' %}" class="flex items-center justify-center px-4 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors">
+                    <i class="fas fa-upload mr-2"></i>Upload Dataset
+                </a>
+                <a href="{% url 'chat:ai_chat' %}" class="flex items-center justify-center px-4 py-3 border-2 border-green-600 text-green-600 font-medium rounded-lg hover:bg-green-50 transition-colors">
+                    <i class="fas fa-robot mr-2"></i>AI Chat
+                </a>
+                <a href="{% url 'chat:dashboard' %}" class="flex items-center justify-center px-4 py-3 border-2 border-cyan-600 text-cyan-600 font-medium rounded-lg hover:bg-cyan-50 transition-colors">
+                    <i class="fas fa-tachometer-alt mr-2"></i>Dashboard
+                </a>
+                <a href="{% url 'chat:home' %}" class="flex items-center justify-center px-4 py-3 border-2 border-gray-600 text-gray-600 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                    <i class="fas fa-home mr-2"></i>Home
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

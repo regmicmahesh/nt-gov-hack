@@ -1,0 +1,262 @@
+{% extends 'chat/base.html' %}
+
+{% block title %}{{ dataset.name }} - OpenMind{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <!-- Dataset Header -->
+    <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8 mb-8">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+            <div class="mb-6 lg:mb-0 flex-1">
+                <h1 class="text-3xl font-bold mb-3">{{ dataset.name }}</h1>
+                <p class="text-lg opacity-90 mb-4">{{ dataset.description }}</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 text-sm font-semibold rounded-full {% if dataset.status == 'active' %}bg-green-500{% elif dataset.status == 'processing' %}bg-yellow-500{% else %}bg-red-500{% endif %} text-white">
+                        {{ dataset.get_status_display }}
+                    </span>
+                    <span class="px-3 py-1 text-sm font-semibold rounded-full bg-gray-100 text-gray-800">
+                        {{ dataset.get_dataset_type_display }}
+                    </span>
+                    {% if dataset.is_public %}
+                        <span class="px-3 py-1 text-sm font-semibold rounded-full bg-blue-500 text-white">
+                            <i class="fas fa-globe mr-1"></i>Public
+                        </span>
+                    {% else %}
+                        <span class="px-3 py-1 text-sm font-semibold rounded-full bg-yellow-500 text-white">
+                            <i class="fas fa-lock mr-1"></i>Private
+                        </span>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="flex flex-col space-y-3 lg:ml-6">
+                {% if can_edit %}
+                <a href="{% url 'chat:dataset_edit' dataset.id %}" class="inline-flex items-center px-4 py-2 bg-white text-blue-600 font-medium rounded-lg hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-edit mr-2"></i>Edit Dataset
+                </a>
+                {% endif %}
+                <a href="{% url 'chat:dataset_download' dataset.id %}" class="inline-flex items-center px-4 py-2 border border-white text-white font-medium rounded-lg hover:bg-white hover:text-blue-600 transition-colors">
+                    <i class="fas fa-download mr-2"></i>Download CSV
+                </a>
+                <a href="{% url 'chat:ai_chat' %}" class="inline-flex items-center px-4 py-2 bg-yellow-500 text-white font-medium rounded-lg hover:bg-yellow-600 transition-colors">
+                    <i class="fas fa-robot mr-2"></i>Ask AI About This Data
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <div class="text-3xl font-bold text-blue-600 mb-2">{{ dataset.row_count|default:0 }}</div>
+            <div class="text-gray-600">Total Rows</div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <div class="text-3xl font-bold text-blue-600 mb-2">{{ dataset.column_count|default:0 }}</div>
+            <div class="text-gray-600">Total Columns</div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <div class="text-3xl font-bold text-blue-600 mb-2">{{ dataset.get_file_size_mb }}</div>
+            <div class="text-gray-600">File Size (MB)</div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+            <div class="text-3xl font-bold text-blue-600 mb-2">{{ dataset.access_logs.count }}</div>
+            <div class="text-gray-600">Total Views</div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Left Column -->
+        <div class="space-y-8">
+            <!-- Dataset Information -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-semibold mb-6">
+                    <i class="fas fa-info-circle mr-2 text-blue-500"></i>Dataset Information
+                </h2>
+                
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <div class="font-semibold text-gray-700">Owner:</div>
+                        <div class="text-gray-600">{{ dataset.owner.get_full_name|default:dataset.owner.username }}</div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-700">Created:</div>
+                        <div class="text-gray-600">{{ dataset.created_at|date:"F d, Y H:i" }}</div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <div class="font-semibold text-gray-700">Last Updated:</div>
+                        <div class="text-gray-600">{{ dataset.updated_at|date:"F d, Y H:i" }}</div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-gray-700">Last Accessed:</div>
+                        <div class="text-gray-600">{{ dataset.last_accessed|date:"F d, Y H:i"|default:"Never" }}</div>
+                    </div>
+                </div>
+                
+                {% if dataset.tags %}
+                <div class="mb-6">
+                    <div class="font-semibold text-gray-700 mb-2">Tags:</div>
+                    <div class="flex flex-wrap gap-2">
+                        {% for tag in tags_list %}
+                            <span class="px-2 py-1 text-xs font-medium bg-gray-100 text-gray-800 rounded">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                
+                {% if dataset.processing_errors %}
+                <div class="bg-yellow-50 border border-yellow-200 text-yellow-800 rounded-lg p-4">
+                    <div class="font-semibold">Processing Warnings:</div>
+                    <div>{{ dataset.processing_errors }}</div>
+                </div>
+                {% endif %}
+            </div>
+            
+            <!-- Column Information -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-semibold mb-6">
+                    <i class="fas fa-columns mr-2 text-blue-500"></i>Column Information
+                </h2>
+                
+                {% if columns_list %}
+                    <div class="space-y-4">
+                        {% for column in columns_list %}
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h3 class="font-semibold text-gray-900 mb-2">{{ column }}</h3>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <span class="font-medium text-gray-700">Type:</span>
+                                    <span class="text-gray-600">Unknown</span>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-700">Null Count:</span>
+                                    <span class="text-gray-600">0</span>
+                                </div>
+                                <div>
+                                    <span class="font-medium text-gray-700">Unique Values:</span>
+                                    <span class="text-gray-600">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-gray-600">Column information not available</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="space-y-8">
+            <!-- Sample Data -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-semibold mb-6">
+                    <i class="fas fa-table mr-2 text-blue-500"></i>Sample Data (First 5 Rows)
+                </h2>
+                
+                {% if sample_preview %}
+                    <div class="overflow-x-auto max-h-96 border border-gray-300 rounded-lg">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    {% for column in columns_list %}
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">{{ column }}</th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                {% for row in sample_preview %}
+                                <tr>
+                                    {% for value in row %}
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ value|truncatechars:30 }}</td>
+                                    {% endfor %}
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <p class="text-sm text-gray-500">
+                            Showing {{ sample_preview|length }} of {{ dataset.row_count }} rows
+                        </p>
+                    </div>
+                {% else %}
+                    <div class="text-center py-8">
+                        <i class="fas fa-table text-5xl text-gray-300 mb-4"></i>
+                        <p class="text-gray-600">Sample data not available</p>
+                    </div>
+                {% endif %}
+            </div>
+            
+            <!-- Recent Activity -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-xl font-semibold mb-6">
+                    <i class="fas fa-history mr-2 text-blue-500"></i>Recent Activity
+                </h2>
+                
+                {% if dataset.access_logs.all %}
+                    <div class="space-y-3">
+                        {% for log in dataset.access_logs.all|slice:":5" %}
+                        <div class="flex justify-between items-center py-3 border-b border-gray-100 last:border-b-0">
+                            <div>
+                                <span class="font-semibold text-gray-900">{{ log.user.username }}</span>
+                                <span class="text-gray-600">{{ log.get_access_type_display }}</span>
+                            </div>
+                            <span class="text-sm text-gray-500">{{ log.timestamp|timesince }} ago</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    {% if dataset.access_logs.count > 5 %}
+                    <div class="text-center mt-4">
+                        <p class="text-sm text-gray-500">
+                            And {{ dataset.access_logs.count|add:"-5" }} more activities
+                        </p>
+                    </div>
+                    {% endif %}
+                {% else %}
+                    <p class="text-gray-600 text-center">No recent activity</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Actions Row -->
+    <div class="bg-white rounded-xl shadow-lg p-6 mt-8">
+        <h2 class="text-xl font-semibold mb-6">
+            <i class="fas fa-cogs mr-2 text-blue-500"></i>Dataset Actions
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="{% url 'chat:ai_chat' %}" class="flex items-center justify-center px-4 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
+                <i class="fas fa-robot mr-2"></i>Query with AI
+            </a>
+            <a href="{% url 'chat:dataset_download' dataset.id %}" class="flex items-center justify-center px-4 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors">
+                <i class="fas fa-download mr-2"></i>Download Data
+            </a>
+            {% if can_edit %}
+            <a href="{% url 'chat:dataset_edit' dataset.id %}" class="flex items-center justify-center px-4 py-3 bg-yellow-600 text-white font-medium rounded-lg hover:bg-yellow-700 transition-colors">
+                <i class="fas fa-edit mr-2"></i>Edit Dataset
+            </a>
+            <a href="{% url 'chat:dataset_delete' dataset.id %}" class="flex items-center justify-center px-4 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors">
+                <i class="fas fa-trash mr-2"></i>Delete Dataset
+            </a>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="text-center mt-8">
+        <div class="inline-flex space-x-4">
+            <a href="{% url 'chat:dataset_list' %}" class="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors">
+                <i class="fas fa-arrow-left mr-2"></i>Back to Datasets
+            </a>
+            <a href="{% url 'chat:dashboard' %}" class="inline-flex items-center px-4 py-2 border border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors">
+                <i class="fas fa-tachometer-alt mr-2"></i>Dashboard
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

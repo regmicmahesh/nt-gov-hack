@@ -1,0 +1,383 @@
+{% extends 'chat/base.html' %}
+
+{% block title %}AI Chat - OpenMind{% endblock %}
+
+{% block extra_css %}
+<style>
+    /* Custom styles for ChatGPT-like interface */
+    .chat-container {
+        height: calc(100vh - 200px);
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+    
+    .chat-container::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    .chat-container::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    .chat-container::-webkit-scrollbar-thumb {
+        background: #d1d5db;
+        border-radius: 2px;
+    }
+    
+    .chat-container::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af;
+    }
+    
+    .typing-indicator {
+        animation: pulse 1.5s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+    
+    .suggestion-chip {
+        transition: all 0.2s ease;
+    }
+    
+    .suggestion-chip:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Markdown content styling */
+    .markdown-content h1, .markdown-content h2, .markdown-content h3,
+    .markdown-content h4, .markdown-content h5, .markdown-content h6 {
+        font-weight: 600;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .markdown-content p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+    
+    .markdown-content ul, .markdown-content ol {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+    
+    .markdown-content li {
+        margin-bottom: 0.25rem;
+    }
+    
+    .markdown-content code {
+        background-color: #f3f4f6;
+        padding: 0.125rem 0.25rem;
+        border-radius: 0.25rem;
+        font-family: 'Monaco', 'Consolas', 'Ubuntu Mono', monospace;
+        font-size: 0.875em;
+    }
+    
+    .markdown-content pre {
+        background-color: #1f2937;
+        color: #f9fafb;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        overflow-x: auto;
+        margin: 1rem 0;
+    }
+    
+    .markdown-content pre code {
+        background: none;
+        color: inherit;
+        padding: 0;
+    }
+    
+    .markdown-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+    }
+    
+    .markdown-content th, .markdown-content td {
+        border: 1px solid #e5e7eb;
+        padding: 0.5rem;
+        text-align: left;
+    }
+    
+    .markdown-content th {
+        background-color: #f9fafb;
+        font-weight: 600;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Full screen chat container -->
+<div class="fixed inset-0 top-16 bg-white">
+    <!-- Chat messages container -->
+    <div class="chat-container flex flex-col h-full" id="chatContainer">
+        <!-- Welcome message -->
+        <div class="flex-1 overflow-y-auto">
+            <div class="max-w-3xl mx-auto px-4 py-8">
+                <!-- Welcome message -->
+                <div class="flex items-start space-x-4 mb-8">
+                    <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                        AI
+                    </div>
+                    <div class="flex-1 space-y-2">
+                        <div class="bg-gray-100 rounded-lg p-4">
+                            <div class="markdown-content text-gray-800">
+                                <p class="mb-3">Hello! I'm your OpenMind. I can help you query and analyze your data using natural language.</p>
+                                <p class="mb-3"><strong>💡 Tip:</strong> Ask questions in plain English and I'll convert them into database queries and provide you with insights.</p>
+                                <p class="mb-2">Try asking questions like:</p>
+                                <ul class="list-disc pl-5 space-y-1 text-sm">
+                                    <li>"Show me all records from [your table]"</li>
+                                    <li>"What's the total count of items in [your dataset]?"</li>
+                                    <li>"Filter records where [condition] is met"</li>
+                                    <li>"Compare values across different categories"</li>
+                                    <li>"Give me insights about [your data]"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Suggestion chips -->
+                <div class="flex flex-wrap gap-2 mb-8 px-12">
+                    <button class="suggestion-chip bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-400" onclick="sendSuggestion(this.textContent)">
+                        Show me all data
+                    </button>
+                    <button class="suggestion-chip bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-400" onclick="sendSuggestion(this.textContent)">
+                        Data summary
+                    </button>
+                    <button class="suggestion-chip bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-400" onclick="sendSuggestion(this.textContent)">
+                        Count records
+                    </button>
+                    <button class="suggestion-chip bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-400" onclick="sendSuggestion(this.textContent)">
+                        Data analysis
+                    </button>
+                    <button class="suggestion-chip bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-400" onclick="sendSuggestion(this.textContent)">
+                        Dataset overview
+                    </button>
+                    <button class="suggestion-chip bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:border-gray-400" onclick="sendSuggestion(this.textContent)">
+                        Data quality check
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Messages will be added here dynamically -->
+            <div id="messagesContainer" class="max-w-3xl mx-auto px-4">
+                <!-- Dynamic messages go here -->
+            </div>
+            
+            <!-- Typing indicator -->
+            <div class="typing-indicator hidden max-w-3xl mx-auto px-4 py-4" id="typingIndicator">
+                <div class="flex items-start space-x-4">
+                    <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                        AI
+                    </div>
+                    <div class="bg-gray-100 rounded-lg p-4">
+                        <div class="flex items-center space-x-1 text-gray-500">
+                            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0s;"></div>
+                            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+                            <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Message input -->
+        <div class="border-t bg-white p-4">
+            <div class="max-w-3xl mx-auto">
+                <form id="chatForm" class="flex items-center space-x-4">
+                    <div class="flex-1 relative">
+                        <input type="text" 
+                               class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                               id="messageInput" 
+                               placeholder="Message OpenMind..."
+                               autocomplete="off">
+                        <button type="submit" 
+                                class="absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-md flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                id="sendButton">
+                            <i class="fas fa-paper-plane text-gray-600"></i>
+                        </button>
+                    </div>
+                </form>
+                <p class="text-xs text-gray-500 mt-2 text-center">
+                    OpenMind can make mistakes. Consider checking important information.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Include marked.js for markdown parsing -->
+<script src="https://cdn.jsdelivr.net/npm/marked@9.1.2/marked.min.js"></script>
+<script>
+// DOM elements
+let chatContainer = document.querySelector('.flex-1.overflow-y-auto');
+let messagesContainer = document.getElementById('messagesContainer');
+let messageInput = document.getElementById('messageInput');
+let chatForm = document.getElementById('chatForm');
+let typingIndicator = document.getElementById('typingIndicator');
+let sendButton = document.getElementById('sendButton');
+
+// Handle form submission
+chatForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const message = messageInput.value.trim();
+    if (message) {
+        sendMessage(message);
+        messageInput.value = '';
+        updateSendButton();
+    }
+});
+
+// Handle input changes to update send button
+messageInput.addEventListener('input', updateSendButton);
+
+// Update send button state
+function updateSendButton() {
+    const hasMessage = messageInput.value.trim().length > 0;
+    sendButton.disabled = !hasMessage;
+    sendButton.className = hasMessage 
+        ? "absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-blue-600 hover:bg-blue-700 rounded-md flex items-center justify-center transition-colors"
+        : "absolute right-2 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-gray-100 rounded-md flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed";
+    
+    const icon = sendButton.querySelector('i');
+    icon.className = hasMessage ? "fas fa-paper-plane text-white" : "fas fa-paper-plane text-gray-600";
+}
+
+// Send suggestion chip message
+function sendSuggestion(text) {
+    sendMessage(text);
+}
+
+// Send message function
+function sendMessage(message) {
+    // Add user message to chat
+    addMessage(message, 'user');
+    
+    // Show typing indicator
+    showTypingIndicator();
+    
+    // Hide suggestion chips after first message
+    const suggestionChips = document.querySelector('.flex.flex-wrap.gap-2.mb-8');
+    if (suggestionChips) {
+        suggestionChips.style.display = 'none';
+    }
+    
+    // Send to backend
+    fetch('{% url "chat:process_chat_message" %}', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken'),
+            'X-Requested-With': 'XMLHttpRequest'
+        },
+        body: JSON.stringify({ 
+            message: message,
+            selected_datasets: []
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        hideTypingIndicator();
+        if (data.error) {
+            addMessage('Error: ' + data.error, 'ai');
+        } else {
+            addMessage(data.response, 'ai');
+        }
+    })
+    .catch(error => {
+        hideTypingIndicator();
+        addMessage('Error: Unable to connect to the AI service.', 'ai');
+        console.error('Error:', error);
+    });
+}
+
+// Add message to chat
+function addMessage(message, sender) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'mb-6';
+    
+    if (sender === 'user') {
+        messageDiv.innerHTML = `
+            <div class="flex items-start space-x-4 justify-end">
+                <div class="bg-blue-600 text-white rounded-lg p-4 max-w-2xl">
+                    <div class="whitespace-pre-wrap">${escapeHtml(message)}</div>
+                </div>
+                <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
+                    U
+                </div>
+            </div>
+        `;
+    } else {
+        // Parse markdown for AI messages
+        const markdownContent = marked.parse(message);
+        messageDiv.innerHTML = `
+            <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
+                    AI
+                </div>
+                <div class="flex-1 space-y-2">
+                    <div class="bg-gray-100 rounded-lg p-4 max-w-2xl">
+                        <div class="markdown-content text-gray-800">${markdownContent}</div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+    
+    messagesContainer.appendChild(messageDiv);
+    scrollToBottom();
+}
+
+// Show typing indicator
+function showTypingIndicator() {
+    typingIndicator.classList.remove('hidden');
+    scrollToBottom();
+}
+
+// Hide typing indicator
+function hideTypingIndicator() {
+    typingIndicator.classList.add('hidden');
+}
+
+// Scroll to bottom of chat
+function scrollToBottom() {
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+
+// Escape HTML to prevent XSS
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Get CSRF token
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', function() {
+    messageInput.focus();
+    updateSendButton();
+});
+</script>
+{% endblock %} 

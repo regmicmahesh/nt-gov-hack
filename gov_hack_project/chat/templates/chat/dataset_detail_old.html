@@ -1,0 +1,332 @@
+{% extends 'chat/base.html' %}
+
+{% block title %}{{ dataset.name }} - GovAssist{% endblock %}
+
+{% block extra_css %}
+<style>
+    .dataset-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    
+    .metadata-card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
+    }
+    
+    .sample-table {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+    
+    .column-info {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .stat-item {
+        text-align: center;
+        padding: 1rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #007bff;
+    }
+    
+    .stat-label {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Dataset Header -->
+<div class="dataset-header">
+    <div class="row align-items-center">
+        <div class="col-md-8">
+            <h2 class="mb-2">{{ dataset.name }}</h2>
+            <p class="lead mb-3">{{ dataset.description }}</p>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge bg-{% if dataset.status == 'active' %}success{% elif dataset.status == 'processing' %}warning{% else %}danger{% endif %} fs-6">
+                    {{ dataset.get_status_display }}
+                </span>
+                <span class="badge bg-secondary fs-6">
+                    {{ dataset.get_dataset_type_display }}
+                </span>
+                {% if dataset.is_public %}
+                    <span class="badge bg-info fs-6">
+                        <i class="fas fa-globe me-1"></i>Public
+                    </span>
+                {% else %}
+                    <span class="badge bg-warning fs-6">
+                        <i class="fas fa-lock me-1"></i>Private
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <div class="d-flex flex-column gap-2">
+                {% if can_edit %}
+                <a href="{% url 'chat:dataset_edit' dataset.id %}" class="btn btn-light">
+                    <i class="fas fa-edit me-2"></i>Edit Dataset
+                </a>
+                {% endif %}
+                <a href="{% url 'chat:dataset_download' dataset.id %}" class="btn btn-outline-light">
+                    <i class="fas fa-download me-2"></i>Download CSV
+                </a>
+                <a href="{% url 'chat:ai_chat' %}" class="btn btn-warning">
+                    <i class="fas fa-robot me-2"></i>Ask AI About This Data
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Stats -->
+<div class="stats-grid">
+    <div class="stat-item">
+        <div class="stat-number">{{ dataset.row_count|default:0 }}</div>
+        <div class="stat-label">Total Rows</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">{{ dataset.column_count|default:0 }}</div>
+        <div class="stat-label">Total Columns</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">{{ dataset.get_file_size_mb }}</div>
+        <div class="stat-label">File Size (MB)</div>
+    </div>
+    <div class="stat-item">
+        <div class="stat-number">{{ dataset.access_logs.count }}</div>
+        <div class="stat-label">Total Views</div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Dataset Information -->
+    <div class="col-md-6">
+        <div class="metadata-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-info-circle me-2"></i>Dataset Information
+            </h5>
+            
+            <div class="row mb-3">
+                <div class="col-6">
+                    <strong>Owner:</strong><br>
+                    <span class="text-muted">{{ dataset.owner.get_full_name|default:dataset.owner.username }}</span>
+                </div>
+                <div class="col-6">
+                    <strong>Created:</strong><br>
+                    <span class="text-muted">{{ dataset.created_at|date:"F d, Y H:i" }}</span>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-6">
+                    <strong>Last Updated:</strong><br>
+                    <span class="text-muted">{{ dataset.updated_at|date:"F d, Y H:i" }}</span>
+                </div>
+                <div class="col-6">
+                    <strong>Last Accessed:</strong><br>
+                    <span class="text-muted">{{ dataset.last_accessed|date:"F d, Y H:i"|default:"Never" }}</span>
+                </div>
+            </div>
+            
+            {% if dataset.tags %}
+            <div class="mb-3">
+                <strong>Tags:</strong><br>
+                {% for tag in tags_list %}
+                    <span class="badge bg-light text-dark me-1">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            {% if dataset.processing_errors %}
+            <div class="alert alert-warning">
+                <strong>Processing Warnings:</strong><br>
+                {{ dataset.processing_errors }}
+            </div>
+            {% endif %}
+        </div>
+        
+        <!-- Column Information -->
+        <div class="metadata-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-columns me-2"></i>Column Information
+            </h5>
+            
+            {% if columns_list %}
+                {% for column in columns_list %}
+                <div class="column-info">
+                    <h6 class="mb-2">{{ column }}</h6>
+                    <div class="row small">
+                        <div class="col-6">
+                            <strong>Type:</strong> 
+                            <span class="text-muted">Unknown</span>
+                        </div>
+                        <div class="col-6">
+                            <strong>Null Count:</strong> 
+                            <span class="text-muted">0</span>
+                        </div>
+                    </div>
+                    <div class="row small">
+                        <div class="col-6">
+                            <strong>Unique Values:</strong> 
+                            <span class="text-muted">0</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="text-muted">Column information not available</p>
+            {% endif %}
+        </div>
+    </div>
+    
+    <!-- Sample Data -->
+    <div class="col-md-6">
+        <div class="metadata-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-table me-2"></i>Sample Data (First 5 Rows)
+            </h5>
+            
+            {% if sample_preview %}
+                <div class="sample-table">
+                    <table class="table table-sm table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                {% for column in columns_list %}
+                                <th>{{ column }}</th>
+                                {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for row in sample_preview %}
+                            <tr>
+                                {% for value in row %}
+                                <td>{{ value|truncatechars:30 }}</td>
+                                {% endfor %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="text-center mt-3">
+                    <small class="text-muted">
+                        Showing {{ sample_preview|length }} of {{ dataset.row_count }} rows
+                    </small>
+                </div>
+            {% else %}
+                <div class="text-center py-4">
+                    <i class="fas fa-table fa-3x text-muted mb-3"></i>
+                    <p class="text-muted">Sample data not available</p>
+                </div>
+            {% endif %}
+        </div>
+        
+        <!-- Recent Activity -->
+        <div class="metadata-card">
+            <h5 class="card-title mb-3">
+                <i class="fas fa-history me-2"></i>Recent Activity
+            </h5>
+            
+            {% if dataset.access_logs.all %}
+                <div class="list-group list-group-flush">
+                    {% for log in dataset.access_logs.all|slice:":5" %}
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <strong>{{ log.user.username }}</strong>
+                            {{ log.get_access_type_display }}
+                        </div>
+                        <small class="text-muted">{{ log.timestamp|timesince }} ago</small>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                {% if dataset.access_logs.count > 5 %}
+                <div class="text-center mt-2">
+                    <small class="text-muted">
+                        And {{ dataset.access_logs.count|add:"-5" }} more activities
+                    </small>
+                </div>
+                {% endif %}
+            {% else %}
+                <p class="text-muted text-center">No recent activity</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Actions Row -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-cogs me-2"></i>Dataset Actions
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <a href="{% url 'chat:ai_chat' %}" class="btn btn-primary w-100">
+                            <i class="fas fa-robot me-2"></i>Query with AI
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <a href="{% url 'chat:dataset_download' dataset.id %}" class="btn btn-success w-100">
+                            <i class="fas fa-download me-2"></i>Download Data
+                        </a>
+                    </div>
+                    {% if can_edit %}
+                    <div class="col-md-3 mb-3">
+                        <a href="{% url 'chat:dataset_edit' dataset.id %}" class="btn btn-warning w-100">
+                            <i class="fas fa-edit me-2"></i>Edit Dataset
+                        </a>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <a href="{% url 'chat:dataset_delete' dataset.id %}" class="btn btn-danger w-100">
+                            <i class="fas fa-trash me-2"></i>Delete Dataset
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<div class="row mt-4">
+    <div class="col-12 text-center">
+        <a href="{% url 'chat:dataset_list' %}" class="btn btn-outline-secondary me-2">
+            <i class="fas fa-arrow-left me-2"></i>Back to Datasets
+        </a>
+        <a href="{% url 'chat:dashboard' %}" class="btn btn-outline-primary">
+            <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+        </a>
+    </div>
+</div>
+{% endblock %} 

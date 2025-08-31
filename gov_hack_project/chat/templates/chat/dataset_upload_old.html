@@ -1,0 +1,635 @@
+{% extends 'chat/base.html' %}
+
+{% block title %}Upload Dataset - OpenMind{% endblock %}
+
+{% block extra_css %}
+<style>
+    .source-content {
+        display: none;
+    }
+    
+    .source-content.active {
+        display: block;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <!-- Header -->
+    <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-blue-600 mb-3">
+            <i class="fas fa-database mr-2"></i>Create New Dataset
+        </h1>
+        <p class="text-lg text-gray-600">Connect to data from files, databases, APIs, or external sources</p>
+    </div>
+
+    <!-- Source Type Selection -->
+    <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+        <h2 class="text-xl font-semibold mb-6">
+            <i class="fas fa-source mr-2 text-blue-500"></i>Step 1: Choose Data Source
+        </h2>
+        
+        <div class="border-b border-gray-200 mb-6">
+            <nav class="-mb-px flex space-x-8">
+                <button type="button" class="source-tab py-3 px-4 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 border-blue-500 text-blue-600" data-source="file">
+                    <i class="fas fa-file-upload mr-2"></i>File Upload
+                </button>
+                <button type="button" class="source-tab py-3 px-4 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300" data-source="database">
+                    <i class="fas fa-database mr-2"></i>Database Connection
+                </button>
+                <button type="button" class="source-tab py-3 px-4 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300" data-source="api">
+                    <i class="fas fa-plug mr-2"></i>API Endpoint
+                </button>
+                <button type="button" class="source-tab py-3 px-4 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300" data-source="external_link">
+                    <i class="fas fa-link mr-2"></i>External Link
+                </button>
+            </nav>
+        </div>
+        
+        <!-- File Upload Content -->
+        <div id="file-content" class="source-content active">
+            <form method="post" enctype="multipart/form-data" id="fileUploadForm">
+                {% csrf_token %}
+                <input type="hidden" name="dataset_source" value="file">
+                
+                <div class="border-2 border-dashed border-gray-300 rounded-lg p-10 text-center bg-gray-50 hover:border-blue-500 hover:bg-blue-50 transition-colors cursor-pointer" id="fileUploadArea">
+                    <div class="text-5xl text-gray-400 mb-4">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Drag & Drop your CSV or Excel file here</h3>
+                    <p class="text-gray-500 mb-1">or click to browse</p>
+                    <p class="text-sm text-gray-400">Maximum file size: 50MB</p>
+                    
+                    <input type="file" name="csv_file" id="csvFile" accept=".csv,.xlsx,.xls" class="hidden">
+                </div>
+                
+                <div class="mt-4 hidden" id="fileInfo">
+                    <div class="bg-blue-50 border border-blue-200 text-blue-800 rounded-lg p-4">
+                        <div class="font-semibold">Selected file: <span id="fileName" class="font-normal"></span></div>
+                        <div class="font-semibold">Size: <span id="fileSize" class="font-normal"></span></div>
+                        <div class="font-semibold">Type: <span id="fileType" class="font-normal"></span></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Database Connection Content -->
+        <div id="database-content" class="source-content">
+            <form method="post" id="databaseForm">
+                {% csrf_token %}
+                <input type="hidden" name="dataset_source" value="database">
+                
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="db_host" class="form-label">
+                            <i class="fas fa-server me-1"></i>Database Host *
+                        </label>
+                        <input type="text" class="form-control" id="db_host" name="db_host" 
+                               placeholder="localhost or database server address" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="db_name" class="form-label">
+                            <i class="fas fa-database me-1"></i>Database Name *
+                        </label>
+                        <input type="text" class="form-control" id="db_name" name="db_name" 
+                               placeholder="Database name" required>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="db_type" class="form-label">
+                            <i class="fas fa-filter me-1"></i>Database Type *
+                        </label>
+                        <select class="form-control" id="db_type" name="db_type" required>
+                            <option value="">Select database type</option>
+                            <option value="postgresql">PostgreSQL</option>
+                            <option value="mysql">MySQL</option>
+                            <option value="sqlite">SQLite</option>
+                            <option value="oracle">Oracle</option>
+                            <option value="sqlserver">SQL Server</option>
+                            <option value="mongodb">MongoDB</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="db_port" class="form-label">
+                            <i class="fas fa-network-wired me-1"></i>Port
+                        </label>
+                        <input type="number" class="form-control" id="db_port" name="db_port" 
+                               placeholder="5432 (PostgreSQL), 3306 (MySQL), etc.">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="db_username" class="form-label">
+                            <i class="fas fa-user me-1"></i>Username *
+                        </label>
+                        <input type="text" class="form-control" id="db_username" name="db_username" 
+                               placeholder="Database username" required>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="db_password" class="form-label">
+                            <i class="fas fa-lock me-1"></i>Password *
+                        </label>
+                        <input type="password" class="form-control" id="db_password" name="db_password" 
+                               placeholder="Database password" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="db_table" class="form-label">
+                            <i class="fas fa-table me-1"></i>Table/View Name
+                        </label>
+                        <input type="text" class="form-control" id="db_table" name="db_table" 
+                               placeholder="Table name or view">
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="db_query" class="form-label">
+                        <i class="fas fa-code me-1"></i>SQL Query (Optional)
+                    </label>
+                    <textarea class="form-control" id="db_query" name="db_query" rows="3" 
+                              placeholder="Custom SQL query (leave blank to use entire table)"></textarea>
+                    <small class="form-text text-muted">Use this for custom queries or to join multiple tables</small>
+                </div>
+            </form>
+        </div>
+        
+        <!-- API Content -->
+        <div id="api-content" class="source-content">
+            <form method="post" id="apiForm">
+                {% csrf_token %}
+                <input type="hidden" name="dataset_source" value="api">
+                
+                <div class="mb-3">
+                    <label for="api_url" class="form-label">
+                        <i class="fas fa-link me-1"></i>API Endpoint URL *
+                    </label>
+                    <input type="url" class="form-control" id="api_url" name="api_url" 
+                           placeholder="https://api.example.com/data" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="api_key" class="form-label">
+                        <i class="fas fa-key me-1"></i>API Key/Authentication
+                    </label>
+                    <input type="text" class="form-control" id="api_key" name="api_key" 
+                           placeholder="API key or authentication token">
+                    <small class="form-text text-muted">Required if the API needs authentication</small>
+                </div>
+            </form>
+        </div>
+        
+        <!-- External Link Content -->
+        <div id="external-link-content" class="source-content">
+            <form method="post" id="externalLinkForm">
+                {% csrf_token %}
+                <input type="hidden" name="dataset_source" value="external_link">
+                
+                <div class="mb-3">
+                    <label for="external_url" class="form-label">
+                        <i class="fas fa-external-link-alt me-1"></i>External Data Source URL *
+                    </label>
+                    <input type="url" class="form-control" id="external_url" name="external_url" 
+                           placeholder="https://data.gov.au/dataset/..." required>
+                    <small class="form-text text-muted">Link to government data portals, public datasets, etc.</small>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dataset Information Section -->
+    <div class="form-section">
+        <h4 class="mb-3">
+            <i class="fas fa-info-circle me-2"></i>Step 2: Dataset Information
+        </h4>
+        
+        <form method="post" id="mainForm">
+            {% csrf_token %}
+            
+            <div class="row">
+                <div class="col-md-8 mb-3">
+                    <label for="name" class="form-label">
+                        <i class="fas fa-tag me-1"></i>Dataset Name *
+                    </label>
+                    <input type="text" class="form-control" id="name" name="name" 
+                           placeholder="Enter dataset name (e.g., Employee Performance Q4 2024)" required>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <label for="dataset_type" class="form-label">
+                        <i class="fas fa-filter me-1"></i>Dataset Type *
+                    </label>
+                    <select class="form-control" id="dataset_type" name="dataset_type" required>
+                        <option value="">Select dataset type</option>
+                        <option value="employee">Employee Data</option>
+                        <option value="budget">Budget Data</option>
+                        <option value="performance">Performance Data</option>
+                        <option value="financial">Financial Data</option>
+                        <option value="custom">Custom Dataset</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="description" class="form-label">
+                    <i class="fas fa-align-left me-1"></i>Description *
+                </label>
+                <textarea class="form-control" id="description" name="description" rows="4" 
+                          placeholder="Describe what this dataset contains, its purpose, and any important context..." required></textarea>
+            </div>
+            
+            <div class="mb-3">
+                <label for="tags" class="form-label">
+                    <i class="fas fa-tags me-1"></i>Tags
+                </label>
+                <input type="text" class="form-control" id="tags" name="tags" 
+                       placeholder="Enter tags separated by commas (e.g., employees, performance, q4)">
+            </div>
+            
+            <div class="mb-3">
+                <label for="sync_frequency" class="form-label">
+                    <i class="fas fa-sync me-1"></i>Sync Frequency
+                </label>
+                <select class="form-control" id="sync_frequency" name="sync_frequency">
+                    <option value="manual">Manual</option>
+                    <option value="hourly">Hourly</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+                <small class="form-text text-muted">How often should the data be refreshed from the source?</small>
+            </div>
+            
+            <div class="mb-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="is_public" name="is_public">
+                    <label class="form-check-label" for="is_public">
+                        <i class="fas fa-globe me-1"></i>Make this dataset public
+                    </label>
+                    <small class="form-text text-muted d-block">
+                        Public datasets can be viewed and queried by all users
+                    </small>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Data Preview Section (for file uploads) -->
+    <div class="form-section" id="previewSection" style="display: none;">
+        <h4 class="mb-3">
+            <i class="fas fa-table me-2"></i>Step 3: Data Preview
+        </h4>
+        
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle me-2"></i>
+            <strong>Preview:</strong> Here's what your data looks like. The AI will use this structure to answer questions.
+        </div>
+        
+        <div class="preview-table">
+            <table class="table table-sm table-striped" id="previewTable">
+                <thead id="previewHeader">
+                    <!-- Headers will be populated by JavaScript -->
+                </thead>
+                <tbody id="previewBody">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <strong>Rows:</strong> <span id="previewRowCount">0</span>
+            </div>
+            <div class="col-md-4">
+                <strong>Columns:</strong> <span id="previewColCount">0</span>
+            </div>
+            <div class="col-md-4">
+                <strong>File Size:</strong> <span id="previewFileSize">0 MB</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit Section -->
+    <div class="form-section">
+        <div class="d-flex justify-content-between">
+            <a href="{% url 'chat:dataset_list' %}" class="btn btn-secondary">
+                <i class="fas fa-arrow-left me-2"></i>Cancel
+            </a>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary btn-lg" id="submitBtn" onclick="submitDataset()">
+                    <i class="fas fa-save me-2"></i>Create Dataset
+                </button>
+                <button type="button" class="btn btn-outline-secondary me-2" onclick="testAjax()">
+                    <i class="fas fa-test-tube me-1"></i>Test AJAX
+                </button>
+                <button type="button" class="btn btn-outline-info" onclick="testDatabaseCreation()">
+                    <i class="fas fa-database me-1"></i>Test DB Creation
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+let currentSource = 'file';
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Source tab switching
+    const sourceTabs = document.querySelectorAll('.source-tab');
+    const sourceContents = document.querySelectorAll('.source-content');
+    
+    sourceTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            const source = this.dataset.source;
+            switchSource(source);
+        });
+    });
+    
+    // File upload handling
+    const fileUploadArea = document.getElementById('fileUploadArea');
+    const fileInput = document.getElementById('csvFile');
+    const fileInfo = document.getElementById('fileInfo');
+    const fileName = document.getElementById('fileName');
+    const fileSize = document.getElementById('fileSize');
+    const fileType = document.getElementById('fileType');
+    const previewSection = document.getElementById('previewSection');
+    
+    // File upload area click handler
+    fileUploadArea.addEventListener('click', function() {
+        fileInput.click();
+    });
+    
+    // Drag and drop handlers
+    fileUploadArea.addEventListener('dragover', function(e) {
+        e.preventDefault();
+        this.classList.add('dragover');
+    });
+    
+    fileUploadArea.addEventListener('dragleave', function(e) {
+        e.preventDefault();
+        this.classList.remove('dragover');
+    });
+    
+    fileUploadArea.addEventListener('drop', function(e) {
+        e.preventDefault();
+        this.classList.remove('dragover');
+        
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+            fileInput.files = files;
+            handleFileSelect(files[0]);
+        }
+    });
+    
+    // File input change handler
+    fileInput.addEventListener('change', function(e) {
+        if (this.files.length > 0) {
+            handleFileSelect(this.files[0]);
+        }
+    });
+});
+
+function switchSource(source) {
+    currentSource = source;
+    
+    // Update active tab
+    document.querySelectorAll('.source-tab').forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.dataset.source === source) {
+            tab.classList.add('active');
+        }
+    });
+    
+    // Update active content
+    document.querySelectorAll('.source-content').forEach(content => {
+        content.classList.remove('active');
+        if (content.id === source + '-content') {
+            content.classList.add('active');
+        }
+    });
+    
+    // Show/hide preview section
+    const previewSection = document.getElementById('previewSection');
+    if (source === 'file') {
+        previewSection.style.display = 'block';
+    } else {
+        previewSection.style.display = 'none';
+    }
+}
+
+function handleFileSelect(file) {
+    // Show file info
+    document.getElementById('fileName').textContent = file.name;
+    document.getElementById('fileSize').textContent = formatFileSize(file.size);
+    document.getElementById('fileType').textContent = file.type || 'text/csv';
+    document.getElementById('fileInfo').style.display = 'block';
+    
+    // Preview CSV data
+    if (file.type === 'text/csv' || file.name.endsWith('.csv')) {
+        previewCSV(file);
+    } else if (file.name.endsWith('.xlsx') || file.name.endsWith('.xls')) {
+        // For Excel files, just show basic info
+        document.getElementById('previewSection').style.display = 'block';
+        document.getElementById('previewRowCount').textContent = 'Excel file';
+        document.getElementById('previewColCount').textContent = 'Preview not available';
+        document.getElementById('previewFileSize').textContent = formatFileSize(file.size);
+    }
+}
+
+function formatFileSize(bytes) {
+    if (bytes === 0) return '0 Bytes';
+    const k = 1024;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+}
+
+function previewCSV(file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const csv = e.target.result;
+        const lines = csv.split('\n');
+        const headers = lines[0].split(',').map(h => h.trim());
+        const data = lines.slice(1, 6).filter(line => line.trim()).map(line => 
+            line.split(',').map(cell => cell.trim())
+        );
+        
+        // Populate preview table
+        const headerRow = document.getElementById('previewHeader');
+        const tbody = document.getElementById('previewBody');
+        
+        headerRow.innerHTML = headers.map(h => `<th>${h}</th>`).join('');
+        tbody.innerHTML = data.map(row => 
+            `<tr>${row.map(cell => `<td>${cell}</td>`).join('')}</tr>`
+        ).join('');
+        
+        // Update preview stats
+        document.getElementById('previewRowCount').textContent = lines.length - 1;
+        document.getElementById('previewColCount').textContent = headers.length;
+        document.getElementById('previewFileSize').textContent = formatFileSize(file.size);
+        
+        // Show preview section
+        document.getElementById('previewSection').style.display = 'block';
+    };
+    reader.readAsText(file);
+}
+
+function submitDataset() {
+    // Get the appropriate form based on current source
+    let formData = new FormData();
+    
+    // Add common fields
+    formData.append('name', document.getElementById('name').value);
+    formData.append('description', document.getElementById('description').value);
+    formData.append('dataset_type', document.getElementById('dataset_type').value);
+    formData.append('tags', document.getElementById('tags').value);
+    formData.append('sync_frequency', document.getElementById('sync_frequency').value);
+    formData.append('is_public', document.getElementById('is_public').checked);
+    formData.append('dataset_source', currentSource);
+    
+    // Add source-specific fields
+    if (currentSource === 'file') {
+        const fileInput = document.getElementById('csvFile');
+        if (fileInput.files.length > 0) {
+            formData.append('csv_file', fileInput.files[0]);
+        } else {
+            alert('Please select a file to upload.');
+            return;
+        }
+    } else if (currentSource === 'database') {
+        formData.append('db_host', document.getElementById('db_host').value);
+        formData.append('db_name', document.getElementById('db_name').value);
+        formData.append('db_port', document.getElementById('db_port').value);
+        formData.append('db_username', document.getElementById('db_username').value);
+        formData.append('db_password', document.getElementById('db_password').value);
+        formData.append('db_type', document.getElementById('db_type').value);
+        formData.append('db_table', document.getElementById('db_table').value);
+        formData.append('db_query', document.getElementById('db_query').value);
+    } else if (currentSource === 'api') {
+        formData.append('api_url', document.getElementById('api_url').value);
+        formData.append('api_key', document.getElementById('api_key').value);
+    } else if (currentSource === 'external_link') {
+        formData.append('external_url', document.getElementById('external_url').value);
+    }
+    
+    // Submit the form
+    fetch('{% url "chat:dataset_upload" %}', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-CSRFToken': getCookie('csrftoken'),
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Success - show message and redirect
+            alert(data.message);
+            if (data.redirect_url) {
+                window.location.href = data.redirect_url;
+            } else {
+                window.location.href = '{% url "chat:dataset_list" %}';
+            }
+        } else {
+            // Error - show error message
+            let errorMsg = data.error || 'An unknown error occurred';
+            
+            // Handle form validation errors
+            if (data.form_errors) {
+                errorMsg += '\n\nForm errors:';
+                for (const [field, errors] of Object.entries(data.form_errors)) {
+                    errorMsg += '\n- ' + field + ': ' + errors.join(', ');
+                }
+            }
+            
+            alert('Error: ' + errorMsg);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while creating the dataset. Please try again.');
+    });
+}
+
+// Test AJAX function to verify JSON responses are working
+function testAjax() {
+    fetch('{% url "chat:test_ajax_endpoint" %}', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken'),
+            'X-Requested-With': 'XMLHttpRequest'
+        },
+        body: JSON.stringify({
+            test_message: 'Hello from frontend AJAX test!'
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('AJAX Test Response:', data);
+        if (data.success) {
+            alert('✅ AJAX Test Successful!\n\n' + 
+                  'Message: ' + data.message + '\n' +
+                  'Method: ' + data.method + '\n' +
+                  'Content Type: ' + data.content_type + '\n' +
+                  'Is AJAX: ' + data.is_ajax);
+        } else {
+            alert('❌ AJAX Test Failed: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('AJAX Test Error:', error);
+        alert('❌ AJAX Test Error: ' + error.message);
+    });
+}
+
+// Test Database Creation function
+function testDatabaseCreation() {
+    fetch('{% url "chat:test_database_creation" %}', {
+        method: 'GET',
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Database Creation Test Response:', data);
+        if (data.success) {
+            alert('✅ Database Creation Test Successful!\n\n' + 
+                  'Message: ' + data.message + '\n' +
+                  'Database Path: ' + data.database_path + '\n' +
+                  'Table Name: ' + data.table_name + '\n' +
+                  'Rows Created: ' + data.rows_created + '\n' +
+                  'Query Result: ' + data.query_result);
+        } else {
+            alert('❌ Database Creation Test Failed: ' + data.error);
+        }
+    })
+    .catch(error => {
+        console.error('Database Creation Test Error:', error);
+        alert('❌ Database Creation Test Error: ' + error.message);
+    });
+}
+
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+</script>
+{% endblock %} 

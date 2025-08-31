@@ -1,0 +1,54 @@
+databases:
+  net_capital_investment_2024_25.csv_dataset:
+    type: database
+    file_name: sqlite:///net_capital_investment_2024_25.csv.db
+    description: "This dataset was uploaded from net_capital_investment_2024_25.csv\
+      \ and contains 70 rows and 7 columns.\n                    \nDataset Type: Custom\
+      \ Dataset\nDescription: net_capital_investment_2024_25.csv\n\nColumns:\n- Unnamed:\
+      \ 0 (object): 20 unique values, 0 nulls\n- Unnamed: 1 (object): 51 unique values,\
+      \ 4 nulls\n- 2022-23 ($m) (int64): 55 unique values, 0 nulls\n- 2023-24 ($m)\
+      \ (int64): 54 unique values, 0 nulls\n- 2024-25 ($m) (int64): 56 unique values,\
+      \ 0 nulls\n- 2025-26 ($m) (int64): 56 unique values, 0 nulls\n- 2026-27 ($m)\
+      \ (int64): 54 unique values, 0 nulls"
+    table_name: net_capital_investment_2024_25.csv
+    created_from: net_capital_investment_2024_25.csv
+    owner: bibek
+    dataset_type: custom
+    row_count: 70
+    column_count: 7
+  staffing_2024_25_budget_dataset:
+    type: database
+    file_name: sqlite:///staffing_2024_25_budget.db
+    description: "This dataset was uploaded from staffing_2024_25_budget.csv and contains\
+      \ 182 rows and 6 columns.\n                    \nDataset Type: Custom Dataset\n\
+      Description: staffing_2024_25_budget\n\nColumns:\n- Unnamed: 0 (object): 18\
+      \ unique values, 3 nulls\n- Unnamed: 1 (object): 166 unique values, 1 nulls\n\
+      - Estimated Actual (object): 166 unique values, 1 nulls\n- Estimate (object):\
+      \ 163 unique values, 1 nulls\n- Unnamed: 4 (float64): 0 unique values, 182 nulls\n\
+      - Unnamed: 5 (float64): 0 unique values, 182 nulls"
+    table_name: staffing_2024_25_budget
+    created_from: staffing_2024_25_budget.csv
+    owner: bibek
+    dataset_type: custom
+    row_count: 182
+    column_count: 6
+  employee_leave_tracking_data_dataset:
+    type: database
+    file_name: sqlite:///employee_leave_tracking_data.db
+    description: "This dataset was uploaded from employee_leave_tracking_data.xlsx\
+      \ and contains 300 rows and 11 columns.\n                    \nDataset Type:\
+      \ Employee Data\nDescription: employee_leave_tracking_data\n\nColumns:\n- Employee\
+      \ Name (object): 300 unique values, 0 nulls\n- Department (object): 5 unique\
+      \ values, 0 nulls\n- Position (object): 10 unique values, 0 nulls\n- Leave Type\
+      \ (object): 5 unique values, 0 nulls\n- Start Date (datetime64[ns]): 202 unique\
+      \ values, 0 nulls\n- End Date (datetime64[ns]): 213 unique values, 0 nulls\n\
+      - Days Taken (int64): 10 unique values, 0 nulls\n- Total Leave Entitlement (int64):\
+      \ 11 unique values, 0 nulls\n- Leave Taken So Far (int64): 26 unique values,\
+      \ 0 nulls\n- Remaining Leaves (int64): 26 unique values, 0 nulls\n- month (object):\
+      \ 12 unique values, 0 nulls"
+    table_name: employee_leave_tracking_data
+    created_from: employee_leave_tracking_data.xlsx
+    owner: bibek
+    dataset_type: employee
+    row_count: 300
+    column_count: 11

@@ -1,0 +1,935 @@
+Portfolio,Entity,Item,Type,Departmental Operating $'000,Departmental Non-operating $'000,Departmental External Revenue $'000,Departmental Special Appropriation $'000,Special Accounts $'000,Administered Operating $'000,Administered SPPs $'000,Administered Non-operating $'000,Administered Special Appropriation $'000,Total $'000
+PARLIAMENT,Department of the Senate,Outcome 1,Agency Resourcing,29061,0,450,0,0,0,0,0,0,29511
+PARLIAMENT,Department of the Senate,Outcome 1,Estimated Actual,27265,0,450,0,0,0,0,0,0,27715
+PARLIAMENT,Department of the Senate,Total,Agency Resourcing,29061,0,450,0,0,0,0,0,0,29511
+PARLIAMENT,Department of the Senate,Total,Estimated Actual,27265,0,450,0,0,0,0,0,0,27715
+PARLIAMENT,Department of the House of Representatives,Outcome 1,Agency Resourcing,29669,0,136,0,0,357,0,0,0,30162
+PARLIAMENT,Department of the House of Representatives,Outcome 1,Estimated Actual,27202,0,149,0,0,347,0,0,0,27698
+PARLIAMENT,Department of the House of Representatives,Total,Agency Resourcing,29669,0,136,0,0,357,0,0,0,30162
+PARLIAMENT,Department of the House of Representatives,Total,Estimated Actual,27202,0,149,0,0,347,0,0,0,27698
+PARLIAMENT,Department of Parliamentary Services,Outcome 1,Agency Resourcing,210169,0,16875,0,0,6432,0,0,0,233476
+PARLIAMENT,Department of Parliamentary Services,Outcome 1,Estimated Actual,199547,0,16875,0,0,6040,0,0,0,222462
+PARLIAMENT,Department of Parliamentary Services,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,41133,0,41133
+PARLIAMENT,Department of Parliamentary Services,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,55200,0,55200
+PARLIAMENT,Department of Parliamentary Services,Total,Agency Resourcing,210169,0,16875,0,0,6432,0,41133,0,274609
+PARLIAMENT,Department of Parliamentary Services,Total,Estimated Actual,199547,0,16875,0,0,6040,0,55200,0,277662
+PARLIAMENT,Parliamentary Budget Office,Outcome 1,Agency Resourcing,9895,0,0,0,0,0,0,0,0,9895
+PARLIAMENT,Parliamentary Budget Office,Outcome 1,Estimated Actual,9137,0,0,0,0,0,0,0,0,9137
+PARLIAMENT,Parliamentary Budget Office,Total,Agency Resourcing,9895,0,0,0,0,0,0,0,0,9895
+PARLIAMENT,Parliamentary Budget Office,Total,Estimated Actual,9137,0,0,0,0,0,0,0,0,9137
+PARLIAMENT,,PORTFOLIO TOTAL,Agency Resourcing,278794,0,17461,0,0,6789,0,41133,0,344177
+PARLIAMENT,,PORTFOLIO TOTAL,Estimated Actual,263151,0,17474,0,0,6387,0,55200,0,342212
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Outcome 1,Agency Resourcing,200704,0,8789,0,100000,187784,0,0,1069772,1567049
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Outcome 1,Estimated Actual,213496,0,64223,0,100323,166124,0,0,1142977,1687143
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Outcome 2,Agency Resourcing,643590,0,2374,0,581713,51765,0,0,17145,1296587
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Outcome 2,Estimated Actual,572187,0,12841,0,535817,76984,0,0,18221,1216050
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Equity Injections,Agency Resourcing,0,46116,0,0,0,0,0,0,0,46116
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Equity Injections,Estimated Actual,0,57507,0,0,0,0,0,0,0,57507
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,237214,0,237214
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,218214,0,218214
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Total,Agency Resourcing,844294,46116,11163,0,681713,239549,0,237214,1086917,3146966
+"AGRICULTURE, FISHERIES AND FORESTRY","Department of Agriculture, Fisheries and Forestry",Total,Estimated Actual,785683,57507,77064,0,636140,243108,0,218214,1161198,3178914
+"AGRICULTURE, FISHERIES AND FORESTRY",Australian Pesticides and Veterinary Medicines Authority*,Outcome 1,Agency Resourcing,2260,0,45444,0,0,0,0,0,0,47704
+"AGRICULTURE, FISHERIES AND FORESTRY",Australian Pesticides and Veterinary Medicines Authority*,Outcome 1,Estimated Actual,5905,0,38696,0,0,0,0,0,0,44601
+"AGRICULTURE, FISHERIES AND FORESTRY",Australian Pesticides and Veterinary Medicines Authority*,Total,Agency Resourcing,2260,0,45444,0,0,0,0,0,0,47704
+"AGRICULTURE, FISHERIES AND FORESTRY",Australian Pesticides and Veterinary Medicines Authority*,Total,Estimated Actual,5905,0,38696,0,0,0,0,0,0,44601
+"AGRICULTURE, FISHERIES AND FORESTRY",Cotton Research and Development Corporation*,Outcome 1,Agency Resourcing,0,0,25502,0,0,0,0,0,0,25502
+"AGRICULTURE, FISHERIES AND FORESTRY",Cotton Research and Development Corporation*,Outcome 1,Estimated Actual,0,0,26729,0,0,0,0,0,0,26729
+"AGRICULTURE, FISHERIES AND FORESTRY",Cotton Research and Development Corporation*,Total,Agency Resourcing,0,0,25502,0,0,0,0,0,0,25502
+"AGRICULTURE, FISHERIES AND FORESTRY",Cotton Research and Development Corporation*,Total,Estimated Actual,0,0,26729,0,0,0,0,0,0,26729
+"AGRICULTURE, FISHERIES AND FORESTRY",Fisheries Research and Development Corporation*,Outcome 1,Agency Resourcing,0,0,48233,0,0,0,0,0,0,48233
+"AGRICULTURE, FISHERIES AND FORESTRY",Fisheries Research and Development Corporation*,Outcome 1,Estimated Actual,0,0,50058,0,0,0,0,0,0,50058
+"AGRICULTURE, FISHERIES AND FORESTRY",Fisheries Research and Development Corporation*,Total,Agency Resourcing,0,0,48233,0,0,0,0,0,0,48233
+"AGRICULTURE, FISHERIES AND FORESTRY",Fisheries Research and Development Corporation*,Total,Estimated Actual,0,0,50058,0,0,0,0,0,0,50058
+"AGRICULTURE, FISHERIES AND FORESTRY",Grains Research and Development Corporation*,Outcome 1,Agency Resourcing,0,0,296866,0,0,0,0,0,0,296866
+"AGRICULTURE, FISHERIES AND FORESTRY",Grains Research and Development Corporation*,Outcome 1,Estimated Actual,0,0,386349,0,0,0,0,0,0,386349
+"AGRICULTURE, FISHERIES AND FORESTRY",Grains Research and Development Corporation*,Total,Agency Resourcing,0,0,296866,0,0,0,0,0,0,296866
+"AGRICULTURE, FISHERIES AND FORESTRY",Grains Research and Development Corporation*,Total,Estimated Actual,0,0,386349,0,0,0,0,0,0,386349
+"AGRICULTURE, FISHERIES AND FORESTRY",Regional Investment Corporation*,Outcome 1,Agency Resourcing,22586,0,0,0,0,0,0,0,0,22586
+"AGRICULTURE, FISHERIES AND FORESTRY",Regional Investment Corporation*,Outcome 1,Estimated Actual,22063,0,0,0,0,0,0,0,0,22063
+"AGRICULTURE, FISHERIES AND FORESTRY",Regional Investment Corporation*,Total,Agency Resourcing,22586,0,0,0,0,0,0,0,0,22586
+"AGRICULTURE, FISHERIES AND FORESTRY",Regional Investment Corporation*,Total,Estimated Actual,22063,0,0,0,0,0,0,0,0,22063
+"AGRICULTURE, FISHERIES AND FORESTRY",Rural Industries Research and Development Corporation*,Outcome 1,Agency Resourcing,0,0,54753,0,0,0,0,0,0,54753
+"AGRICULTURE, FISHERIES AND FORESTRY",Rural Industries Research and Development Corporation*,Outcome 1,Estimated Actual,0,0,61532,0,0,0,0,0,0,61532
+"AGRICULTURE, FISHERIES AND FORESTRY",Rural Industries Research and Development Corporation*,Total,Agency Resourcing,0,0,54753,0,0,0,0,0,0,54753
+"AGRICULTURE, FISHERIES AND FORESTRY",Rural Industries Research and Development Corporation*,Total,Estimated Actual,0,0,61532,0,0,0,0,0,0,61532
+"AGRICULTURE, FISHERIES AND FORESTRY",Wine Australia*,Outcome 1,Agency Resourcing,0,0,32698,0,0,0,0,0,0,32698
+"AGRICULTURE, FISHERIES AND FORESTRY",Wine Australia*,Outcome 1,Estimated Actual,0,0,43414,0,0,0,0,0,0,43414
+"AGRICULTURE, FISHERIES AND FORESTRY",Wine Australia*,Total,Agency Resourcing,0,0,32698,0,0,0,0,0,0,32698
+"AGRICULTURE, FISHERIES AND FORESTRY",Wine Australia*,Total,Estimated Actual,0,0,43414,0,0,0,0,0,0,43414
+"AGRICULTURE, FISHERIES AND FORESTRY",Australian Fisheries Management Authority,Outcome 1,Agency Resourcing,32444,0,0,0,19667,6265,0,0,0,58376
+"AGRICULTURE, FISHERIES AND FORESTRY",Australian Fisheries Management Authority,Outcome 1,Estimated Actual,31439,0,0,0,18146,6031,0,0,0,55616
+"AGRICULTURE, FISHERIES AND FORESTRY",Australian Fisheries Management Authority,Total,Agency Resourcing,32444,0,0,0,19667,6265,0,0,0,58376
+"AGRICULTURE, FISHERIES AND FORESTRY",Australian Fisheries Management Authority,Total,Estimated Actual,31439,0,0,0,18146,6031,0,0,0,55616
+"AGRICULTURE, FISHERIES AND FORESTRY",,PORTFOLIO TOTAL,Agency Resourcing,901584,46116,514659,0,701380,245814,0,237214,1086917,3733684
+"AGRICULTURE, FISHERIES AND FORESTRY",,PORTFOLIO TOTAL,Estimated Actual,845090,57507,683842,0,654286,249139,0,218214,1161198,3869276
+ATTORNEY-GENERAL'S,Attorney-General's Department,Outcome 1,Agency Resourcing,325977,0,202131,0,29568,411948,0,0,330,969954
+ATTORNEY-GENERAL'S,Attorney-General's Department,Outcome 1,Estimated Actual,295039,0,186064,0,48790,487365,0,0,980,1018238
+ATTORNEY-GENERAL'S,Attorney-General's Department,Equity Injections,Agency Resourcing,0,3166,0,0,0,0,0,0,0,3166
+ATTORNEY-GENERAL'S,Attorney-General's Department,Equity Injections,Estimated Actual,0,5163,0,0,0,0,0,0,0,5163
+ATTORNEY-GENERAL'S,Attorney-General's Department,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+ATTORNEY-GENERAL'S,Attorney-General's Department,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,1356,0,1356
+ATTORNEY-GENERAL'S,Attorney-General's Department,Total,Agency Resourcing,325977,3166,202131,0,29568,411948,0,0,330,973120
+ATTORNEY-GENERAL'S,Attorney-General's Department,Total,Estimated Actual,295039,5163,186064,0,48790,487365,0,1356,980,1024757
+ATTORNEY-GENERAL'S,Australian Human Rights Commission*,Outcome 1,Agency Resourcing,32129,0,9547,0,0,0,0,0,0,41676
+ATTORNEY-GENERAL'S,Australian Human Rights Commission*,Outcome 1,Estimated Actual,31315,0,10377,0,0,0,0,0,0,41692
+ATTORNEY-GENERAL'S,Australian Human Rights Commission*,Total,Agency Resourcing,32129,0,9547,0,0,0,0,0,0,41676
+ATTORNEY-GENERAL'S,Australian Human Rights Commission*,Total,Estimated Actual,31315,0,10377,0,0,0,0,0,0,41692
+ATTORNEY-GENERAL'S,Administrative Appeals Tribunal,Outcome 1,Agency Resourcing,262163,0,250,0,0,0,0,0,7500,269913
+ATTORNEY-GENERAL'S,Administrative Appeals Tribunal,Outcome 1,Estimated Actual,226735,0,250,0,0,0,0,0,7500,234485
+ATTORNEY-GENERAL'S,Administrative Appeals Tribunal,Equity Injections,Agency Resourcing,0,2316,0,0,0,0,0,0,0,2316
+ATTORNEY-GENERAL'S,Administrative Appeals Tribunal,Equity Injections,Estimated Actual,0,3135,0,0,0,0,0,0,0,3135
+ATTORNEY-GENERAL'S,Administrative Appeals Tribunal,Total,Agency Resourcing,262163,2316,250,0,0,0,0,0,7500,272229
+ATTORNEY-GENERAL'S,Administrative Appeals Tribunal,Total,Estimated Actual,226735,3135,250,0,0,0,0,0,7500,237620
+ATTORNEY-GENERAL'S,Australian Criminal Intelligence Commission,Outcome 1,Agency Resourcing,148318,0,4610,0,147719,0,0,0,0,300647
+ATTORNEY-GENERAL'S,Australian Criminal Intelligence Commission,Outcome 1,Estimated Actual,149680,0,11728,0,142630,0,0,0,0,304038
+ATTORNEY-GENERAL'S,Australian Criminal Intelligence Commission,Equity Injections,Agency Resourcing,0,23606,0,0,0,0,0,0,0,23606
+ATTORNEY-GENERAL'S,Australian Criminal Intelligence Commission,Equity Injections,Estimated Actual,0,4230,0,0,0,0,0,0,0,4230
+ATTORNEY-GENERAL'S,Australian Criminal Intelligence Commission,Total,Agency Resourcing,148318,23606,4610,0,147719,0,0,0,0,324253
+ATTORNEY-GENERAL'S,Australian Criminal Intelligence Commission,Total,Estimated Actual,149680,4230,11728,0,142630,0,0,0,0,308268
+ATTORNEY-GENERAL'S,Australian Federal Police,Outcome 1,Agency Resourcing,898576,0,91974,0,9536,1107,0,0,50,1001243
+ATTORNEY-GENERAL'S,Australian Federal Police,Outcome 1,Estimated Actual,896700,0,108985,0,11488,1071,0,0,50,1018294
+ATTORNEY-GENERAL'S,Australian Federal Police,Outcome 2,Agency Resourcing,0,0,220813,0,0,0,0,0,0,220813
+ATTORNEY-GENERAL'S,Australian Federal Police,Outcome 2,Estimated Actual,0,0,217600,0,0,0,0,0,0,217600
+ATTORNEY-GENERAL'S,Australian Federal Police,Outcome 3,Agency Resourcing,700242,0,67907,0,0,49092,0,0,0,817241
+ATTORNEY-GENERAL'S,Australian Federal Police,Outcome 3,Estimated Actual,677793,0,69154,0,0,29078,0,0,0,776025
+ATTORNEY-GENERAL'S,Australian Federal Police,Equity Injections,Agency Resourcing,0,44550,0,0,0,0,0,0,0,44550
+ATTORNEY-GENERAL'S,Australian Federal Police,Equity Injections,Estimated Actual,0,65535,0,0,0,0,0,0,0,65535
+ATTORNEY-GENERAL'S,Australian Federal Police,Total,Agency Resourcing,1598818,44550,380694,0,9536,50199,0,0,50,2083847
+ATTORNEY-GENERAL'S,Australian Federal Police,Total,Estimated Actual,1574493,65535,395739,0,11488,30149,0,0,50,2077454
+ATTORNEY-GENERAL'S,Australian Financial Security Authority,Outcome 1,Agency Resourcing,52269,0,49952,0,60447,0,0,0,3000,165668
+ATTORNEY-GENERAL'S,Australian Financial Security Authority,Outcome 1,Estimated Actual,57291,0,46403,0,59202,0,0,0,3000,165896
+ATTORNEY-GENERAL'S,Australian Financial Security Authority,Total,Agency Resourcing,52269,0,49952,0,60447,0,0,0,3000,165668
+ATTORNEY-GENERAL'S,Australian Financial Security Authority,Total,Estimated Actual,57291,0,46403,0,59202,0,0,0,3000,165896
+ATTORNEY-GENERAL'S,Australian Institute of Criminology,Outcome 1,Agency Resourcing,5507,0,0,0,593,0,0,0,0,6100
+ATTORNEY-GENERAL'S,Australian Institute of Criminology,Outcome 1,Estimated Actual,5685,0,0,0,661,0,0,0,0,6346
+ATTORNEY-GENERAL'S,Australian Institute of Criminology,Total,Agency Resourcing,5507,0,0,0,593,0,0,0,0,6100
+ATTORNEY-GENERAL'S,Australian Institute of Criminology,Total,Estimated Actual,5685,0,0,0,661,0,0,0,0,6346
+ATTORNEY-GENERAL'S,Australian Law Reform Commission,Outcome 1,Agency Resourcing,2998,0,1,0,0,0,0,0,0,2999
+ATTORNEY-GENERAL'S,Australian Law Reform Commission,Outcome 1,Estimated Actual,4428,0,1,0,0,0,0,0,0,4429
+ATTORNEY-GENERAL'S,Australian Law Reform Commission,Total,Agency Resourcing,2998,0,1,0,0,0,0,0,0,2999
+ATTORNEY-GENERAL'S,Australian Law Reform Commission,Total,Estimated Actual,4428,0,1,0,0,0,0,0,0,4429
+ATTORNEY-GENERAL'S,Australian Transaction Reports and Analysis Centre,Outcome 1,Agency Resourcing,153342,0,5847,0,0,0,0,0,0,159189
+ATTORNEY-GENERAL'S,Australian Transaction Reports and Analysis Centre,Outcome 1,Estimated Actual,100856,0,10096,0,0,0,0,0,0,110952
+ATTORNEY-GENERAL'S,Australian Transaction Reports and Analysis Centre,Equity Injections,Agency Resourcing,0,15050,0,0,0,0,0,0,0,15050
+ATTORNEY-GENERAL'S,Australian Transaction Reports and Analysis Centre,Equity Injections,Estimated Actual,0,11334,0,0,0,0,0,0,0,11334
+ATTORNEY-GENERAL'S,Australian Transaction Reports and Analysis Centre,Total,Agency Resourcing,153342,15050,5847,0,0,0,0,0,0,174239
+ATTORNEY-GENERAL'S,Australian Transaction Reports and Analysis Centre,Total,Estimated Actual,100856,11334,10096,0,0,0,0,0,0,122286
+ATTORNEY-GENERAL'S,Federal Court of Australia,Outcome 1,Agency Resourcing,79987,0,1435,0,0,0,0,0,600,82022
+ATTORNEY-GENERAL'S,Federal Court of Australia,Outcome 1,Estimated Actual,71428,0,1435,0,0,0,0,0,600,73463
+ATTORNEY-GENERAL'S,Federal Court of Australia,Outcome 2,Agency Resourcing,49370,0,0,0,0,0,0,0,100,49470
+ATTORNEY-GENERAL'S,Federal Court of Australia,Outcome 2,Estimated Actual,48561,0,0,0,0,0,0,0,100,48661
+ATTORNEY-GENERAL'S,Federal Court of Australia,Outcome 3,Agency Resourcing,116057,0,0,0,0,947,0,0,200,117204
+ATTORNEY-GENERAL'S,Federal Court of Australia,Outcome 3,Estimated Actual,106950,0,0,0,0,931,0,0,200,108081
+ATTORNEY-GENERAL'S,Federal Court of Australia,Outcome 4,Agency Resourcing,162595,0,792,0,0,0,0,0,0,163387
+ATTORNEY-GENERAL'S,Federal Court of Australia,Outcome 4,Estimated Actual,131562,0,790,0,0,0,0,0,0,132352
+ATTORNEY-GENERAL'S,Federal Court of Australia,Total,Agency Resourcing,408009,0,2227,0,0,947,0,0,900,412083
+ATTORNEY-GENERAL'S,Federal Court of Australia,Total,Estimated Actual,358501,0,2225,0,0,931,0,0,900,362557
+ATTORNEY-GENERAL'S,High Court of Australia,Outcome 1,Agency Resourcing,20951,0,625,0,0,0,0,0,0,21576
+ATTORNEY-GENERAL'S,High Court of Australia,Outcome 1,Estimated Actual,20192,0,800,0,0,0,0,0,0,20992
+ATTORNEY-GENERAL'S,High Court of Australia,Equity Injections,Agency Resourcing,0,550,0,0,0,0,0,0,0,550
+ATTORNEY-GENERAL'S,High Court of Australia,Equity Injections,Estimated Actual,0,850,0,0,0,0,0,0,0,850
+ATTORNEY-GENERAL'S,High Court of Australia,Total,Agency Resourcing,20951,550,625,0,0,0,0,0,0,22126
+ATTORNEY-GENERAL'S,High Court of Australia,Total,Estimated Actual,20192,850,800,0,0,0,0,0,0,21842
+ATTORNEY-GENERAL'S,National Anti-Corruption Commission,Outcome 1,Agency Resourcing,65551,0,0,0,0,0,0,0,0,65551
+ATTORNEY-GENERAL'S,National Anti-Corruption Commission,Outcome 1,Estimated Actual,57533,0,0,0,0,0,0,0,0,57533
+ATTORNEY-GENERAL'S,National Anti-Corruption Commission,Equity Injections,Agency Resourcing,0,1692,0,0,0,0,0,0,0,1692
+ATTORNEY-GENERAL'S,National Anti-Corruption Commission,Equity Injections,Estimated Actual,0,27839,0,0,0,0,0,0,0,27839
+ATTORNEY-GENERAL'S,National Anti-Corruption Commission,Total,Agency Resourcing,65551,1692,0,0,0,0,0,0,0,67243
+ATTORNEY-GENERAL'S,National Anti-Corruption Commission,Total,Estimated Actual,57533,27839,0,0,0,0,0,0,0,85372
+ATTORNEY-GENERAL'S,Office of the Australian Information Commissioner,Outcome 1,Agency Resourcing,36792,0,0,0,0,0,0,0,0,36792
+ATTORNEY-GENERAL'S,Office of the Australian Information Commissioner,Outcome 1,Estimated Actual,45125,0,178,0,0,0,0,0,0,45303
+ATTORNEY-GENERAL'S,Office of the Australian Information Commissioner,Equity Injections,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+ATTORNEY-GENERAL'S,Office of the Australian Information Commissioner,Equity Injections,Estimated Actual,0,1000,0,0,0,0,0,0,0,1000
+ATTORNEY-GENERAL'S,Office of the Australian Information Commissioner,Total,Agency Resourcing,36792,0,0,0,0,0,0,0,0,36792
+ATTORNEY-GENERAL'S,Office of the Australian Information Commissioner,Total,Estimated Actual,45125,1000,178,0,0,0,0,0,0,46303
+ATTORNEY-GENERAL'S,Office of the Commonwealth Ombudsman,Outcome 1,Agency Resourcing,46358,0,4700,0,0,0,0,0,0,51058
+ATTORNEY-GENERAL'S,Office of the Commonwealth Ombudsman,Outcome 1,Estimated Actual,42994,0,4385,0,0,0,0,0,0,47379
+ATTORNEY-GENERAL'S,Office of the Commonwealth Ombudsman,Total,Agency Resourcing,46358,0,4700,0,0,0,0,0,0,51058
+ATTORNEY-GENERAL'S,Office of the Commonwealth Ombudsman,Total,Estimated Actual,42994,0,4385,0,0,0,0,0,0,47379
+ATTORNEY-GENERAL'S,Office of the Director of Public Prosecutions,Outcome 1,Agency Resourcing,132807,0,11070,0,0,0,0,3000,0,146877
+ATTORNEY-GENERAL'S,Office of the Director of Public Prosecutions,Outcome 1,Estimated Actual,107878,0,11608,0,0,0,0,0,0,119486
+ATTORNEY-GENERAL'S,Office of the Director of Public Prosecutions,Equity Injections,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+ATTORNEY-GENERAL'S,Office of the Director of Public Prosecutions,Equity Injections,Estimated Actual,0,2200,0,0,0,0,0,0,0,2200
+ATTORNEY-GENERAL'S,Office of the Director of Public Prosecutions,Total,Agency Resourcing,132807,0,11070,0,0,0,0,3000,0,146877
+ATTORNEY-GENERAL'S,Office of the Director of Public Prosecutions,Total,Estimated Actual,107878,2200,11608,0,0,0,0,0,0,121686
+ATTORNEY-GENERAL'S,Office of the Inspector-General of Intelligence and Security,Outcome 1,Agency Resourcing,16483,0,86,0,0,0,0,0,0,16569
+ATTORNEY-GENERAL'S,Office of the Inspector-General of Intelligence and Security,Outcome 1,Estimated Actual,13701,0,286,0,0,0,0,0,0,13987
+ATTORNEY-GENERAL'S,Office of the Inspector-General of Intelligence and Security,Total,Agency Resourcing,16483,0,86,0,0,0,0,0,0,16569
+ATTORNEY-GENERAL'S,Office of the Inspector-General of Intelligence and Security,Total,Estimated Actual,13701,0,286,0,0,0,0,0,0,13987
+ATTORNEY-GENERAL'S,Office of Parliamentary Counsel,Outcome 1,Agency Resourcing,23711,0,7704,0,0,0,0,0,0,31415
+ATTORNEY-GENERAL'S,Office of Parliamentary Counsel,Outcome 1,Estimated Actual,21480,0,8065,0,0,0,0,0,0,29545
+ATTORNEY-GENERAL'S,Office of Parliamentary Counsel,Equity Injections,Agency Resourcing,0,600,0,0,0,0,0,0,0,600
+ATTORNEY-GENERAL'S,Office of Parliamentary Counsel,Equity Injections,Estimated Actual,0,700,0,0,0,0,0,0,0,700
+ATTORNEY-GENERAL'S,Office of Parliamentary Counsel,Total,Agency Resourcing,23711,600,7704,0,0,0,0,0,0,32015
+ATTORNEY-GENERAL'S,Office of Parliamentary Counsel,Total,Estimated Actual,21480,700,8065,0,0,0,0,0,0,30245
+ATTORNEY-GENERAL'S,Office of the Special Investigator,Outcome 1,Agency Resourcing,57875,0,0,0,0,0,0,0,0,57875
+ATTORNEY-GENERAL'S,Office of the Special Investigator,Outcome 1,Estimated Actual,56206,0,0,0,0,0,0,0,0,56206
+ATTORNEY-GENERAL'S,Office of the Special Investigator,Equity Injections,Agency Resourcing,0,500,0,0,0,0,0,0,0,500
+ATTORNEY-GENERAL'S,Office of the Special Investigator,Equity Injections,Estimated Actual,0,500,0,0,0,0,0,0,0,500
+ATTORNEY-GENERAL'S,Office of the Special Investigator,Total,Agency Resourcing,57875,500,0,0,0,0,0,0,0,58375
+ATTORNEY-GENERAL'S,Office of the Special Investigator,Total,Estimated Actual,56206,500,0,0,0,0,0,0,0,56706
+ATTORNEY-GENERAL'S,,PORTFOLIO TOTAL,Agency Resourcing,3390058,92030,679444,0,247863,463094,0,3000,11780,4887269
+ATTORNEY-GENERAL'S,,PORTFOLIO TOTAL,Estimated Actual,3169132,122486,688205,0,262771,518445,0,1356,12430,4774825
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Outcome 1,Agency Resourcing,436491,0,1769,0,350000,827465,0,0,4502,1620227
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Outcome 1,Estimated Actual,338815,0,3567,0,404159,748628,0,0,30,1495199
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Outcome 2,Agency Resourcing,497066,0,3335,0,13450,488168,0,0,81,1002100
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Outcome 2,Estimated Actual,423286,0,4820,0,16311,411190,0,0,81,855688
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Outcome 3,Agency Resourcing,318035,0,8000,0,0,5000,0,0,0,331035
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Outcome 3,Estimated Actual,336944,0,9000,0,0,5000,0,0,0,350944
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Outcome 4,Agency Resourcing,141947,0,0,0,2799,134705,0,0,0,279451
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Outcome 4,Estimated Actual,101520,0,0,0,2680,276072,0,0,0,380272
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Equity Injections,Agency Resourcing,0,19989,0,0,0,0,0,0,0,19989
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Equity Injections,Estimated Actual,0,24123,0,0,0,0,0,0,0,24123
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,2568780,0,2568780
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,8820397,0,8820397
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Total,Agency Resourcing,1393539,19989,13104,0,366249,1455338,0,2568780,4583,5821582
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER","Department of Climate Change, Energy, the Environment and Water",Total,Estimated Actual,1200565,24123,17387,0,423150,1440890,0,8820397,111,11926623
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Institute of Marine Science*,Outcome 1,Agency Resourcing,81869,0,46239,0,0,0,0,0,0,128108
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Institute of Marine Science*,Outcome 1,Estimated Actual,99852,0,37606,0,0,0,0,0,0,137458
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Institute of Marine Science*,Equity Injections,Agency Resourcing,0,11416,0,0,0,0,0,0,0,11416
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Institute of Marine Science*,Equity Injections,Estimated Actual,0,29246,0,0,0,0,0,0,0,29246
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Institute of Marine Science*,Total,Agency Resourcing,81869,11416,46239,0,0,0,0,0,0,139524
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Institute of Marine Science*,Total,Estimated Actual,99852,29246,37606,0,0,0,0,0,0,166704
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Renewable Energy Agency*,Outcome 1,Agency Resourcing,465264,0,1420,0,0,0,0,0,0,466684
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Renewable Energy Agency*,Outcome 1,Estimated Actual,320963,0,1330,0,0,0,0,0,0,322293
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Renewable Energy Agency*,Total,Agency Resourcing,465264,0,1420,0,0,0,0,0,0,466684
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Australian Renewable Energy Agency*,Total,Estimated Actual,320963,0,1330,0,0,0,0,0,0,322293
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Finance Corporation*,Outcome 1,Agency Resourcing,20800,0,304972,0,0,0,0,0,0,325772
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Finance Corporation*,Outcome 1,Estimated Actual,20811,0,240276,0,0,0,0,0,0,261087
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Finance Corporation*,Total,Agency Resourcing,20800,0,304972,0,0,0,0,0,0,325772
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Finance Corporation*,Total,Estimated Actual,20811,0,240276,0,0,0,0,0,0,261087
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Director of National Parks*,Outcome 1,Agency Resourcing,113295,0,36961,0,0,0,0,0,0,150256
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Director of National Parks*,Outcome 1,Estimated Actual,106592,0,24345,0,0,0,0,0,0,130937
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Director of National Parks*,Equity Injections,Agency Resourcing,0,72288,0,0,0,0,0,0,0,72288
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Director of National Parks*,Equity Injections,Estimated Actual,0,36883,0,0,0,0,0,0,0,36883
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Director of National Parks*,Total,Agency Resourcing,113295,72288,36961,0,0,0,0,0,0,222544
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Director of National Parks*,Total,Estimated Actual,106592,36883,24345,0,0,0,0,0,0,167820
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Murray-Darling Basin Authority*,Outcome 1,Agency Resourcing,84670,0,129485,0,0,0,0,0,0,214155
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Murray-Darling Basin Authority*,Outcome 1,Estimated Actual,87880,0,124406,0,0,0,0,0,0,212286
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Murray-Darling Basin Authority*,Equity Injections,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Murray-Darling Basin Authority*,Equity Injections,Estimated Actual,0,9998,0,0,0,0,0,0,0,9998
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Murray-Darling Basin Authority*,Total,Agency Resourcing,84670,0,129485,0,0,0,0,0,0,214155
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Murray-Darling Basin Authority*,Total,Estimated Actual,87880,9998,124406,0,0,0,0,0,0,222284
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Sydney Harbour Federation Trust*,Outcome 1,Agency Resourcing,650,0,22342,0,0,0,0,0,0,22992
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Sydney Harbour Federation Trust*,Outcome 1,Estimated Actual,4598,0,22135,0,0,0,0,0,0,26733
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Sydney Harbour Federation Trust*,Equity Injections,Agency Resourcing,0,18911,0,0,0,0,0,0,0,18911
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Sydney Harbour Federation Trust*,Equity Injections,Estimated Actual,0,25591,0,0,0,0,0,0,0,25591
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Sydney Harbour Federation Trust*,Total,Agency Resourcing,650,18911,22342,0,0,0,0,0,0,41903
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Sydney Harbour Federation Trust*,Total,Estimated Actual,4598,25591,22135,0,0,0,0,0,0,52324
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Bureau of Meteorology,Outcome 1,Agency Resourcing,440088,0,100519,0,0,0,0,0,0,540607
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Bureau of Meteorology,Outcome 1,Estimated Actual,429251,0,100862,0,0,0,0,0,0,530113
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Bureau of Meteorology,Equity Injections,Agency Resourcing,0,29593,0,0,0,0,0,0,0,29593
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Bureau of Meteorology,Equity Injections,Estimated Actual,0,10788,0,0,0,0,0,0,0,10788
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Bureau of Meteorology,Total,Agency Resourcing,440088,29593,100519,0,0,0,0,0,0,570200
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Bureau of Meteorology,Total,Estimated Actual,429251,10788,100862,0,0,0,0,0,0,540901
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Regulator,Outcome 1,Agency Resourcing,109067,0,0,0,3500,269947,0,0,509,383023
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Regulator,Outcome 1,Estimated Actual,127598,0,0,0,3500,332743,0,0,509,464350
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Regulator,Outcome 2,Agency Resourcing,6500,0,0,0,0,0,0,0,0,6500
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Regulator,Outcome 2,Estimated Actual,6972,0,0,0,0,0,0,0,0,6972
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Regulator,Total,Agency Resourcing,115567,0,0,0,3500,269947,0,0,509,389523
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Clean Energy Regulator,Total,Estimated Actual,134570,0,0,0,3500,332743,0,0,509,471322
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Climate Change Authority,Outcome 1,Agency Resourcing,13886,0,0,0,0,0,0,0,0,13886
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Climate Change Authority,Outcome 1,Estimated Actual,13396,0,500,0,0,0,0,0,0,13896
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Climate Change Authority,Total,Agency Resourcing,13886,0,0,0,0,0,0,0,0,13886
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Climate Change Authority,Total,Estimated Actual,13396,0,500,0,0,0,0,0,0,13896
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Great Barrier Reef Marine Park Authority,Outcome 1,Agency Resourcing,82561,0,4083,11000,19305,0,0,0,0,116949
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Great Barrier Reef Marine Park Authority,Outcome 1,Estimated Actual,80672,0,6578,8000,21032,0,0,0,0,116282
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Great Barrier Reef Marine Park Authority,Equity Injections,Agency Resourcing,0,7146,0,0,0,0,0,0,0,7146
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Great Barrier Reef Marine Park Authority,Equity Injections,Estimated Actual,0,2124,0,0,0,0,0,0,0,2124
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Great Barrier Reef Marine Park Authority,Total,Agency Resourcing,82561,7146,4083,11000,19305,0,0,0,0,124095
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",Great Barrier Reef Marine Park Authority,Total,Estimated Actual,80672,2124,6578,8000,21032,0,0,0,0,118406
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",,PORTFOLIO TOTAL,Agency Resourcing,2812189,159343,659125,11000,389054,1725285,0,2568780,5092,8329868
+"CLIMATE CHANGE, ENERGY, THE ENVIRONMENT AND WATER",,PORTFOLIO TOTAL,Estimated Actual,2499150,138753,575425,8000,447682,1773633,0,8820397,620,14263660
+DEFENCE,Department of Defence,Outcome 1,Agency Resourcing,221852,0,1908,0,0,0,0,0,0,223760
+DEFENCE,Department of Defence,Outcome 1,Estimated Actual,324396,0,7158,0,0,0,0,0,0,331554
+DEFENCE,Department of Defence,Outcome 2,Agency Resourcing,41768428,0,745260,0,273151,0,0,0,4690198,47477037
+DEFENCE,Department of Defence,Outcome 2,Estimated Actual,38809941,0,1033752,0,67466,0,0,0,4263438,44174597
+DEFENCE,Department of Defence,Equity Injections,Agency Resourcing,0,10590238,0,0,0,0,0,0,0,10590238
+DEFENCE,Department of Defence,Equity Injections,Estimated Actual,0,11086276,0,0,0,0,0,0,0,11086276
+DEFENCE,Department of Defence,Total,Agency Resourcing,41990280,10590238,747168,0,273151,0,0,0,4690198,58291035
+DEFENCE,Department of Defence,Total,Estimated Actual,39134337,11086276,1040910,0,67466,0,0,0,4263438,55592427
+DEFENCE,Army and Air Force Canteen Service*,Outcome 1,Agency Resourcing,0,0,33465,0,0,0,0,0,0,33465
+DEFENCE,Army and Air Force Canteen Service*,Outcome 1,Estimated Actual,0,0,32339,0,0,0,0,0,0,32339
+DEFENCE,Army and Air Force Canteen Service*,Total,Agency Resourcing,0,0,33465,0,0,0,0,0,0,33465
+DEFENCE,Army and Air Force Canteen Service*,Total,Estimated Actual,0,0,32339,0,0,0,0,0,0,32339
+DEFENCE,Australian Military Forces Relief Trust Fund*,Outcome 1,Agency Resourcing,0,0,838,0,0,0,0,0,0,838
+DEFENCE,Australian Military Forces Relief Trust Fund*,Outcome 1,Estimated Actual,0,0,813,0,0,0,0,0,0,813
+DEFENCE,Australian Military Forces Relief Trust Fund*,Total,Agency Resourcing,0,0,838,0,0,0,0,0,0,838
+DEFENCE,Australian Military Forces Relief Trust Fund*,Total,Estimated Actual,0,0,813,0,0,0,0,0,0,813
+DEFENCE,Australian Strategic Policy Institute Limited*,Outcome 1,Agency Resourcing,0,0,14955,0,0,0,0,0,0,14955
+DEFENCE,Australian Strategic Policy Institute Limited*,Outcome 1,Estimated Actual,0,0,14001,0,0,0,0,0,0,14001
+DEFENCE,Australian Strategic Policy Institute Limited*,Total,Agency Resourcing,0,0,14955,0,0,0,0,0,0,14955
+DEFENCE,Australian Strategic Policy Institute Limited*,Total,Estimated Actual,0,0,14001,0,0,0,0,0,0,14001
+DEFENCE,Defence Housing Australia*,Outcome 1,Agency Resourcing,0,0,931171,0,0,0,0,0,0,931171
+DEFENCE,Defence Housing Australia*,Outcome 1,Estimated Actual,0,0,827133,0,0,0,0,0,0,827133
+DEFENCE,Defence Housing Australia*,Total,Agency Resourcing,0,0,931171,0,0,0,0,0,0,931171
+DEFENCE,Defence Housing Australia*,Total,Estimated Actual,0,0,827133,0,0,0,0,0,0,827133
+DEFENCE,Royal Australian Air Force Veterans Residences Trust Fund*,Outcome 1,Agency Resourcing,0,0,656,0,0,0,0,0,0,656
+DEFENCE,Royal Australian Air Force Veterans Residences Trust Fund*,Outcome 1,Estimated Actual,0,0,656,0,0,0,0,0,0,656
+DEFENCE,Royal Australian Air Force Veterans Residences Trust Fund*,Total,Agency Resourcing,0,0,656,0,0,0,0,0,0,656
+DEFENCE,Royal Australian Air Force Veterans Residences Trust Fund*,Total,Estimated Actual,0,0,656,0,0,0,0,0,0,656
+DEFENCE,Royal Australian Air Force Welfare Trust Fund*,Outcome 1,Agency Resourcing,0,0,1710,0,0,0,0,0,0,1710
+DEFENCE,Royal Australian Air Force Welfare Trust Fund*,Outcome 1,Estimated Actual,0,0,1710,0,0,0,0,0,0,1710
+DEFENCE,Royal Australian Air Force Welfare Trust Fund*,Total,Agency Resourcing,0,0,1710,0,0,0,0,0,0,1710
+DEFENCE,Royal Australian Air Force Welfare Trust Fund*,Total,Estimated Actual,0,0,1710,0,0,0,0,0,0,1710
+DEFENCE,Royal Australian Navy Central Canteens Board (Royal Australian Navy Central Canteens Fund)*,Outcome 1,Agency Resourcing,0,0,18596,0,0,0,0,0,0,18596
+DEFENCE,Royal Australian Navy Central Canteens Board (Royal Australian Navy Central Canteens Fund)*,Outcome 1,Estimated Actual,0,0,17903,0,0,0,0,0,0,17903
+DEFENCE,Royal Australian Navy Central Canteens Board (Royal Australian Navy Central Canteens Fund)*,Total,Agency Resourcing,0,0,18596,0,0,0,0,0,0,18596
+DEFENCE,Royal Australian Navy Central Canteens Board (Royal Australian Navy Central Canteens Fund)*,Total,Estimated Actual,0,0,17903,0,0,0,0,0,0,17903
+DEFENCE,Royal Australian Navy Relief Trust Fund*,Outcome 1,Agency Resourcing,0,0,720,0,0,0,0,0,0,720
+DEFENCE,Royal Australian Navy Relief Trust Fund*,Outcome 1,Estimated Actual,0,0,767,0,0,0,0,0,0,767
+DEFENCE,Royal Australian Navy Relief Trust Fund*,Total,Agency Resourcing,0,0,720,0,0,0,0,0,0,720
+DEFENCE,Royal Australian Navy Relief Trust Fund*,Total,Estimated Actual,0,0,767,0,0,0,0,0,0,767
+DEFENCE,Australian Signals Directorate,Outcome 1,Agency Resourcing,1687007,0,2994,0,0,0,0,0,0,1690001
+DEFENCE,Australian Signals Directorate,Outcome 1,Estimated Actual,1762225,0,2917,0,0,0,0,0,0,1765142
+DEFENCE,Australian Signals Directorate,Equity Injections,Agency Resourcing,0,1036491,0,0,0,0,0,0,0,1036491
+DEFENCE,Australian Signals Directorate,Equity Injections,Estimated Actual,0,1094367,0,0,0,0,0,0,0,1094367
+DEFENCE,Australian Signals Directorate,Total,Agency Resourcing,1687007,1036491,2994,0,0,0,0,0,0,2726492
+DEFENCE,Australian Signals Directorate,Total,Estimated Actual,1762225,1094367,2917,0,0,0,0,0,0,2859509
+DEFENCE,Australian Submarine Agency,Outcome 1,Agency Resourcing,330111,0,0,0,0,0,0,0,0,330111
+DEFENCE,Australian Submarine Agency,Outcome 1,Estimated Actual,235334,0,0,0,0,0,0,0,0,235334
+DEFENCE,Australian Submarine Agency,Equity Injections,Agency Resourcing,0,52843,0,0,0,0,0,0,0,52843
+DEFENCE,Australian Submarine Agency,Equity Injections,Estimated Actual,0,8085,0,0,0,0,0,0,0,8085
+DEFENCE,Australian Submarine Agency,Total,Agency Resourcing,330111,52843,0,0,0,0,0,0,0,382954
+DEFENCE,Australian Submarine Agency,Total,Estimated Actual,235334,8085,0,0,0,0,0,0,0,243419
+DEFENCE,Department of Veterans' Affairs,Outcome 1,Agency Resourcing,383045,0,3925,0,116265,71760,0,0,8184322,8759317
+DEFENCE,Department of Veterans' Affairs,Outcome 1,Estimated Actual,402100,0,4170,0,107434,64689,0,0,8119983,8698376
+DEFENCE,Department of Veterans' Affairs,Outcome 2,Agency Resourcing,173146,0,2790,0,0,33726,0,0,4509086,4718748
+DEFENCE,Department of Veterans' Affairs,Outcome 2,Estimated Actual,170608,0,2539,0,0,53191,0,0,4373216,4599554
+DEFENCE,Department of Veterans' Affairs,Outcome 3,Agency Resourcing,15996,0,621,0,45,46893,0,0,0,63555
+DEFENCE,Department of Veterans' Affairs,Outcome 3,Estimated Actual,17754,0,565,0,35,58413,0,0,0,76767
+DEFENCE,Department of Veterans' Affairs,Equity Injections,Agency Resourcing,0,193,0,0,0,0,0,0,0,193
+DEFENCE,Department of Veterans' Affairs,Equity Injections,Estimated Actual,0,6121,0,0,0,0,0,0,0,6121
+DEFENCE,Department of Veterans' Affairs,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,2328,0,2328
+DEFENCE,Department of Veterans' Affairs,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,9195,0,9195
+DEFENCE,Department of Veterans' Affairs,Total,Agency Resourcing,572187,193,7336,0,116310,152379,0,2328,12693408,13544141
+DEFENCE,Department of Veterans' Affairs,Total,Estimated Actual,590462,6121,7274,0,107469,176293,0,9195,12493199,13390013
+DEFENCE,Australian War Memorial*,Outcome 1,Agency Resourcing,50301,0,9295,0,0,0,0,0,0,59596
+DEFENCE,Australian War Memorial*,Outcome 1,Estimated Actual,42140,0,13907,0,0,0,0,0,0,56047
+DEFENCE,Australian War Memorial*,Equity Injections,Agency Resourcing,0,106522,0,0,0,0,0,0,0,106522
+DEFENCE,Australian War Memorial*,Equity Injections,Estimated Actual,0,7645,0,0,0,0,0,0,0,7645
+DEFENCE,Australian War Memorial*,Total,Agency Resourcing,50301,106522,9295,0,0,0,0,0,0,166118
+DEFENCE,Australian War Memorial*,Total,Estimated Actual,42140,7645,13907,0,0,0,0,0,0,63692
+DEFENCE,,PORTFOLIO TOTAL,Agency Resourcing,44629886,11786287,1768904,0,389461,152379,0,2328,17383606,76112851
+DEFENCE,,PORTFOLIO TOTAL,Estimated Actual,41764498,12202494,1960330,0,174935,176293,0,9195,16756637,73044382
+EDUCATION,Department of Education,Outcome 1,Agency Resourcing,258383,0,378,0,0,726830,130538,0,44769469,45885598
+EDUCATION,Department of Education,Outcome 1,Estimated Actual,212147,0,378,0,0,690856,152204,0,42988759,44044344
+EDUCATION,Department of Education,Outcome 2,Agency Resourcing,160415,0,4195,0,11202,587927,0,0,19691167,20454906
+EDUCATION,Department of Education,Outcome 2,Estimated Actual,153248,0,4422,0,10265,489776,0,0,18345561,19003272
+EDUCATION,Department of Education,Equity Injections,Agency Resourcing,0,33561,0,0,0,0,0,0,0,33561
+EDUCATION,Department of Education,Equity Injections,Estimated Actual,0,22377,0,0,0,0,0,0,0,22377
+EDUCATION,Department of Education,Total,Agency Resourcing,418798,33561,4573,0,11202,1314757,130538,0,64460636,66374065
+EDUCATION,Department of Education,Total,Estimated Actual,365395,22377,4800,0,10265,1180632,152204,0,61334320,63069993
+EDUCATION,"Australian Curriculum, Assessment and Reporting Authority*",Outcome 1,Agency Resourcing,0,0,34995,0,0,0,0,0,0,34995
+EDUCATION,"Australian Curriculum, Assessment and Reporting Authority*",Outcome 1,Estimated Actual,0,0,36098,0,0,0,0,0,0,36098
+EDUCATION,"Australian Curriculum, Assessment and Reporting Authority*",Total,Agency Resourcing,0,0,34995,0,0,0,0,0,0,34995
+EDUCATION,"Australian Curriculum, Assessment and Reporting Authority*",Total,Estimated Actual,0,0,36098,0,0,0,0,0,0,36098
+EDUCATION,Australian Institute for Teaching and School Leadership Limited*,Outcome 1,Agency Resourcing,0,0,16265,0,0,0,0,0,0,16265
+EDUCATION,Australian Institute for Teaching and School Leadership Limited*,Outcome 1,Estimated Actual,0,0,22853,0,0,0,0,0,0,22853
+EDUCATION,Australian Institute for Teaching and School Leadership Limited*,Total,Agency Resourcing,0,0,16265,0,0,0,0,0,0,16265
+EDUCATION,Australian Institute for Teaching and School Leadership Limited*,Total,Estimated Actual,0,0,22853,0,0,0,0,0,0,22853
+EDUCATION,Australian Research Council,Outcome 1,Agency Resourcing,24293,0,561,0,0,1031328,0,0,0,1056182
+EDUCATION,Australian Research Council,Outcome 1,Estimated Actual,23706,0,837,0,0,10831,0,0,851414,886788
+EDUCATION,Australian Research Council,Total,Agency Resourcing,24293,0,561,0,0,1031328,0,0,0,1056182
+EDUCATION,Australian Research Council,Total,Estimated Actual,23706,0,837,0,0,10831,0,0,851414,886788
+EDUCATION,Tertiary Education Quality and Standards Agency,Outcome 1,Agency Resourcing,22159,0,655,0,0,0,0,0,200,23014
+EDUCATION,Tertiary Education Quality and Standards Agency,Outcome 1,Estimated Actual,22413,0,822,0,0,0,0,0,200,23435
+EDUCATION,Tertiary Education Quality and Standards Agency,Total,Agency Resourcing,22159,0,655,0,0,0,0,0,200,23014
+EDUCATION,Tertiary Education Quality and Standards Agency,Total,Estimated Actual,22413,0,822,0,0,0,0,0,200,23435
+EDUCATION,,PORTFOLIO TOTAL,Agency Resourcing,465250,33561,57049,0,11202,2346085,130538,0,64460836,67504521
+EDUCATION,,PORTFOLIO TOTAL,Estimated Actual,411514,22377,65410,0,10265,1191463,152204,0,62185934,64039167
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Outcome 1,Agency Resourcing,470577,0,43247,0,0,1900605,0,0,30,2414459
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Outcome 1,Estimated Actual,406462,0,66226,0,0,1917786,0,0,30,2390504
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Outcome 2,Agency Resourcing,327342,0,29379,0,3292,1918509,0,0,551265,2829787
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Outcome 2,Estimated Actual,300504,0,46497,0,3168,2597292,0,0,513979,3461440
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Outcome 3,Agency Resourcing,85134,0,6392,0,0,93802,0,0,612665,797993
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Outcome 3,Estimated Actual,76982,0,11935,0,0,74328,0,0,565251,728496
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Equity Injections,Agency Resourcing,0,69831,0,0,0,0,0,0,0,69831
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Equity Injections,Estimated Actual,0,43163,0,0,0,0,0,0,0,43163
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Total,Agency Resourcing,883053,69831,79018,0,3292,3912916,0,0,1163960,6112070
+EMPLOYMENT AND WORKPLACE RELATIONS,Department of Employment and Workplace Relations,Total,Estimated Actual,783948,43163,124658,0,3168,4589406,0,0,1079260,6623603
+EMPLOYMENT AND WORKPLACE RELATIONS,Comcare*,Outcome 1,Agency Resourcing,6679,0,378038,0,0,0,0,0,0,384717
+EMPLOYMENT AND WORKPLACE RELATIONS,Comcare*,Outcome 1,Estimated Actual,6029,0,329392,0,0,0,0,0,0,335421
+EMPLOYMENT AND WORKPLACE RELATIONS,Comcare*,Total,Agency Resourcing,6679,0,378038,0,0,0,0,0,0,384717
+EMPLOYMENT AND WORKPLACE RELATIONS,Comcare*,Total,Estimated Actual,6029,0,329392,0,0,0,0,0,0,335421
+EMPLOYMENT AND WORKPLACE RELATIONS,Asbestos and Silica Safety and Eradication Agency,Outcome 1,Agency Resourcing,5876,0,0,0,0,0,0,0,0,5876
+EMPLOYMENT AND WORKPLACE RELATIONS,Asbestos and Silica Safety and Eradication Agency,Outcome 1,Estimated Actual,5551,0,0,0,0,0,0,0,0,5551
+EMPLOYMENT AND WORKPLACE RELATIONS,Asbestos and Silica Safety and Eradication Agency,Total,Agency Resourcing,5876,0,0,0,0,0,0,0,0,5876
+EMPLOYMENT AND WORKPLACE RELATIONS,Asbestos and Silica Safety and Eradication Agency,Total,Estimated Actual,5551,0,0,0,0,0,0,0,0,5551
+EMPLOYMENT AND WORKPLACE RELATIONS,Australian Skills Quality Authority,Outcome 1,Agency Resourcing,52047,0,0,0,0,0,0,0,357,52404
+EMPLOYMENT AND WORKPLACE RELATIONS,Australian Skills Quality Authority,Outcome 1,Estimated Actual,46590,0,0,0,0,0,0,0,357,46947
+EMPLOYMENT AND WORKPLACE RELATIONS,Australian Skills Quality Authority,Equity Injections,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+EMPLOYMENT AND WORKPLACE RELATIONS,Australian Skills Quality Authority,Equity Injections,Estimated Actual,0,1157,0,0,0,0,0,0,0,1157
+EMPLOYMENT AND WORKPLACE RELATIONS,Australian Skills Quality Authority,Total,Agency Resourcing,52047,0,0,0,0,0,0,0,357,52404
+EMPLOYMENT AND WORKPLACE RELATIONS,Australian Skills Quality Authority,Total,Estimated Actual,46590,1157,0,0,0,0,0,0,357,48104
+EMPLOYMENT AND WORKPLACE RELATIONS,Fair Work Commission,Outcome 1,Agency Resourcing,119487,0,210,0,0,0,0,0,500,120197
+EMPLOYMENT AND WORKPLACE RELATIONS,Fair Work Commission,Outcome 1,Estimated Actual,105625,0,213,0,0,0,0,0,500,106338
+EMPLOYMENT AND WORKPLACE RELATIONS,Fair Work Commission,Total,Agency Resourcing,119487,0,210,0,0,0,0,0,500,120197
+EMPLOYMENT AND WORKPLACE RELATIONS,Fair Work Commission,Total,Estimated Actual,105625,0,213,0,0,0,0,0,500,106338
+EMPLOYMENT AND WORKPLACE RELATIONS,Office of the Fair Work Ombudsman,Outcome 1,Agency Resourcing,183744,0,1300,0,0,0,0,0,1500,186544
+EMPLOYMENT AND WORKPLACE RELATIONS,Office of the Fair Work Ombudsman,Outcome 1,Estimated Actual,186436,0,1300,0,0,0,0,0,1500,189236
+EMPLOYMENT AND WORKPLACE RELATIONS,Office of the Fair Work Ombudsman,Total,Agency Resourcing,183744,0,1300,0,0,0,0,0,1500,186544
+EMPLOYMENT AND WORKPLACE RELATIONS,Office of the Fair Work Ombudsman,Total,Estimated Actual,186436,0,1300,0,0,0,0,0,1500,189236
+EMPLOYMENT AND WORKPLACE RELATIONS,Safe Work Australia,Outcome 1,Agency Resourcing,12572,0,0,0,12573,0,0,0,0,25145
+EMPLOYMENT AND WORKPLACE RELATIONS,Safe Work Australia,Outcome 1,Estimated Actual,12227,0,0,0,12233,0,0,0,0,24460
+EMPLOYMENT AND WORKPLACE RELATIONS,Safe Work Australia,Total,Agency Resourcing,12572,0,0,0,12573,0,0,0,0,25145
+EMPLOYMENT AND WORKPLACE RELATIONS,Safe Work Australia,Total,Estimated Actual,12227,0,0,0,12233,0,0,0,0,24460
+EMPLOYMENT AND WORKPLACE RELATIONS,"Seafarers Safety, Rehabilitation and Compensation Authority",Outcome 1,Agency Resourcing,0,0,0,0,169,0,0,0,0,169
+EMPLOYMENT AND WORKPLACE RELATIONS,"Seafarers Safety, Rehabilitation and Compensation Authority",Outcome 1,Estimated Actual,0,0,0,0,229,900,0,0,0,1129
+EMPLOYMENT AND WORKPLACE RELATIONS,"Seafarers Safety, Rehabilitation and Compensation Authority",Total,Agency Resourcing,0,0,0,0,169,0,0,0,0,169
+EMPLOYMENT AND WORKPLACE RELATIONS,"Seafarers Safety, Rehabilitation and Compensation Authority",Total,Estimated Actual,0,0,0,0,229,900,0,0,0,1129
+EMPLOYMENT AND WORKPLACE RELATIONS,,PORTFOLIO TOTAL,Agency Resourcing,1263458,69831,458566,0,16034,3912916,0,0,1166317,6887122
+EMPLOYMENT AND WORKPLACE RELATIONS,,PORTFOLIO TOTAL,Estimated Actual,1146406,44320,455563,0,15630,4590306,0,0,1081617,7333842
+FINANCE,Department of Finance,Outcome 1,Agency Resourcing,99247,0,1616,0,0,0,0,0,0,100863
+FINANCE,Department of Finance,Outcome 1,Estimated Actual,107021,0,1915,0,0,0,0,0,0,108936
+FINANCE,Department of Finance,Outcome 2,Agency Resourcing,397685,0,33814,0,66190178,10832,0,0,9569832,76202341
+FINANCE,Department of Finance,Outcome 2,Estimated Actual,256984,0,33689,0,53757806,10699,0,0,9132975,63192153
+FINANCE,Department of Finance,Outcome 3,Agency Resourcing,26622,0,220,0,0,375314,0,0,297455,699611
+FINANCE,Department of Finance,Outcome 3,Estimated Actual,26235,0,219,0,0,399868,0,0,278580,704902
+FINANCE,Department of Finance,Equity Injections,Agency Resourcing,0,765503,0,0,0,0,0,0,0,765503
+FINANCE,Department of Finance,Equity Injections,Estimated Actual,0,547830,0,0,0,0,0,0,0,547830
+FINANCE,Department of Finance,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,799263,0,799263
+FINANCE,Department of Finance,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,449238,0,449238
+FINANCE,Department of Finance,Total,Agency Resourcing,523554,765503,35650,0,66190178,386146,0,799263,9867287,78567581
+FINANCE,Department of Finance,Total,Estimated Actual,390240,547830,35823,0,53757806,410567,0,449238,9411555,65003059
+FINANCE,Commonwealth Superannuation Corporation*,Outcome 1,Agency Resourcing,0,0,0,0,172701,0,0,0,0,172701
+FINANCE,Commonwealth Superannuation Corporation*,Outcome 1,Estimated Actual,0,0,0,0,161646,0,0,0,0,161646
+FINANCE,Commonwealth Superannuation Corporation*,Total,Agency Resourcing,0,0,0,0,172701,0,0,0,0,172701
+FINANCE,Commonwealth Superannuation Corporation*,Total,Estimated Actual,0,0,0,0,161646,0,0,0,0,161646
+FINANCE,Australian Electoral Commission,Outcome 1,Agency Resourcing,782651,0,11038,16116,0,0,0,0,75500,885305
+FINANCE,Australian Electoral Commission,Outcome 1,Estimated Actual,641680,0,11038,14900,0,0,0,0,0,667618
+FINANCE,Australian Electoral Commission,Total,Agency Resourcing,782651,0,11038,16116,0,0,0,0,75500,885305
+FINANCE,Australian Electoral Commission,Total,Estimated Actual,641680,0,11038,14900,0,0,0,0,0,667618
+FINANCE,Digital Transformation Agency,Outcome 1,Agency Resourcing,51701,0,4370,0,395319,0,0,0,0,451390
+FINANCE,Digital Transformation Agency,Outcome 1,Estimated Actual,49717,0,3836,0,414444,0,0,0,0,467997
+FINANCE,Digital Transformation Agency,Total,Agency Resourcing,51701,0,4370,0,395319,0,0,0,0,451390
+FINANCE,Digital Transformation Agency,Total,Estimated Actual,49717,0,3836,0,414444,0,0,0,0,467997
+FINANCE,Future Fund Management Agency,Outcome 1,Agency Resourcing,0,0,0,0,499288,0,0,0,0,499288
+FINANCE,Future Fund Management Agency,Outcome 1,Estimated Actual,0,0,0,0,554852,0,0,0,0,554852
+FINANCE,Future Fund Management Agency,Total,Agency Resourcing,0,0,0,0,499288,0,0,0,0,499288
+FINANCE,Future Fund Management Agency,Total,Estimated Actual,0,0,0,0,554852,0,0,0,0,554852
+FINANCE,Independent Parliamentary Expenses Authority,Outcome 1,Agency Resourcing,10759,0,0,0,0,46562,0,0,35875,93196
+FINANCE,Independent Parliamentary Expenses Authority,Outcome 1,Estimated Actual,9008,0,0,0,0,45604,0,0,35139,89751
+FINANCE,Independent Parliamentary Expenses Authority,Total,Agency Resourcing,10759,0,0,0,0,46562,0,0,35875,93196
+FINANCE,Independent Parliamentary Expenses Authority,Total,Estimated Actual,9008,0,0,0,0,45604,0,0,35139,89751
+FINANCE,Parliamentary Workplace Support Service,Outcome 1,Agency Resourcing,16913,0,0,0,0,0,0,6536,0,23449
+FINANCE,Parliamentary Workplace Support Service,Outcome 1,Estimated Actual,14989,0,0,0,0,0,0,0,0,14989
+FINANCE,Parliamentary Workplace Support Service,Total,Agency Resourcing,16913,0,0,0,0,0,0,6536,0,23449
+FINANCE,Parliamentary Workplace Support Service,Total,Estimated Actual,14989,0,0,0,0,0,0,0,0,14989
+FINANCE,,PORTFOLIO TOTAL,Agency Resourcing,1385578,765503,51058,16116,67257486,432708,0,805799,9978662,80692910
+FINANCE,,PORTFOLIO TOTAL,Estimated Actual,1105634,547830,50697,14900,54888748,456171,0,449238,9446694,66959912
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Outcome 1,Agency Resourcing,1623139,0,131439,0,1000,4877388,0,0,371833,7004799
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Outcome 1,Estimated Actual,1408795,0,131627,0,1000,4632245,0,0,372216,6545883
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Outcome 2,Agency Resourcing,556751,0,0,0,0,750,0,0,2100,559601
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Outcome 2,Estimated Actual,510432,0,0,0,0,750,0,0,2100,513282
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Outcome 3,Agency Resourcing,179446,0,0,0,39698,0,0,0,0,219144
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Outcome 3,Estimated Actual,166240,0,0,0,39309,0,0,0,0,205549
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Equity Injections,Agency Resourcing,0,163416,0,0,0,0,0,0,0,163416
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Equity Injections,Estimated Actual,0,147723,0,0,0,0,0,0,0,147723
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,257503,0,257503
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,26351,0,26351
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Total,Agency Resourcing,2359336,163416,131439,0,40698,4878138,0,257503,373933,8204463
+FOREIGN AFFAIRS AND TRADE,Department of Foreign Affairs and Trade,Total,Estimated Actual,2085467,147723,131627,0,40309,4632995,0,26351,374316,7438788
+FOREIGN AFFAIRS AND TRADE,Tourism Australia*,Outcome 1,Agency Resourcing,150196,0,40761,0,0,0,0,0,0,190957
+FOREIGN AFFAIRS AND TRADE,Tourism Australia*,Outcome 1,Estimated Actual,148291,0,44539,0,0,0,0,0,0,192830
+FOREIGN AFFAIRS AND TRADE,Tourism Australia*,Total,Agency Resourcing,150196,0,40761,0,0,0,0,0,0,190957
+FOREIGN AFFAIRS AND TRADE,Tourism Australia*,Total,Estimated Actual,148291,0,44539,0,0,0,0,0,0,192830
+FOREIGN AFFAIRS AND TRADE,Australian Centre for International Agricultural Research,Outcome 1,Agency Resourcing,10269,0,3074,0,2693,107058,0,0,0,123094
+FOREIGN AFFAIRS AND TRADE,Australian Centre for International Agricultural Research,Outcome 1,Estimated Actual,9599,0,3000,0,8805,103550,0,0,0,124954
+FOREIGN AFFAIRS AND TRADE,Australian Centre for International Agricultural Research,Total,Agency Resourcing,10269,0,3074,0,2693,107058,0,0,0,123094
+FOREIGN AFFAIRS AND TRADE,Australian Centre for International Agricultural Research,Total,Estimated Actual,9599,0,3000,0,8805,103550,0,0,0,124954
+FOREIGN AFFAIRS AND TRADE,Australian Secret Intelligence Service,Outcome 1,Agency Resourcing,458122,0,31123,0,0,0,0,0,0,489245
+FOREIGN AFFAIRS AND TRADE,Australian Secret Intelligence Service,Outcome 1,Estimated Actual,429046,0,32644,0,0,0,0,0,0,461690
+FOREIGN AFFAIRS AND TRADE,Australian Secret Intelligence Service,Equity Injections,Agency Resourcing,0,38382,0,0,0,0,0,0,0,38382
+FOREIGN AFFAIRS AND TRADE,Australian Secret Intelligence Service,Equity Injections,Estimated Actual,0,11632,0,0,0,0,0,0,0,11632
+FOREIGN AFFAIRS AND TRADE,Australian Secret Intelligence Service,Total,Agency Resourcing,458122,38382,31123,0,0,0,0,0,0,527627
+FOREIGN AFFAIRS AND TRADE,Australian Secret Intelligence Service,Total,Estimated Actual,429046,11632,32644,0,0,0,0,0,0,473322
+FOREIGN AFFAIRS AND TRADE,Australian Trade and Investment Commission,Outcome 1,Agency Resourcing,261431,0,22500,0,0,163300,0,0,0,447231
+FOREIGN AFFAIRS AND TRADE,Australian Trade and Investment Commission,Outcome 1,Estimated Actual,267271,0,22500,0,0,187000,0,0,0,476771
+FOREIGN AFFAIRS AND TRADE,Australian Trade and Investment Commission,Outcome 2,Agency Resourcing,11315,0,1000,0,0,0,0,0,0,12315
+FOREIGN AFFAIRS AND TRADE,Australian Trade and Investment Commission,Outcome 2,Estimated Actual,11090,0,1000,0,0,0,0,0,0,12090
+FOREIGN AFFAIRS AND TRADE,Australian Trade and Investment Commission,Equity Injections,Agency Resourcing,0,2533,0,0,0,0,0,0,0,2533
+FOREIGN AFFAIRS AND TRADE,Australian Trade and Investment Commission,Equity Injections,Estimated Actual,0,1583,0,0,0,0,0,0,0,1583
+FOREIGN AFFAIRS AND TRADE,Australian Trade and Investment Commission,Total,Agency Resourcing,272746,2533,23500,0,0,163300,0,0,0,462079
+FOREIGN AFFAIRS AND TRADE,Australian Trade and Investment Commission,Total,Estimated Actual,278361,1583,23500,0,0,187000,0,0,0,490444
+FOREIGN AFFAIRS AND TRADE,,PORTFOLIO TOTAL,Agency Resourcing,3250669,204331,229897,0,43391,5148496,0,257503,373933,9508220
+FOREIGN AFFAIRS AND TRADE,,PORTFOLIO TOTAL,Estimated Actual,2950764,160938,235310,0,49114,4923545,0,26351,374316,8720338
+HEALTH AND AGED CARE,Department of Health and Aged Care,Outcome 1,Agency Resourcing,564424,0,39597,0,227438,7640661,0,0,1886297,10358417
+HEALTH AND AGED CARE,Department of Health and Aged Care,Outcome 1,Estimated Actual,547775,0,28012,0,220414,8197650,0,0,1908070,10901921
+HEALTH AND AGED CARE,Department of Health and Aged Care,Outcome 2,Agency Resourcing,223621,0,0,0,0,1748910,0,0,8076705,10049236
+HEALTH AND AGED CARE,Department of Health and Aged Care,Outcome 2,Estimated Actual,220446,0,0,0,0,1834961,0,0,7894753,9950160
+HEALTH AND AGED CARE,Department of Health and Aged Care,Outcome 3,Agency Resourcing,700089,0,0,0,0,5707233,0,0,31731086,38138408
+HEALTH AND AGED CARE,Department of Health and Aged Care,Outcome 3,Estimated Actual,574903,0,0,0,0,6748392,0,0,28228999,35552294
+HEALTH AND AGED CARE,Department of Health and Aged Care,Outcome 4,Agency Resourcing,13028,0,0,0,0,147358,0,0,0,160386
+HEALTH AND AGED CARE,Department of Health and Aged Care,Outcome 4,Estimated Actual,12172,0,0,0,0,98448,0,0,0,110620
+HEALTH AND AGED CARE,Department of Health and Aged Care,Equity Injections,Agency Resourcing,0,322855,0,0,0,0,0,0,0,322855
+HEALTH AND AGED CARE,Department of Health and Aged Care,Equity Injections,Estimated Actual,0,236501,0,0,0,0,0,0,0,236501
+HEALTH AND AGED CARE,Department of Health and Aged Care,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,65676,0,65676
+HEALTH AND AGED CARE,Department of Health and Aged Care,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,43887,0,43887
+HEALTH AND AGED CARE,Department of Health and Aged Care,Total,Agency Resourcing,1501162,322855,39597,0,227438,15244162,0,65676,41694088,59094978
+HEALTH AND AGED CARE,Department of Health and Aged Care,Total,Estimated Actual,1355296,236501,28012,0,220414,16879451,0,43887,38031822,56795383
+HEALTH AND AGED CARE,Australian Commission on Safety and Quality in Health Care*,Outcome 1,Agency Resourcing,0,0,32698,0,0,0,0,0,0,32698
+HEALTH AND AGED CARE,Australian Commission on Safety and Quality in Health Care*,Outcome 1,Estimated Actual,0,0,45292,0,0,0,0,0,0,45292
+HEALTH AND AGED CARE,Australian Commission on Safety and Quality in Health Care*,Total,Agency Resourcing,0,0,32698,0,0,0,0,0,0,32698
+HEALTH AND AGED CARE,Australian Commission on Safety and Quality in Health Care*,Total,Estimated Actual,0,0,45292,0,0,0,0,0,0,45292
+HEALTH AND AGED CARE,Australian Digital Health Agency*,Outcome 1,Agency Resourcing,285789,0,32250,0,0,0,0,0,0,318039
+HEALTH AND AGED CARE,Australian Digital Health Agency*,Outcome 1,Estimated Actual,269304,0,32250,0,0,0,0,0,0,301554
+HEALTH AND AGED CARE,Australian Digital Health Agency*,Equity Injections,Agency Resourcing,0,45773,0,0,0,0,0,0,0,45773
+HEALTH AND AGED CARE,Australian Digital Health Agency*,Equity Injections,Estimated Actual,0,33321,0,0,0,0,0,0,0,33321
+HEALTH AND AGED CARE,Australian Digital Health Agency*,Total,Agency Resourcing,285789,45773,32250,0,0,0,0,0,0,363812
+HEALTH AND AGED CARE,Australian Digital Health Agency*,Total,Estimated Actual,269304,33321,32250,0,0,0,0,0,0,334875
+HEALTH AND AGED CARE,Australian Institute of Health and Welfare*,Outcome 1,Agency Resourcing,36489,0,77030,0,0,0,0,0,0,113519
+HEALTH AND AGED CARE,Australian Institute of Health and Welfare*,Outcome 1,Estimated Actual,35544,0,77630,0,0,0,0,0,0,113174
+HEALTH AND AGED CARE,Australian Institute of Health and Welfare*,Total,Agency Resourcing,36489,0,77030,0,0,0,0,0,0,113519
+HEALTH AND AGED CARE,Australian Institute of Health and Welfare*,Total,Estimated Actual,35544,0,77630,0,0,0,0,0,0,113174
+HEALTH AND AGED CARE,Australian Sports Commission*,Outcome 1,Agency Resourcing,308602,0,18576,0,0,0,0,0,0,327178
+HEALTH AND AGED CARE,Australian Sports Commission*,Outcome 1,Estimated Actual,351081,0,21111,0,0,0,0,0,0,372192
+HEALTH AND AGED CARE,Australian Sports Commission*,Equity Injections,Agency Resourcing,0,355,0,0,0,0,0,0,0,355
+HEALTH AND AGED CARE,Australian Sports Commission*,Equity Injections,Estimated Actual,0,2882,0,0,0,0,0,0,0,2882
+HEALTH AND AGED CARE,Australian Sports Commission*,Total,Agency Resourcing,308602,355,18576,0,0,0,0,0,0,327533
+HEALTH AND AGED CARE,Australian Sports Commission*,Total,Estimated Actual,351081,2882,21111,0,0,0,0,0,0,375074
+HEALTH AND AGED CARE,Australian Sports Foundation Limited*,Outcome 1,Agency Resourcing,0,0,48200,0,0,0,0,0,0,48200
+HEALTH AND AGED CARE,Australian Sports Foundation Limited*,Outcome 1,Estimated Actual,0,0,48200,0,0,0,0,0,0,48200
+HEALTH AND AGED CARE,Australian Sports Foundation Limited*,Total,Agency Resourcing,0,0,48200,0,0,0,0,0,0,48200
+HEALTH AND AGED CARE,Australian Sports Foundation Limited*,Total,Estimated Actual,0,0,48200,0,0,0,0,0,0,48200
+HEALTH AND AGED CARE,Food Standards Australia New Zealand*,Outcome 1,Agency Resourcing,17855,0,4758,0,0,0,0,0,0,22613
+HEALTH AND AGED CARE,Food Standards Australia New Zealand*,Outcome 1,Estimated Actual,17458,0,5068,0,0,0,0,0,0,22526
+HEALTH AND AGED CARE,Food Standards Australia New Zealand*,Total,Agency Resourcing,17855,0,4758,0,0,0,0,0,0,22613
+HEALTH AND AGED CARE,Food Standards Australia New Zealand*,Total,Estimated Actual,17458,0,5068,0,0,0,0,0,0,22526
+HEALTH AND AGED CARE,Independent Health and Aged Care Pricing Authority*,Outcome 1,Agency Resourcing,0,0,46549,0,0,0,0,0,0,46549
+HEALTH AND AGED CARE,Independent Health and Aged Care Pricing Authority*,Outcome 1,Estimated Actual,0,0,45268,0,0,0,0,0,0,45268
+HEALTH AND AGED CARE,Independent Health and Aged Care Pricing Authority*,Total,Agency Resourcing,0,0,46549,0,0,0,0,0,0,46549
+HEALTH AND AGED CARE,Independent Health and Aged Care Pricing Authority*,Total,Estimated Actual,0,0,45268,0,0,0,0,0,0,45268
+HEALTH AND AGED CARE,Aged Care Quality and Safety Commission,Outcome 1,Agency Resourcing,314900,0,17351,0,0,0,0,0,0,332251
+HEALTH AND AGED CARE,Aged Care Quality and Safety Commission,Outcome 1,Estimated Actual,271726,0,18271,0,0,0,0,0,0,289997
+HEALTH AND AGED CARE,Aged Care Quality and Safety Commission,Equity Injections,Agency Resourcing,0,150,0,0,0,0,0,0,0,150
+HEALTH AND AGED CARE,Aged Care Quality and Safety Commission,Equity Injections,Estimated Actual,0,850,0,0,0,0,0,0,0,850
+HEALTH AND AGED CARE,Aged Care Quality and Safety Commission,Total,Agency Resourcing,314900,150,17351,0,0,0,0,0,0,332401
+HEALTH AND AGED CARE,Aged Care Quality and Safety Commission,Total,Estimated Actual,271726,850,18271,0,0,0,0,0,0,290847
+HEALTH AND AGED CARE,Australian National Preventive Health Agency,Total,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+HEALTH AND AGED CARE,Australian National Preventive Health Agency,Total,Estimated Actual,0,0,0,0,0,0,0,0,0,0
+HEALTH AND AGED CARE,Australian Organ and Tissue Donation and Transplantation Authority,Outcome 1,Agency Resourcing,7187,0,0,0,0,51906,0,0,0,59093
+HEALTH AND AGED CARE,Australian Organ and Tissue Donation and Transplantation Authority,Outcome 1,Estimated Actual,7037,0,0,0,0,51066,0,0,0,58103
+HEALTH AND AGED CARE,Australian Organ and Tissue Donation and Transplantation Authority,Total,Agency Resourcing,7187,0,0,0,0,51906,0,0,0,59093
+HEALTH AND AGED CARE,Australian Organ and Tissue Donation and Transplantation Authority,Total,Estimated Actual,7037,0,0,0,0,51066,0,0,0,58103
+HEALTH AND AGED CARE,Australian Radiation Protection and Nuclear Safety Agency,Outcome 1,Agency Resourcing,26151,0,0,0,14993,0,0,0,0,41144
+HEALTH AND AGED CARE,Australian Radiation Protection and Nuclear Safety Agency,Outcome 1,Estimated Actual,28547,0,0,0,13424,0,0,0,0,41971
+HEALTH AND AGED CARE,Australian Radiation Protection and Nuclear Safety Agency,Equity Injections,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+HEALTH AND AGED CARE,Australian Radiation Protection and Nuclear Safety Agency,Equity Injections,Estimated Actual,0,10468,0,0,0,0,0,0,0,10468
+HEALTH AND AGED CARE,Australian Radiation Protection and Nuclear Safety Agency,Total,Agency Resourcing,26151,0,0,0,14993,0,0,0,0,41144
+HEALTH AND AGED CARE,Australian Radiation Protection and Nuclear Safety Agency,Total,Estimated Actual,28547,10468,0,0,13424,0,0,0,0,52439
+HEALTH AND AGED CARE,Cancer Australia,Outcome 1,Agency Resourcing,14194,0,421,0,0,34362,0,0,0,48977
+HEALTH AND AGED CARE,Cancer Australia,Outcome 1,Estimated Actual,13407,0,1763,0,0,24743,0,0,0,39913
+HEALTH AND AGED CARE,Cancer Australia,Total,Agency Resourcing,14194,0,421,0,0,34362,0,0,0,48977
+HEALTH AND AGED CARE,Cancer Australia,Total,Estimated Actual,13407,0,1763,0,0,24743,0,0,0,39913
+HEALTH AND AGED CARE,National Blood Authority,Outcome 1,Agency Resourcing,9102,0,0,0,1872164,8429,0,0,0,1889695
+HEALTH AND AGED CARE,National Blood Authority,Outcome 1,Estimated Actual,6322,0,0,0,1714362,5829,0,0,0,1726513
+HEALTH AND AGED CARE,National Blood Authority,Total,Agency Resourcing,9102,0,0,0,1872164,8429,0,0,0,1889695
+HEALTH AND AGED CARE,National Blood Authority,Total,Estimated Actual,6322,0,0,0,1714362,5829,0,0,0,1726513
+HEALTH AND AGED CARE,National Health and Medical Research Council,Outcome 1,Agency Resourcing,38438,0,12620,0,10000,953872,0,0,0,1014930
+HEALTH AND AGED CARE,National Health and Medical Research Council,Outcome 1,Estimated Actual,37599,0,13100,0,10000,923780,0,0,0,984479
+HEALTH AND AGED CARE,National Health and Medical Research Council,Total,Agency Resourcing,38438,0,12620,0,10000,953872,0,0,0,1014930
+HEALTH AND AGED CARE,National Health and Medical Research Council,Total,Estimated Actual,37599,0,13100,0,10000,923780,0,0,0,984479
+HEALTH AND AGED CARE,National Health Funding Body,Outcome 1,Agency Resourcing,6879,0,0,0,0,0,0,0,0,6879
+HEALTH AND AGED CARE,National Health Funding Body,Outcome 1,Estimated Actual,7456,0,0,0,0,0,0,0,0,7456
+HEALTH AND AGED CARE,National Health Funding Body,Total,Agency Resourcing,6879,0,0,0,0,0,0,0,0,6879
+HEALTH AND AGED CARE,National Health Funding Body,Total,Estimated Actual,7456,0,0,0,0,0,0,0,0,7456
+HEALTH AND AGED CARE,National Mental Health Commission,Outcome 1,Agency Resourcing,2851,0,321,0,0,1494,0,0,0,4666
+HEALTH AND AGED CARE,National Mental Health Commission,Outcome 1,Estimated Actual,11147,0,285,0,0,5783,0,0,0,17215
+HEALTH AND AGED CARE,National Mental Health Commission,Total,Agency Resourcing,2851,0,321,0,0,1494,0,0,0,4666
+HEALTH AND AGED CARE,National Mental Health Commission,Total,Estimated Actual,11147,0,285,0,0,5783,0,0,0,17215
+HEALTH AND AGED CARE,Office of the Inspector-General of Aged Care,Outcome 1,Agency Resourcing,6987,0,0,0,0,0,0,0,0,6987
+HEALTH AND AGED CARE,Office of the Inspector-General of Aged Care,Outcome 1,Estimated Actual,6308,0,0,0,0,0,0,0,0,6308
+HEALTH AND AGED CARE,Office of the Inspector-General of Aged Care,Equity Injections,Agency Resourcing,0,1900,0,0,0,0,0,0,0,1900
+HEALTH AND AGED CARE,Office of the Inspector-General of Aged Care,Equity Injections,Estimated Actual,0,3331,0,0,0,0,0,0,0,3331
+HEALTH AND AGED CARE,Office of the Inspector-General of Aged Care,Total,Agency Resourcing,6987,1900,0,0,0,0,0,0,0,8887
+HEALTH AND AGED CARE,Office of the Inspector-General of Aged Care,Total,Estimated Actual,6308,3331,0,0,0,0,0,0,0,9639
+HEALTH AND AGED CARE,Professional Services Review,Outcome 1,Agency Resourcing,16182,0,0,0,0,0,0,0,0,16182
+HEALTH AND AGED CARE,Professional Services Review,Outcome 1,Estimated Actual,15841,0,0,0,0,0,0,0,0,15841
+HEALTH AND AGED CARE,Professional Services Review,Total,Agency Resourcing,16182,0,0,0,0,0,0,0,0,16182
+HEALTH AND AGED CARE,Professional Services Review,Total,Estimated Actual,15841,0,0,0,0,0,0,0,0,15841
+HEALTH AND AGED CARE,Sport Integrity Australia,Outcome 1,Agency Resourcing,42783,0,1986,0,0,4684,0,0,0,49453
+HEALTH AND AGED CARE,Sport Integrity Australia,Outcome 1,Estimated Actual,37407,0,1986,0,0,6752,0,0,0,46145
+HEALTH AND AGED CARE,Sport Integrity Australia,Total,Agency Resourcing,42783,0,1986,0,0,4684,0,0,0,49453
+HEALTH AND AGED CARE,Sport Integrity Australia,Total,Estimated Actual,37407,0,1986,0,0,6752,0,0,0,46145
+HEALTH AND AGED CARE,,PORTFOLIO TOTAL,Agency Resourcing,2635551,371033,332357,0,2124595,16298909,0,65676,41694088,63522209
+HEALTH AND AGED CARE,,PORTFOLIO TOTAL,Estimated Actual,2471480,287353,338236,0,1958200,17897404,0,43887,38031822,61028382
+HOME AFFAIRS,Department of Home Affairs,Outcome 1,Agency Resourcing,263380,0,33636,0,0,117769,0,0,0,414785
+HOME AFFAIRS,Department of Home Affairs,Outcome 1,Estimated Actual,255349,0,45644,0,0,119244,0,0,375,420612
+HOME AFFAIRS,Department of Home Affairs,Outcome 2,Agency Resourcing,1143104,0,123067,0,0,1204559,0,0,0,2470730
+HOME AFFAIRS,Department of Home Affairs,Outcome 2,Estimated Actual,1081965,0,134017,0,0,1263869,0,0,0,2479851
+HOME AFFAIRS,Department of Home Affairs,Outcome 3,Agency Resourcing,2279408,0,99667,0,0,750810,0,0,700000,3829885
+HOME AFFAIRS,Department of Home Affairs,Outcome 3,Estimated Actual,2058082,0,88457,0,0,818941,0,0,850000,3815480
+HOME AFFAIRS,Department of Home Affairs,Equity Injections,Agency Resourcing,0,113898,0,0,0,0,0,0,0,113898
+HOME AFFAIRS,Department of Home Affairs,Equity Injections,Estimated Actual,0,95344,0,0,0,0,0,0,0,95344
+HOME AFFAIRS,Department of Home Affairs,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,16401,0,16401
+HOME AFFAIRS,Department of Home Affairs,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,2083,0,2083
+HOME AFFAIRS,Department of Home Affairs,Total,Agency Resourcing,3685892,113898,256370,0,0,2073138,0,16401,700000,6845699
+HOME AFFAIRS,Department of Home Affairs,Total,Estimated Actual,3395396,95344,268118,0,0,2202054,0,2083,850375,6813370
+HOME AFFAIRS,Australian Security Intelligence Organisation,Outcome 1,Agency Resourcing,657733,0,20833,0,0,0,0,0,0,678566
+HOME AFFAIRS,Australian Security Intelligence Organisation,Outcome 1,Estimated Actual,597907,0,22727,0,0,0,0,0,0,620634
+HOME AFFAIRS,Australian Security Intelligence Organisation,Equity Injections,Agency Resourcing,0,87053,0,0,0,0,0,0,0,87053
+HOME AFFAIRS,Australian Security Intelligence Organisation,Equity Injections,Estimated Actual,0,71110,0,0,0,0,0,0,0,71110
+HOME AFFAIRS,Australian Security Intelligence Organisation,Total,Agency Resourcing,657733,87053,20833,0,0,0,0,0,0,765619
+HOME AFFAIRS,Australian Security Intelligence Organisation,Total,Estimated Actual,597907,71110,22727,0,0,0,0,0,0,691744
+HOME AFFAIRS,National Emergency Management Agency,Outcome 1,Agency Resourcing,130635,0,0,0,0,105090,0,0,11000,246725
+HOME AFFAIRS,National Emergency Management Agency,Outcome 1,Estimated Actual,133498,0,0,0,0,177950,0,0,85470,396918
+HOME AFFAIRS,National Emergency Management Agency,Equity Injections,Agency Resourcing,0,791,0,0,0,0,0,0,0,791
+HOME AFFAIRS,National Emergency Management Agency,Equity Injections,Estimated Actual,0,2823,0,0,0,0,0,0,0,2823
+HOME AFFAIRS,National Emergency Management Agency,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,15420,0,15420
+HOME AFFAIRS,National Emergency Management Agency,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,57715,0,57715
+HOME AFFAIRS,National Emergency Management Agency,Total,Agency Resourcing,130635,791,0,0,0,105090,0,15420,11000,262936
+HOME AFFAIRS,National Emergency Management Agency,Total,Estimated Actual,133498,2823,0,0,0,177950,0,57715,85470,457456
+HOME AFFAIRS,,PORTFOLIO TOTAL,Agency Resourcing,4474260,201742,277203,0,0,2178228,0,31821,711000,7874254
+HOME AFFAIRS,,PORTFOLIO TOTAL,Estimated Actual,4126801,169277,290845,0,0,2380004,0,59798,935845,7962570
+"INDUSTRY, SCIENCE AND RESOURCES","Department of Industry, Science and Resources",Outcome 1,Agency Resourcing,678049,0,96265,0,66072,1313405,0,0,32603,2186394
+"INDUSTRY, SCIENCE AND RESOURCES","Department of Industry, Science and Resources",Outcome 1,Estimated Actual,638256,0,115130,0,55914,1827087,0,0,39020,2675407
+"INDUSTRY, SCIENCE AND RESOURCES","Department of Industry, Science and Resources",Equity Injections,Agency Resourcing,0,73848,0,0,0,0,0,0,0,73848
+"INDUSTRY, SCIENCE AND RESOURCES","Department of Industry, Science and Resources",Equity Injections,Estimated Actual,0,30235,0,0,0,0,0,0,0,30235
+"INDUSTRY, SCIENCE AND RESOURCES","Department of Industry, Science and Resources",Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,70,0,70
+"INDUSTRY, SCIENCE AND RESOURCES","Department of Industry, Science and Resources",Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,16650,0,16650
+"INDUSTRY, SCIENCE AND RESOURCES","Department of Industry, Science and Resources",Total,Agency Resourcing,678049,73848,96265,0,66072,1313405,0,70,32603,2260312
+"INDUSTRY, SCIENCE AND RESOURCES","Department of Industry, Science and Resources",Total,Estimated Actual,638256,30235,115130,0,55914,1827087,0,16650,39020,2722292
+"INDUSTRY, SCIENCE AND RESOURCES",Australian Nuclear Science and Technology Organisation*,Outcome 1,Agency Resourcing,324464,0,149292,0,0,0,0,0,0,473756
+"INDUSTRY, SCIENCE AND RESOURCES",Australian Nuclear Science and Technology Organisation*,Outcome 1,Estimated Actual,262527,0,171172,0,0,0,0,0,0,433699
+"INDUSTRY, SCIENCE AND RESOURCES",Australian Nuclear Science and Technology Organisation*,Equity Injections,Agency Resourcing,0,70711,0,0,0,0,0,0,0,70711
+"INDUSTRY, SCIENCE AND RESOURCES",Australian Nuclear Science and Technology Organisation*,Equity Injections,Estimated Actual,0,117011,0,0,0,0,0,0,0,117011
+"INDUSTRY, SCIENCE AND RESOURCES",Australian Nuclear Science and Technology Organisation*,Total,Agency Resourcing,324464,70711,149292,0,0,0,0,0,0,544467
+"INDUSTRY, SCIENCE AND RESOURCES",Australian Nuclear Science and Technology Organisation*,Total,Estimated Actual,262527,117011,171172,0,0,0,0,0,0,550710
+"INDUSTRY, SCIENCE AND RESOURCES",Commonwealth Scientific and Industrial Research Organisation*,Outcome 1,Agency Resourcing,916459,0,686665,0,0,0,0,0,0,1603124
+"INDUSTRY, SCIENCE AND RESOURCES",Commonwealth Scientific and Industrial Research Organisation*,Outcome 1,Estimated Actual,1008739,0,619707,0,0,0,0,0,0,1628446
+"INDUSTRY, SCIENCE AND RESOURCES",Commonwealth Scientific and Industrial Research Organisation*,Equity Injections,Agency Resourcing,0,50100,0,0,0,0,0,0,0,50100
+"INDUSTRY, SCIENCE AND RESOURCES",Commonwealth Scientific and Industrial Research Organisation*,Equity Injections,Estimated Actual,0,50700,0,0,0,0,0,0,0,50700
+"INDUSTRY, SCIENCE AND RESOURCES",Commonwealth Scientific and Industrial Research Organisation*,Total,Agency Resourcing,916459,50100,686665,0,0,0,0,0,0,1653224
+"INDUSTRY, SCIENCE AND RESOURCES",Commonwealth Scientific and Industrial Research Organisation*,Total,Estimated Actual,1008739,50700,619707,0,0,0,0,0,0,1679146
+"INDUSTRY, SCIENCE AND RESOURCES",National Offshore Petroleum Safety and Environmental Management Authority*,Outcome 1,Agency Resourcing,21306,0,37481,0,0,0,0,0,0,58787
+"INDUSTRY, SCIENCE AND RESOURCES",National Offshore Petroleum Safety and Environmental Management Authority*,Outcome 1,Estimated Actual,9229,0,38892,0,0,0,0,0,0,48121
+"INDUSTRY, SCIENCE AND RESOURCES",National Offshore Petroleum Safety and Environmental Management Authority*,Total,Agency Resourcing,21306,0,37481,0,0,0,0,0,0,58787
+"INDUSTRY, SCIENCE AND RESOURCES",National Offshore Petroleum Safety and Environmental Management Authority*,Total,Estimated Actual,9229,0,38892,0,0,0,0,0,0,48121
+"INDUSTRY, SCIENCE AND RESOURCES",National Reconstruction Fund Corporation*,Outcome 1,Agency Resourcing,18000,0,11116,0,0,0,0,0,0,29116
+"INDUSTRY, SCIENCE AND RESOURCES",National Reconstruction Fund Corporation*,Outcome 1,Estimated Actual,39016,0,0,0,0,0,0,0,0,39016
+"INDUSTRY, SCIENCE AND RESOURCES",National Reconstruction Fund Corporation*,Equity Injections,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+"INDUSTRY, SCIENCE AND RESOURCES",National Reconstruction Fund Corporation*,Equity Injections,Estimated Actual,0,14200,0,0,0,0,0,0,0,14200
+"INDUSTRY, SCIENCE AND RESOURCES",National Reconstruction Fund Corporation*,Total,Agency Resourcing,18000,0,11116,0,0,0,0,0,0,29116
+"INDUSTRY, SCIENCE AND RESOURCES",National Reconstruction Fund Corporation*,Total,Estimated Actual,39016,14200,0,0,0,0,0,0,0,53216
+"INDUSTRY, SCIENCE AND RESOURCES",Geoscience Australia,Outcome 1,Agency Resourcing,345272,0,37183,0,0,19,0,0,0,382474
+"INDUSTRY, SCIENCE AND RESOURCES",Geoscience Australia,Outcome 1,Estimated Actual,332093,0,42930,0,0,19,0,0,0,375042
+"INDUSTRY, SCIENCE AND RESOURCES",Geoscience Australia,Equity Injections,Agency Resourcing,0,9945,0,0,0,0,0,0,0,9945
+"INDUSTRY, SCIENCE AND RESOURCES",Geoscience Australia,Equity Injections,Estimated Actual,0,13063,0,0,0,0,0,0,0,13063
+"INDUSTRY, SCIENCE AND RESOURCES",Geoscience Australia,Total,Agency Resourcing,345272,9945,37183,0,0,19,0,0,0,392419
+"INDUSTRY, SCIENCE AND RESOURCES",Geoscience Australia,Total,Estimated Actual,332093,13063,42930,0,0,19,0,0,0,388105
+"INDUSTRY, SCIENCE AND RESOURCES",IP Australia,Outcome 1,Agency Resourcing,380,0,0,0,278538,0,0,0,0,278918
+"INDUSTRY, SCIENCE AND RESOURCES",IP Australia,Outcome 1,Estimated Actual,371,0,0,0,257840,0,0,0,0,258211
+"INDUSTRY, SCIENCE AND RESOURCES",IP Australia,Total,Agency Resourcing,380,0,0,0,278538,0,0,0,0,278918
+"INDUSTRY, SCIENCE AND RESOURCES",IP Australia,Total,Estimated Actual,371,0,0,0,257840,0,0,0,0,258211
+"INDUSTRY, SCIENCE AND RESOURCES",,PORTFOLIO TOTAL,Agency Resourcing,2303930,204604,1018002,0,344610,1313424,0,70,32603,5217243
+"INDUSTRY, SCIENCE AND RESOURCES",,PORTFOLIO TOTAL,Estimated Actual,2290231,225209,987831,0,313754,1827106,0,16650,39020,5699801
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 1,Agency Resourcing,86423,0,0,0,0,21128,649516,0,0,757067
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 1,Estimated Actual,81698,0,0,0,0,85153,485306,0,100,652257
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 2,Agency Resourcing,205301,0,3612,0,0,429004,0,0,268502,906419
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 2,Estimated Actual,138405,0,3612,0,0,415066,0,0,258773,815856
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 3,Agency Resourcing,83532,0,0,0,0,1095487,269721,0,3943308,5392048
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 3,Estimated Actual,83945,0,0,0,0,904789,375346,0,795881,2159961
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 4,Agency Resourcing,30816,0,0,0,20516,221491,0,0,50,272873
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 4,Estimated Actual,35340,0,0,0,20365,270116,0,0,50,325871
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 5,Agency Resourcing,94816,0,2049,0,0,389401,0,0,0,486266
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 5,Estimated Actual,89633,0,2560,0,0,401664,0,0,100,493957
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 6,Agency Resourcing,53029,0,4554,0,3876,313986,0,0,0,375445
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Outcome 6,Estimated Actual,55673,0,4554,0,3876,293450,0,0,0,357553
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,3654178,0,3654178
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,3489071,0,3489071
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Total,Agency Resourcing,553917,0,10215,0,24392,2470497,919237,3654178,4211860,11844296
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Department of Infrastructure, Transport, Regional Development, Communications and the Arts",Total,Estimated Actual,484694,0,10726,0,24241,2370238,860652,3489071,1054904,8294526
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Broadcasting Corporation*,Outcome 1,Agency Resourcing,1196101,0,90654,0,0,0,0,0,0,1286755
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Broadcasting Corporation*,Outcome 1,Estimated Actual,1137568,0,98472,0,0,0,0,0,0,1236040
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Broadcasting Corporation*,Total,Agency Resourcing,1196101,0,90654,0,0,0,0,0,0,1286755
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Broadcasting Corporation*,Total,Estimated Actual,1137568,0,98472,0,0,0,0,0,0,1236040
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Australian Film, Television and Radio School*",Outcome 1,Agency Resourcing,27944,0,10398,0,0,0,0,0,0,38342
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Australian Film, Television and Radio School*",Outcome 1,Estimated Actual,24283,0,9472,0,0,0,0,0,0,33755
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Australian Film, Television and Radio School*",Total,Agency Resourcing,27944,0,10398,0,0,0,0,0,0,38342
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS","Australian Film, Television and Radio School*",Total,Estimated Actual,24283,0,9472,0,0,0,0,0,0,33755
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Maritime Safety Authority*,Outcome 1,Agency Resourcing,86218,0,157317,0,0,0,0,0,0,243535
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Maritime Safety Authority*,Outcome 1,Estimated Actual,102278,0,152526,0,0,0,0,0,0,254804
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Maritime Safety Authority*,Total,Agency Resourcing,86218,0,157317,0,0,0,0,0,0,243535
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Maritime Safety Authority*,Total,Estimated Actual,102278,0,152526,0,0,0,0,0,0,254804
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian National Maritime Museum*,Outcome 1,Agency Resourcing,24882,0,10508,0,0,0,0,0,0,35390
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian National Maritime Museum*,Outcome 1,Estimated Actual,27029,0,10411,0,0,0,0,0,0,37440
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian National Maritime Museum*,Equity Injections,Agency Resourcing,0,4608,0,0,0,0,0,0,0,4608
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian National Maritime Museum*,Equity Injections,Estimated Actual,0,3895,0,0,0,0,0,0,0,3895
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian National Maritime Museum*,Total,Agency Resourcing,24882,4608,10508,0,0,0,0,0,0,39998
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian National Maritime Museum*,Total,Estimated Actual,27029,3895,10411,0,0,0,0,0,0,41335
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Bundanon Trust*,Outcome 1,Agency Resourcing,0,0,13736,0,0,0,0,0,0,13736
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Bundanon Trust*,Outcome 1,Estimated Actual,0,0,12365,0,0,0,0,0,0,12365
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Bundanon Trust*,Total,Agency Resourcing,0,0,13736,0,0,0,0,0,0,13736
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Bundanon Trust*,Total,Estimated Actual,0,0,12365,0,0,0,0,0,0,12365
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Civil Aviation Safety Authority*,Outcome 1,Agency Resourcing,41494,0,149714,0,0,0,0,0,0,191208
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Civil Aviation Safety Authority*,Outcome 1,Estimated Actual,107602,0,140410,0,0,0,0,0,0,248012
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Civil Aviation Safety Authority*,Total,Agency Resourcing,41494,0,149714,0,0,0,0,0,0,191208
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Civil Aviation Safety Authority*,Total,Estimated Actual,107602,0,140410,0,0,0,0,0,0,248012
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Creative Australia*,Outcome 1,Agency Resourcing,289649,0,5439,0,0,0,0,0,0,295088
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Creative Australia*,Outcome 1,Estimated Actual,257974,0,11902,0,0,0,0,0,0,269876
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Creative Australia*,Total,Agency Resourcing,289649,0,5439,0,0,0,0,0,0,295088
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Creative Australia*,Total,Estimated Actual,257974,0,11902,0,0,0,0,0,0,269876
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",High Speed Rail Authority*,Outcome 1,Agency Resourcing,55102,0,0,0,0,0,0,0,0,55102
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",High Speed Rail Authority*,Outcome 1,Estimated Actual,29231,0,4447,0,0,0,0,0,0,33678
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",High Speed Rail Authority*,Total,Agency Resourcing,55102,0,0,0,0,0,0,0,0,55102
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",High Speed Rail Authority*,Total,Estimated Actual,29231,0,4447,0,0,0,0,0,0,33678
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Infrastructure Australia*,Outcome 1,Agency Resourcing,13247,0,183,0,0,0,0,0,0,13430
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Infrastructure Australia*,Outcome 1,Estimated Actual,12961,0,271,0,0,0,0,0,0,13232
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Infrastructure Australia*,Total,Agency Resourcing,13247,0,183,0,0,0,0,0,0,13430
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Infrastructure Australia*,Total,Estimated Actual,12961,0,271,0,0,0,0,0,0,13232
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Film and Sound Archive of Australia*,Outcome 1,Agency Resourcing,40839,0,2549,0,0,0,0,0,0,43388
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Film and Sound Archive of Australia*,Outcome 1,Estimated Actual,37270,0,4607,0,0,0,0,0,0,41877
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Film and Sound Archive of Australia*,Equity Injections,Agency Resourcing,0,6983,0,0,0,0,0,0,0,6983
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Film and Sound Archive of Australia*,Equity Injections,Estimated Actual,0,9813,0,0,0,0,0,0,0,9813
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Film and Sound Archive of Australia*,Total,Agency Resourcing,40839,6983,2549,0,0,0,0,0,0,50371
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Film and Sound Archive of Australia*,Total,Estimated Actual,37270,9813,4607,0,0,0,0,0,0,51690
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Gallery of Australia*,Outcome 1,Agency Resourcing,69917,0,20482,0,0,0,0,0,0,90399
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Gallery of Australia*,Outcome 1,Estimated Actual,66003,0,20723,0,0,0,0,0,0,86726
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Gallery of Australia*,Equity Injections,Agency Resourcing,0,42243,0,0,0,0,0,0,0,42243
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Gallery of Australia*,Equity Injections,Estimated Actual,0,28814,0,0,0,0,0,0,0,28814
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Gallery of Australia*,Total,Agency Resourcing,69917,42243,20482,0,0,0,0,0,0,132642
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Gallery of Australia*,Total,Estimated Actual,66003,28814,20723,0,0,0,0,0,0,115540
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Library of Australia*,Outcome 1,Agency Resourcing,86219,0,14187,0,0,0,0,0,0,100406
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Library of Australia*,Outcome 1,Estimated Actual,75948,0,19036,0,0,0,0,0,0,94984
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Library of Australia*,Equity Injections,Agency Resourcing,0,26733,0,0,0,0,0,0,0,26733
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Library of Australia*,Equity Injections,Estimated Actual,0,18343,0,0,0,0,0,0,0,18343
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Library of Australia*,Total,Agency Resourcing,86219,26733,14187,0,0,0,0,0,0,127139
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Library of Australia*,Total,Estimated Actual,75948,18343,19036,0,0,0,0,0,0,113327
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Museum of Australia*,Outcome 1,Agency Resourcing,55192,0,10946,0,0,0,0,0,0,66138
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Museum of Australia*,Outcome 1,Estimated Actual,53768,0,12789,0,0,0,0,0,0,66557
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Museum of Australia*,Equity Injections,Agency Resourcing,0,12140,0,0,0,0,0,0,0,12140
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Museum of Australia*,Equity Injections,Estimated Actual,0,10838,0,0,0,0,0,0,0,10838
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Museum of Australia*,Total,Agency Resourcing,55192,12140,10946,0,0,0,0,0,0,78278
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Museum of Australia*,Total,Estimated Actual,53768,10838,12789,0,0,0,0,0,0,77395
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Portrait Gallery of Australia*,Outcome 1,Agency Resourcing,19181,0,4396,0,0,0,0,0,0,23577
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Portrait Gallery of Australia*,Outcome 1,Estimated Actual,18648,0,4330,0,0,0,0,0,0,22978
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Portrait Gallery of Australia*,Equity Injections,Agency Resourcing,0,211,0,0,0,0,0,0,0,211
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Portrait Gallery of Australia*,Equity Injections,Estimated Actual,0,205,0,0,0,0,0,0,0,205
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Portrait Gallery of Australia*,Total,Agency Resourcing,19181,211,4396,0,0,0,0,0,0,23788
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Portrait Gallery of Australia*,Total,Estimated Actual,18648,205,4330,0,0,0,0,0,0,23183
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Transport Commission*,Outcome 1,Agency Resourcing,6746,0,12804,0,0,0,0,0,0,19550
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Transport Commission*,Outcome 1,Estimated Actual,7033,0,13239,0,0,0,0,0,0,20272
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Transport Commission*,Total,Agency Resourcing,6746,0,12804,0,0,0,0,0,0,19550
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Transport Commission*,Total,Estimated Actual,7033,0,13239,0,0,0,0,0,0,20272
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Northern Australia Infrastructure Facility*,Outcome 1,Agency Resourcing,21782,0,0,0,0,0,0,0,0,21782
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Northern Australia Infrastructure Facility*,Outcome 1,Estimated Actual,21295,0,250,0,0,0,0,0,0,21545
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Northern Australia Infrastructure Facility*,Total,Agency Resourcing,21782,0,0,0,0,0,0,0,0,21782
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Northern Australia Infrastructure Facility*,Total,Estimated Actual,21295,0,250,0,0,0,0,0,0,21545
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Old Parliament House*,Outcome 1,Agency Resourcing,22290,0,3834,0,0,0,0,0,0,26124
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Old Parliament House*,Outcome 1,Estimated Actual,21702,0,3759,0,0,0,0,0,0,25461
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Old Parliament House*,Equity Injections,Agency Resourcing,0,5318,0,0,0,0,0,0,0,5318
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Old Parliament House*,Equity Injections,Estimated Actual,0,6572,0,0,0,0,0,0,0,6572
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Old Parliament House*,Total,Agency Resourcing,22290,5318,3834,0,0,0,0,0,0,31442
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Old Parliament House*,Total,Estimated Actual,21702,6572,3759,0,0,0,0,0,0,32033
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Screen Australia*,Outcome 1,Agency Resourcing,13226,0,80974,0,0,0,0,0,0,94200
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Screen Australia*,Outcome 1,Estimated Actual,12890,0,79864,0,0,0,0,0,0,92754
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Screen Australia*,Total,Agency Resourcing,13226,0,80974,0,0,0,0,0,0,94200
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Screen Australia*,Total,Estimated Actual,12890,0,79864,0,0,0,0,0,0,92754
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Special Broadcasting Service Corporation*,Outcome 1,Agency Resourcing,348352,0,155773,0,0,0,0,0,0,504125
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Special Broadcasting Service Corporation*,Outcome 1,Estimated Actual,334939,0,156738,0,0,0,0,0,0,491677
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Special Broadcasting Service Corporation*,Total,Agency Resourcing,348352,0,155773,0,0,0,0,0,0,504125
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Special Broadcasting Service Corporation*,Total,Estimated Actual,334939,0,156738,0,0,0,0,0,0,491677
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Communications and Media Authority,Outcome 1,Agency Resourcing,170697,0,100,0,50,2000,0,0,8300,181147
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Communications and Media Authority,Outcome 1,Estimated Actual,159388,0,100,0,50,6020,0,0,26600,192158
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Communications and Media Authority,Equity Injections,Agency Resourcing,0,0,0,0,0,0,0,0,0,0
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Communications and Media Authority,Equity Injections,Estimated Actual,0,2000,0,0,0,0,0,0,0,2000
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Communications and Media Authority,Total,Agency Resourcing,170697,0,100,0,50,2000,0,0,8300,181147
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Communications and Media Authority,Total,Estimated Actual,159388,2000,100,0,50,6020,0,0,26600,194158
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Transport Safety Bureau,Outcome 1,Agency Resourcing,26691,0,1469,0,0,0,0,0,0,28160
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Transport Safety Bureau,Outcome 1,Estimated Actual,26641,0,1469,0,0,0,0,0,0,28110
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Transport Safety Bureau,Total,Agency Resourcing,26691,0,1469,0,0,0,0,0,0,28160
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",Australian Transport Safety Bureau,Total,Estimated Actual,26641,0,1469,0,0,0,0,0,0,28110
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Archives of Australia,Outcome 1,Agency Resourcing,93558,0,2204,0,0,0,0,0,0,95762
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Archives of Australia,Outcome 1,Estimated Actual,92337,0,2140,0,0,0,0,0,0,94477
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Archives of Australia,Equity Injections,Agency Resourcing,0,12075,0,0,0,0,0,0,0,12075
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Archives of Australia,Equity Injections,Estimated Actual,0,7300,0,0,0,0,0,0,0,7300
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Archives of Australia,Total,Agency Resourcing,93558,12075,2204,0,0,0,0,0,0,107837
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Archives of Australia,Total,Estimated Actual,92337,7300,2140,0,0,0,0,0,0,101777
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Capital Authority,Outcome 1,Agency Resourcing,11045,0,3565,0,0,36606,0,0,25,51241
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Capital Authority,Outcome 1,Estimated Actual,11576,0,4562,0,0,34013,0,0,25,50176
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Capital Authority,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,12758,0,12758
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Capital Authority,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,99215,0,99215
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Capital Authority,Total,Agency Resourcing,11045,0,3565,0,0,36606,0,12758,25,63999
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",National Capital Authority,Total,Estimated Actual,11576,0,4562,0,0,34013,0,99215,25,149391
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",,PORTFOLIO TOTAL,Agency Resourcing,3274289,110311,761447,0,24442,2509103,919237,3666936,4220185,15485950
+"INFRASTRUCTURE, TRANSPORT, REGIONAL DEVELOPMENT, COMMUNICATIONS AND THE ARTS",,PORTFOLIO TOTAL,Estimated Actual,3123058,87780,774608,0,24291,2410271,860652,3588286,1081529,11950475
+PRIME MINISTER AND CABINET,Department of the Prime Minister and Cabinet,Outcome 1,Agency Resourcing,285508,0,36479,0,0,55099,0,0,10,377096
+PRIME MINISTER AND CABINET,Department of the Prime Minister and Cabinet,Outcome 1,Estimated Actual,307057,0,33975,0,0,56691,0,0,10,397733
+PRIME MINISTER AND CABINET,Department of the Prime Minister and Cabinet,Total,Agency Resourcing,285508,0,36479,0,0,55099,0,0,10,377096
+PRIME MINISTER AND CABINET,Department of the Prime Minister and Cabinet,Total,Estimated Actual,307057,0,33975,0,0,56691,0,0,10,397733
+PRIME MINISTER AND CABINET,Aboriginal Hostels Limited*,Outcome 1,Agency Resourcing,44416,0,25661,0,0,0,0,0,0,70077
+PRIME MINISTER AND CABINET,Aboriginal Hostels Limited*,Outcome 1,Estimated Actual,43092,0,25744,0,0,0,0,0,0,68836
+PRIME MINISTER AND CABINET,Aboriginal Hostels Limited*,Equity Injections,Agency Resourcing,0,2357,0,0,0,0,0,0,0,2357
+PRIME MINISTER AND CABINET,Aboriginal Hostels Limited*,Equity Injections,Estimated Actual,0,3048,0,0,0,0,0,0,0,3048
+PRIME MINISTER AND CABINET,Aboriginal Hostels Limited*,Total,Agency Resourcing,44416,2357,25661,0,0,0,0,0,0,72434
+PRIME MINISTER AND CABINET,Aboriginal Hostels Limited*,Total,Estimated Actual,43092,3048,25744,0,0,0,0,0,0,71884
+PRIME MINISTER AND CABINET,Australian Institute of Aboriginal and Torres Strait Islander Studies*,Outcome 1,Agency Resourcing,29343,0,11693,0,0,0,0,0,0,41036
+PRIME MINISTER AND CABINET,Australian Institute of Aboriginal and Torres Strait Islander Studies*,Outcome 1,Estimated Actual,22575,0,16171,0,0,0,0,0,0,38746
+PRIME MINISTER AND CABINET,Australian Institute of Aboriginal and Torres Strait Islander Studies*,Equity Injections,Agency Resourcing,0,3043,0,0,0,0,0,0,0,3043
+PRIME MINISTER AND CABINET,Australian Institute of Aboriginal and Torres Strait Islander Studies*,Equity Injections,Estimated Actual,0,294,0,0,0,0,0,0,0,294
+PRIME MINISTER AND CABINET,Australian Institute of Aboriginal and Torres Strait Islander Studies*,Total,Agency Resourcing,29343,3043,11693,0,0,0,0,0,0,44079
+PRIME MINISTER AND CABINET,Australian Institute of Aboriginal and Torres Strait Islander Studies*,Total,Estimated Actual,22575,294,16171,0,0,0,0,0,0,39040
+PRIME MINISTER AND CABINET,Indigenous Business Australia*,Outcome 1,Agency Resourcing,9595,0,256113,0,0,0,0,0,0,265708
+PRIME MINISTER AND CABINET,Indigenous Business Australia*,Outcome 1,Estimated Actual,9420,0,246435,0,0,0,0,0,0,255855
+PRIME MINISTER AND CABINET,Indigenous Business Australia*,Equity Injections,Agency Resourcing,0,22850,0,0,0,0,0,0,0,22850
+PRIME MINISTER AND CABINET,Indigenous Business Australia*,Equity Injections,Estimated Actual,0,22850,0,0,0,0,0,0,0,22850
+PRIME MINISTER AND CABINET,Indigenous Business Australia*,Total,Agency Resourcing,9595,22850,256113,0,0,0,0,0,0,288558
+PRIME MINISTER AND CABINET,Indigenous Business Australia*,Total,Estimated Actual,9420,22850,246435,0,0,0,0,0,0,278705
+PRIME MINISTER AND CABINET,Indigenous Land and Sea Corporation*,Outcome 1,Agency Resourcing,10087,0,90924,0,0,0,0,0,0,101011
+PRIME MINISTER AND CABINET,Indigenous Land and Sea Corporation*,Outcome 1,Estimated Actual,9812,0,90801,0,0,0,0,0,0,100613
+PRIME MINISTER AND CABINET,Indigenous Land and Sea Corporation*,Total,Agency Resourcing,10087,0,90924,0,0,0,0,0,0,101011
+PRIME MINISTER AND CABINET,Indigenous Land and Sea Corporation*,Total,Estimated Actual,9812,0,90801,0,0,0,0,0,0,100613
+PRIME MINISTER AND CABINET,National Australia Day Council Limited*,Outcome 1,Agency Resourcing,0,0,17277,0,0,0,0,0,0,17277
+PRIME MINISTER AND CABINET,National Australia Day Council Limited*,Outcome 1,Estimated Actual,0,0,17104,0,0,0,0,0,0,17104
+PRIME MINISTER AND CABINET,National Australia Day Council Limited*,Total,Agency Resourcing,0,0,17277,0,0,0,0,0,0,17277
+PRIME MINISTER AND CABINET,National Australia Day Council Limited*,Total,Estimated Actual,0,0,17104,0,0,0,0,0,0,17104
+PRIME MINISTER AND CABINET,Northern Territory Aboriginal Investment Corporation*,Outcome 1,Agency Resourcing,0,0,85230,0,0,0,0,0,0,85230
+PRIME MINISTER AND CABINET,Northern Territory Aboriginal Investment Corporation*,Outcome 1,Estimated Actual,0,0,568616,0,0,0,0,0,0,568616
+PRIME MINISTER AND CABINET,Northern Territory Aboriginal Investment Corporation*,Total,Agency Resourcing,0,0,85230,0,0,0,0,0,0,85230
+PRIME MINISTER AND CABINET,Northern Territory Aboriginal Investment Corporation*,Total,Estimated Actual,0,0,568616,0,0,0,0,0,0,568616
+PRIME MINISTER AND CABINET,Outback Stores Pty Ltd*,Outcome 1,Agency Resourcing,0,0,19312,0,0,0,0,0,0,19312
+PRIME MINISTER AND CABINET,Outback Stores Pty Ltd*,Outcome 1,Estimated Actual,0,0,19312,0,0,0,0,0,0,19312
+PRIME MINISTER AND CABINET,Outback Stores Pty Ltd*,Total,Agency Resourcing,0,0,19312,0,0,0,0,0,0,19312
+PRIME MINISTER AND CABINET,Outback Stores Pty Ltd*,Total,Estimated Actual,0,0,19312,0,0,0,0,0,0,19312
+PRIME MINISTER AND CABINET,Torres Strait Regional Authority*,Outcome 1,Agency Resourcing,38223,0,13070,0,0,0,0,0,0,51293
+PRIME MINISTER AND CABINET,Torres Strait Regional Authority*,Outcome 1,Estimated Actual,37247,0,17799,0,0,0,0,0,0,55046
+PRIME MINISTER AND CABINET,Torres Strait Regional Authority*,Total,Agency Resourcing,38223,0,13070,0,0,0,0,0,0,51293
+PRIME MINISTER AND CABINET,Torres Strait Regional Authority*,Total,Estimated Actual,37247,0,17799,0,0,0,0,0,0,55046
+PRIME MINISTER AND CABINET,Australian National Audit Office,Outcome 1,Agency Resourcing,96375,0,5100,800,0,0,0,0,0,102275
+PRIME MINISTER AND CABINET,Australian National Audit Office,Outcome 1,Estimated Actual,92450,0,4100,778,0,0,0,0,0,97328
+PRIME MINISTER AND CABINET,Australian National Audit Office,Total,Agency Resourcing,96375,0,5100,800,0,0,0,0,0,102275
+PRIME MINISTER AND CABINET,Australian National Audit Office,Total,Estimated Actual,92450,0,4100,778,0,0,0,0,0,97328
+PRIME MINISTER AND CABINET,Australian Public Service Commission,Outcome 1,Agency Resourcing,72038,0,24072,0,0,0,0,0,4633,100743
+PRIME MINISTER AND CABINET,Australian Public Service Commission,Outcome 1,Estimated Actual,73279,0,23651,0,0,0,0,0,4537,101467
+PRIME MINISTER AND CABINET,Australian Public Service Commission,Total,Agency Resourcing,72038,0,24072,0,0,0,0,0,4633,100743
+PRIME MINISTER AND CABINET,Australian Public Service Commission,Total,Estimated Actual,73279,0,23651,0,0,0,0,0,4537,101467
+PRIME MINISTER AND CABINET,National Indigenous Australians Agency,Outcome 1,Agency Resourcing,319243,0,15475,0,1155167,1938968,3744,0,84276,3516873
+PRIME MINISTER AND CABINET,National Indigenous Australians Agency,Outcome 1,Estimated Actual,350141,0,16440,0,1674825,1766277,3635,0,79635,3890953
+PRIME MINISTER AND CABINET,National Indigenous Australians Agency,Equity Injections,Agency Resourcing,0,2101,0,0,0,0,0,0,0,2101
+PRIME MINISTER AND CABINET,National Indigenous Australians Agency,Equity Injections,Estimated Actual,0,2101,0,0,0,0,0,0,0,2101
+PRIME MINISTER AND CABINET,National Indigenous Australians Agency,Total,Agency Resourcing,319243,2101,15475,0,1155167,1938968,3744,0,84276,3518974
+PRIME MINISTER AND CABINET,National Indigenous Australians Agency,Total,Estimated Actual,350141,2101,16440,0,1674825,1766277,3635,0,79635,3893054
+PRIME MINISTER AND CABINET,Office of National Intelligence,Outcome 1,Agency Resourcing,126944,0,1000,0,0,11204,0,0,0,139148
+PRIME MINISTER AND CABINET,Office of National Intelligence,Outcome 1,Estimated Actual,138395,0,1000,0,0,10382,0,0,0,149777
+PRIME MINISTER AND CABINET,Office of National Intelligence,Equity Injections,Agency Resourcing,0,1303,0,0,0,0,0,0,0,1303
+PRIME MINISTER AND CABINET,Office of National Intelligence,Equity Injections,Estimated Actual,0,6024,0,0,0,0,0,0,0,6024
+PRIME MINISTER AND CABINET,Office of National Intelligence,Total,Agency Resourcing,126944,1303,1000,0,0,11204,0,0,0,140451
+PRIME MINISTER AND CABINET,Office of National Intelligence,Total,Estimated Actual,138395,6024,1000,0,0,10382,0,0,0,155801
+PRIME MINISTER AND CABINET,Office of the Official Secretary to the Governor-General,Outcome 1,Agency Resourcing,16483,0,258,0,0,4936,0,0,495,22172
+PRIME MINISTER AND CABINET,Office of the Official Secretary to the Governor-General,Outcome 1,Estimated Actual,16114,0,258,0,0,5844,0,0,495,22711
+PRIME MINISTER AND CABINET,Office of the Official Secretary to the Governor-General,Total,Agency Resourcing,16483,0,258,0,0,4936,0,0,495,22172
+PRIME MINISTER AND CABINET,Office of the Official Secretary to the Governor-General,Total,Estimated Actual,16114,0,258,0,0,5844,0,0,495,22711
+PRIME MINISTER AND CABINET,Workplace Gender Equality Agency,Outcome 1,Agency Resourcing,11961,0,200,0,0,0,0,0,0,12161
+PRIME MINISTER AND CABINET,Workplace Gender Equality Agency,Outcome 1,Estimated Actual,11738,0,100,0,0,0,0,0,0,11838
+PRIME MINISTER AND CABINET,Workplace Gender Equality Agency,Total,Agency Resourcing,11961,0,200,0,0,0,0,0,0,12161
+PRIME MINISTER AND CABINET,Workplace Gender Equality Agency,Total,Estimated Actual,11738,0,100,0,0,0,0,0,0,11838
+PRIME MINISTER AND CABINET,,PORTFOLIO TOTAL,Agency Resourcing,1060216,31654,601864,800,1155167,2010207,3744,0,89414,4953066
+PRIME MINISTER AND CABINET,,PORTFOLIO TOTAL,Estimated Actual,1111320,34317,1081506,778,1674825,1839194,3635,0,84677,5830252
+SOCIAL SERVICES,Department of Social Services,Outcome 1,Agency Resourcing,84192,0,5214,0,0,4607,0,0,143439190,143533203
+SOCIAL SERVICES,Department of Social Services,Outcome 1,Estimated Actual,88218,0,7831,0,0,13072,0,0,136244777,136353898
+SOCIAL SERVICES,Department of Social Services,Outcome 2,Agency Resourcing,304834,0,12397,0,3384,1314270,0,0,657415,2292300
+SOCIAL SERVICES,Department of Social Services,Outcome 2,Estimated Actual,264130,0,21508,0,3903,1056532,0,0,467615,1813688
+SOCIAL SERVICES,Department of Social Services,Outcome 3,Agency Resourcing,179141,0,8473,0,0,35662999,0,0,0,35850613
+SOCIAL SERVICES,Department of Social Services,Outcome 3,Estimated Actual,155768,0,12156,0,0,31007267,0,0,0,31175191
+SOCIAL SERVICES,Department of Social Services,Outcome 4,Agency Resourcing,17684,0,1097,0,0,61263,0,0,0,80044
+SOCIAL SERVICES,Department of Social Services,Outcome 4,Estimated Actual,15626,0,1737,0,0,67455,0,0,0,84818
+SOCIAL SERVICES,Department of Social Services,Total,Agency Resourcing,585851,0,27181,0,3384,37043139,0,0,144096605,181756160
+SOCIAL SERVICES,Department of Social Services,Total,Estimated Actual,523742,0,43232,0,3903,32144326,0,0,136712392,169427595
+SOCIAL SERVICES,National Disability Insurance Agency*,Outcome 1,Agency Resourcing,2190431,0,46189647,0,0,0,0,0,0,48380078
+SOCIAL SERVICES,National Disability Insurance Agency*,Outcome 1,Estimated Actual,2008642,0,41690437,0,0,0,0,0,0,43699079
+SOCIAL SERVICES,National Disability Insurance Agency*,Total,Agency Resourcing,2190431,0,46189647,0,0,0,0,0,0,48380078
+SOCIAL SERVICES,National Disability Insurance Agency*,Total,Estimated Actual,2008642,0,41690437,0,0,0,0,0,0,43699079
+SOCIAL SERVICES,Australian Institute of Family Studies,Outcome 1,Agency Resourcing,4913,0,20342,0,0,0,0,0,0,25255
+SOCIAL SERVICES,Australian Institute of Family Studies,Outcome 1,Estimated Actual,5249,0,16415,0,0,0,0,0,0,21664
+SOCIAL SERVICES,Australian Institute of Family Studies,Total,Agency Resourcing,4913,0,20342,0,0,0,0,0,0,25255
+SOCIAL SERVICES,Australian Institute of Family Studies,Total,Estimated Actual,5249,0,16415,0,0,0,0,0,0,21664
+SOCIAL SERVICES,"Domestic, Family and Sexual Violence Commission",Outcome 1,Agency Resourcing,5723,0,0,0,0,0,0,0,0,5723
+SOCIAL SERVICES,"Domestic, Family and Sexual Violence Commission",Outcome 1,Estimated Actual,5588,0,0,0,0,0,0,0,0,5588
+SOCIAL SERVICES,"Domestic, Family and Sexual Violence Commission",Total,Agency Resourcing,5723,0,0,0,0,0,0,0,0,5723
+SOCIAL SERVICES,"Domestic, Family and Sexual Violence Commission",Total,Estimated Actual,5588,0,0,0,0,0,0,0,0,5588
+SOCIAL SERVICES,NDIS Quality and Safeguards Commission,Outcome 1,Agency Resourcing,173564,0,0,0,0,4977,0,0,0,178541
+SOCIAL SERVICES,NDIS Quality and Safeguards Commission,Outcome 1,Estimated Actual,154499,0,0,0,0,4804,0,0,0,159303
+SOCIAL SERVICES,NDIS Quality and Safeguards Commission,Equity Injections,Agency Resourcing,0,18106,0,0,0,0,0,0,0,18106
+SOCIAL SERVICES,NDIS Quality and Safeguards Commission,Equity Injections,Estimated Actual,0,0,0,0,0,0,0,0,0,0
+SOCIAL SERVICES,NDIS Quality and Safeguards Commission,Total,Agency Resourcing,173564,18106,0,0,0,4977,0,0,0,196647
+SOCIAL SERVICES,NDIS Quality and Safeguards Commission,Total,Estimated Actual,154499,0,0,0,0,4804,0,0,0,159303
+SOCIAL SERVICES,Services Australia,Outcome 1,Agency Resourcing,5471540,0,174590,0,2451035,976,0,0,1000,8099141
+SOCIAL SERVICES,Services Australia,Outcome 1,Estimated Actual,4903071,0,283042,0,2402023,1247,0,0,1000,7590383
+SOCIAL SERVICES,Services Australia,Equity Injections,Agency Resourcing,0,224286,0,0,0,0,0,0,0,224286
+SOCIAL SERVICES,Services Australia,Equity Injections,Estimated Actual,0,100541,0,0,0,0,0,0,0,100541
+SOCIAL SERVICES,Services Australia,Total,Agency Resourcing,5471540,224286,174590,0,2451035,976,0,0,1000,8323427
+SOCIAL SERVICES,Services Australia,Total,Estimated Actual,4903071,100541,283042,0,2402023,1247,0,0,1000,7690924
+SOCIAL SERVICES,,PORTFOLIO TOTAL,Agency Resourcing,8432022,242392,46411760,0,2454419,37049092,0,0,144097605,238687290
+SOCIAL SERVICES,,PORTFOLIO TOTAL,Estimated Actual,7600791,100541,42033126,0,2405926,32150377,0,0,136713392,221004153
+TREASURY,Department of the Treasury,Outcome 1,Agency Resourcing,394325,0,11072,0,909364,150064,0,0,128514832,129979657
+TREASURY,Department of the Treasury,Outcome 1,Estimated Actual,352908,0,11072,0,2345048,310643,0,0,124417146,127436817
+TREASURY,Department of the Treasury,Administered Assets and Liabilities,Agency Resourcing,0,0,0,0,0,0,0,1544000,0,1544000
+TREASURY,Department of the Treasury,Administered Assets and Liabilities,Estimated Actual,0,0,0,0,0,0,0,825000,0,825000
+TREASURY,Department of the Treasury,Total,Agency Resourcing,394325,0,11072,0,909364,150064,0,1544000,128514832,131523657
+TREASURY,Department of the Treasury,Total,Estimated Actual,352908,0,11072,0,2345048,310643,0,825000,124417146,128261817
+TREASURY,Housing Australia*,Outcome 1,Agency Resourcing,5428,0,495470,0,0,0,0,0,0,500898
+TREASURY,Housing Australia*,Outcome 1,Estimated Actual,0,0,802663,0,0,0,0,0,0,802663
+TREASURY,Housing Australia*,Total,Agency Resourcing,5428,0,495470,0,0,0,0,0,0,500898
+TREASURY,Housing Australia*,Total,Estimated Actual,0,0,802663,0,0,0,0,0,0,802663
+TREASURY,Australian Bureau of Statistics,Outcome 1,Agency Resourcing,524888,0,60465,0,0,0,0,0,0,585353
+TREASURY,Australian Bureau of Statistics,Outcome 1,Estimated Actual,425181,0,70570,0,0,0,0,0,0,495751
+TREASURY,Australian Bureau of Statistics,Equity Injections,Agency Resourcing,0,3304,0,0,0,0,0,0,0,3304
+TREASURY,Australian Bureau of Statistics,Equity Injections,Estimated Actual,0,7732,0,0,0,0,0,0,0,7732
+TREASURY,Australian Bureau of Statistics,Total,Agency Resourcing,524888,3304,60465,0,0,0,0,0,0,588657
+TREASURY,Australian Bureau of Statistics,Total,Estimated Actual,425181,7732,70570,0,0,0,0,0,0,503483
+TREASURY,Australian Competition and Consumer Commission,Outcome 1,Agency Resourcing,435630,0,8607,0,0,0,0,0,20,444257
+TREASURY,Australian Competition and Consumer Commission,Outcome 1,Estimated Actual,391513,0,9585,0,0,0,0,0,20,401118
+TREASURY,Australian Competition and Consumer Commission,Equity Injections,Agency Resourcing,0,1100,0,0,0,0,0,0,0,1100
+TREASURY,Australian Competition and Consumer Commission,Equity Injections,Estimated Actual,0,1100,0,0,0,0,0,0,0,1100
+TREASURY,Australian Competition and Consumer Commission,Total,Agency Resourcing,435630,1100,8607,0,0,0,0,0,20,445357
+TREASURY,Australian Competition and Consumer Commission,Total,Estimated Actual,391513,1100,9585,0,0,0,0,0,20,402218
+TREASURY,Australian Office of Financial Management,Outcome 1,Agency Resourcing,16762,0,25,0,276341,0,0,0,527811178,528104306
+TREASURY,Australian Office of Financial Management,Outcome 1,Estimated Actual,19516,0,25,0,448113,0,0,0,179973783,180441437
+TREASURY,Australian Office of Financial Management,Total,Agency Resourcing,16762,0,25,0,276341,0,0,0,527811178,528104306
+TREASURY,Australian Office of Financial Management,Total,Estimated Actual,19516,0,25,0,448113,0,0,0,179973783,180441437
+TREASURY,Australian Prudential Regulation Authority,Outcome 1,Agency Resourcing,16361,0,0,0,404542,0,0,0,0,420903
+TREASURY,Australian Prudential Regulation Authority,Outcome 1,Estimated Actual,9364,0,0,0,405242,0,0,0,0,414606
+TREASURY,Australian Prudential Regulation Authority,Total,Agency Resourcing,16361,0,0,0,404542,0,0,0,0,420903
+TREASURY,Australian Prudential Regulation Authority,Total,Estimated Actual,9364,0,0,0,405242,0,0,0,0,414606
+TREASURY,Australian Securities and Investments Commission,Outcome 1,Agency Resourcing,584377,0,5935,0,0,12559,0,0,175694,778565
+TREASURY,Australian Securities and Investments Commission,Outcome 1,Estimated Actual,511198,0,10271,0,16304,11367,0,0,159800,708940
+TREASURY,Australian Securities and Investments Commission,Total,Agency Resourcing,584377,0,5935,0,0,12559,0,0,175694,778565
+TREASURY,Australian Securities and Investments Commission,Total,Estimated Actual,511198,0,10271,0,16304,11367,0,0,159800,708940
+TREASURY,Australian Taxation Office,Outcome 1,Agency Resourcing,4306935,0,184651,0,29675,10564,0,0,18205192,22737017
+TREASURY,Australian Taxation Office,Outcome 1,Estimated Actual,4179855,0,180670,0,22210,5934,0,0,18148027,22536696
+TREASURY,Australian Taxation Office,Equity Injections,Agency Resourcing,0,30092,0,0,0,0,0,0,0,30092
+TREASURY,Australian Taxation Office,Equity Injections,Estimated Actual,0,22348,0,0,0,0,0,0,0,22348
+TREASURY,Australian Taxation Office,Total,Agency Resourcing,4306935,30092,184651,0,29675,10564,0,0,18205192,22767109
+TREASURY,Australian Taxation Office,Total,Estimated Actual,4179855,22348,180670,0,22210,5934,0,0,18148027,22559044
+TREASURY,Commonwealth Grants Commission,Outcome 1,Agency Resourcing,8339,0,0,0,0,0,0,0,0,8339
+TREASURY,Commonwealth Grants Commission,Outcome 1,Estimated Actual,8175,0,0,0,0,0,0,0,0,8175
+TREASURY,Commonwealth Grants Commission,Total,Agency Resourcing,8339,0,0,0,0,0,0,0,0,8339
+TREASURY,Commonwealth Grants Commission,Total,Estimated Actual,8175,0,0,0,0,0,0,0,0,8175
+TREASURY,Inspector-General of Taxation,Outcome 1,Agency Resourcing,7356,0,0,0,0,0,0,0,0,7356
+TREASURY,Inspector-General of Taxation,Outcome 1,Estimated Actual,6709,0,0,0,0,0,0,0,0,6709
+TREASURY,Inspector-General of Taxation,Total,Agency Resourcing,7356,0,0,0,0,0,0,0,0,7356
+TREASURY,Inspector-General of Taxation,Total,Estimated Actual,6709,0,0,0,0,0,0,0,0,6709
+TREASURY,National Competition Council,Outcome 1,Agency Resourcing,1753,0,0,0,0,0,0,0,0,1753
+TREASURY,National Competition Council,Outcome 1,Estimated Actual,1727,0,0,0,0,0,0,0,0,1727
+TREASURY,National Competition Council,Total,Agency Resourcing,1753,0,0,0,0,0,0,0,0,1753
+TREASURY,National Competition Council,Total,Estimated Actual,1727,0,0,0,0,0,0,0,0,1727
+TREASURY,Office of the Auditing and Assurance Standards Board,Outcome 1,Agency Resourcing,4001,0,0,0,0,0,0,0,0,4001
+TREASURY,Office of the Auditing and Assurance Standards Board,Outcome 1,Estimated Actual,2917,0,0,0,0,0,0,0,0,2917
+TREASURY,Office of the Auditing and Assurance Standards Board,Total,Agency Resourcing,4001,0,0,0,0,0,0,0,0,4001
+TREASURY,Office of the Auditing and Assurance Standards Board,Total,Estimated Actual,2917,0,0,0,0,0,0,0,0,2917
+TREASURY,Office of the Australian Accounting Standards Board,Outcome 1,Agency Resourcing,8389,0,1050,0,0,0,0,0,0,9439
+TREASURY,Office of the Australian Accounting Standards Board,Outcome 1,Estimated Actual,5039,0,1050,0,0,0,0,0,0,6089
+TREASURY,Office of the Australian Accounting Standards Board,Total,Agency Resourcing,8389,0,1050,0,0,0,0,0,0,9439
+TREASURY,Office of the Australian Accounting Standards Board,Total,Estimated Actual,5039,0,1050,0,0,0,0,0,0,6089
+TREASURY,Productivity Commission,Outcome 1,Agency Resourcing,38664,0,10,0,0,0,0,0,0,38674
+TREASURY,Productivity Commission,Outcome 1,Estimated Actual,37874,0,10,0,0,0,0,0,0,37884
+TREASURY,Productivity Commission,Total,Agency Resourcing,38664,0,10,0,0,0,0,0,0,38674
+TREASURY,Productivity Commission,Total,Estimated Actual,37874,0,10,0,0,0,0,0,0,37884
+TREASURY,Royal Australian Mint,Outcome 1,Agency Resourcing,0,0,0,0,166982,0,0,0,0,166982
+TREASURY,Royal Australian Mint,Outcome 1,Estimated Actual,0,0,0,0,222368,0,0,0,0,222368
+TREASURY,Royal Australian Mint,Total,Agency Resourcing,0,0,0,0,166982,0,0,0,0,166982
+TREASURY,Royal Australian Mint,Total,Estimated Actual,0,0,0,0,222368,0,0,0,0,222368
+TREASURY,,PORTFOLIO TOTAL,Agency Resourcing,6353208,34496,767285,0,1786904,173187,0,1544000,674706916,685365996
+TREASURY,,PORTFOLIO TOTAL,Estimated Actual,5951976,31180,1085916,0,3459285,327944,0,825000,322698776,334380077
